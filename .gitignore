@@ -1,0 +1,9 @@
+.idea
+.env
+src/wp-config.php
+src/wp-content/languages/*.json
+src/wp-content/languages/plugins/*.json
+src/wp-content/cache
+src/wp-content/plugins
+src/wp-content/td_cache
+src/wp-content/debug.log
