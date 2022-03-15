@@ -1,0 +1,128 @@
+# Translation of Themes - Arke in Chinese (China)
+# This file is distributed under the same license as the Themes - Arke package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-12-12 01:27:32+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: zh_CN\n"
+"Project-Id-Version: Themes - Arke\n"
+
+#. Description of the theme
+msgid "Arke is a truly minimal WordPress theme. No sidebars, no widgets, no settings. Just your content. Arke is extremely fast and scores 100/100 on Pingdom's speed test."
+msgstr "Arke 是一个极简的 WordPress 主题。没有侧边栏，没有小部件，没有设置项，只专注于你的内容。Arke 主题非常快，在 Pingdom 速度测试中获得 100/100 得分。"
+
+#. Theme Name of the theme
+msgid "Arke"
+msgstr "Arke"
+
+#: functions.php:187
+msgid "Hide Notice"
+msgstr "隐藏通知"
+
+#. translators: 1: plugin link
+#: functions.php:182
+msgid "Easily change the font of your website with our new plugin - %1$s"
+msgstr "使用我们的新插件轻松的给您的网站更换字体 - %1$s"
+
+#. Template Name of the theme
+msgid "Archive Template"
+msgstr "归档模板"
+
+#: index.php:43
+msgid "View All Posts &rarr;"
+msgstr "查看所有文章&rarr;"
+
+#: functions.php:151
+msgid "Posts Navigation"
+msgstr "文章导航"
+
+#: functions.php:150
+msgid "Newer Posts &rarr;"
+msgstr "更新的文章&rarr;"
+
+#: functions.php:149
+msgid "&larr; Older Posts"
+msgstr "&larr; 之前的文章"
+
+#: functions.php:43
+msgid "Primary Menu"
+msgstr "主菜单"
+
+#: content.php:35
+msgid "Pages:"
+msgstr "页码："
+
+#: content.php:32
+msgid "Continue reading &rarr;"
+msgstr "继续阅读 &rarr;"
+
+#: content-none.php:47
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "我们似乎无法找到你想要的，也许搜索会有所帮助。"
+
+#: content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "抱歉，没有找到符合您搜索的内容，请更换关键词重试。"
+
+#. translators: %s: link to new post admin screen
+#: content-none.php:25
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "准备发布您的第一篇文章么？<a href=\"%1$s\">从这里开始</a>。"
+
+#: content-none.php:16
+msgid "Nothing Found"
+msgstr "没有找到"
+
+#: comments.php:74
+msgid "Comments are closed."
+msgstr "评论已关闭。"
+
+#: comments.php:63
+msgid "Newer Comments &rarr;"
+msgstr "更新的评论 &rarr;"
+
+#: comments.php:60
+msgid "&larr; Older Comments"
+msgstr "&larr; 之前的评论"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:36
+msgctxt "comments title"
+msgid "%1$s Comment;"
+msgid_plural "%1$s Comments"
+msgstr[0] "%1$s 条评论"
+
+#. translators: %2$s: theme author.
+#: archive-template.php:53
+msgid "Theme: %1$s by %2$s."
+msgstr "主题：%1$s 由 %2$s 设计。"
+
+#: archive-template.php:42
+msgid "Sorry, no posts matched your criteria."
+msgstr "抱歉，没有文章符合您的条件。"
+
+#. translators: %s: post title.
+#: comments.php:32
+msgctxt "comments title"
+msgid "One Comment"
+msgstr "一条评论"
+
+#: functions.php:157
+msgid ", "
+msgstr ","
+
+#. Theme URI of the theme
+msgid "https://olympusthemes.com/themes/arke/"
+msgstr "https://olympusthemes.com/themes/arke/"
+
+#. Author URI of the theme
+msgid "https://olympusthemes.com/"
+msgstr "https://olympusthemes.com/"
+
+#. Author of the theme
+msgid "DannyCooper"
+msgstr "DannyCooper"

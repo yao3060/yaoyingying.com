@@ -1,0 +1,4510 @@
+# Translation of Plugins - Clearfy – WordPress optimization plugin and disable ultimate tweaker - Development (trunk) in Chinese (China)
+# This file is distributed under the same license as the Plugins - Clearfy – WordPress optimization plugin and disable ultimate tweaker - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-04-01 05:37:17+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: zh_CN\n"
+"Project-Id-Version: Plugins - Clearfy – WordPress optimization plugin and disable ultimate tweaker - Development (trunk)\n"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:227
+msgid "This function will force a script or style from the header to the footer. This can fix problems of blocking page rendering."
+msgstr "这个函数将强制应用腳本或樣式到頁眉与頁尾，帮助解决页面无法呈现的问题。"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:226
+msgid "Move to footer (PRO)"
+msgstr "移动到页尾（专业版）"
+
+#: admin/pages/class-pages-performance-cache.php:283
+msgid "To start page caching, you need to install the additional component Cache!"
+msgstr "要启用页面缓存，请先安装缓存附加组件！"
+
+#: admin/pages/class-pages-performance-cache.php:282
+msgid "Install Page Cache component"
+msgstr "安装缓存附加组件"
+
+#: admin/pages/class-pages-performance-cache.php:221
+msgid "Strings in the HTTP ’User Agent’ header that prevent WP-Cache from caching bot, spiders, and crawlers’ requests. Note that super cached files are still sent to these agents if they already exists."
+msgstr "在 HTTP 'User Agent' 标头中的字串用以避免 WP-Cache缓存来自机器人、爬虫和蜘蛛的请求。注意，如果超级缓存文件已经存在，仍会传送给这些用户代理。"
+
+#: admin/pages/class-pages-performance-cache.php:219
+msgid "Rejected User Agents"
+msgstr "已拒绝的用户代理(User Agent)"
+
+#: admin/pages/class-pages-performance-cache.php:209
+msgid "Add here those filenames that can be cached, even if they match one of the rejected substring specified above."
+msgstr "在这里新增可以被缓存的文件名称，即使它们与上方设定的拒绝字串相符时也仍将被缓存。"
+
+#: admin/pages/class-pages-performance-cache.php:207
+msgid "Filenames that can be cached"
+msgstr "可被缓存的文件名称"
+
+#: admin/pages/class-pages-performance-cache.php:195
+msgid ""
+"Reduce the load times of pages by storing commonly used files from your website on your visitors browser.\n"
+"\n"
+"A browser loads the css, js, images resources to display the web page to the visitors. This process is always performed.\n"
+"\n"
+"If the commonly used files are cached by browser, the visitors’ browsers do not have to load them evert time so the load times of pages are reduced."
+msgstr ""
+"透过储存经常使用的网站文件在访客的浏览器以减少页面读取时间。\n"
+"\n"
+"浏览器总是会读取 css, js, 影像资源后才对访客展示网站。\n"
+"\n"
+"如果这些常用的文件被缓存在浏览器，访客的浏览器就不用每次花费时间读取，进而减少页面读取时间。"
+
+#: admin/pages/class-pages-performance-cache.php:193
+msgid "Browser Caching"
+msgstr "浏览器缓存"
+
+#: admin/pages/class-pages-performance-cache.php:182
+msgid ""
+"Reduce the size of page decrease the page load time a lot. You can reduce the size of page with GZIP compression feature.\n"
+"\n"
+"If the size of requested files are big, loading takes time so in this case there is needed to reduce the size of files. Gzip Compression feature compresses the pages and resources before sending so the transfer time is reduced."
+msgstr ""
+"你可以使用 GZIP压缩功能减少页面容量，以大幅缩短页面读取时间。\n"
+"\n"
+"如果请求的档案容量很大，读取将会花费很多时间，这种情况下就需要缩小档案容量。 Gzip压缩功能会在传送前压缩页面和资源，因此传输时间就缩短了。"
+
+#: admin/pages/class-pages-performance-cache.php:180
+msgid "Gzip"
+msgstr "Gzip"
+
+#: admin/pages/class-pages-performance-cache.php:171
+msgid "Clear cache files when a post or page is updated"
+msgstr "更新文章或页面时清除缓存文件"
+
+#: admin/pages/class-pages-performance-cache.php:169
+msgid "Clear cache for updated Post"
+msgstr "文章发布更新后清除缓存"
+
+#: admin/pages/class-pages-performance-cache.php:160
+msgid "Clear cache files when a post or page is published"
+msgstr "发布文章或页面时清除缓存文件"
+
+#: admin/pages/class-pages-performance-cache.php:158
+msgid "Clear cache for new post"
+msgstr "新文章发布后清除缓存"
+
+#: admin/pages/class-pages-performance-cache.php:149
+msgid "Don't show the cached version for logged-in users"
+msgstr "不要对已登录的用户显示缓存内容"
+
+#: admin/pages/class-pages-performance-cache.php:147
+msgid "Don't cache for logged-in users"
+msgstr "不要对已登录的用户缓存"
+
+#: admin/pages/class-pages-performance-cache.php:134
+msgid ""
+"The preload feature stars to work after delete cache.\n"
+"\n"
+"When the Preload feature calls the urls, the cache of urls are created automatically. When all the pages are cached, the preload stops working. When the cache is clear, it starts working again.\n"
+"\n"
+"The Preload runs every 5 minutes. If you want set a specific interval. Note: The preload feature works with the WP_CRON system."
+msgstr ""
+"删除缓存后，预先加载功能就会开始运作。\n"
+"\n"
+"当所有页面都已缓存，预先加载功能将会停止运作。\n"
+"\n"
+"预先加载功能每五分钟执行一次，如果你要自订区间。注意：预先加载功能需要与WP_CRON系统共同运作。"
+
+#: admin/pages/class-pages-performance-cache.php:132
+msgid "Preload cache"
+msgstr "预先加载缓存"
+
+#: admin/pages/class-pages-performance-cache.php:119
+msgid ""
+"You can reduce the number of sql queries with this feature.\n"
+"\n"
+"When “Cache System” is enabled, the page is saved as a static html file, thus PHP and MySQL does not work for the page which has been cached. MySQL and PHP work to generate the html of the other pages which have not been cached yet.\n"
+"\n"
+"Every time before the cache is created, the same widgets are generated again and again. This feature avoids generating the widgets again and again to reduce the sql queries."
+msgstr ""
+"透过此功能你可以减少sql的查询数量。\n"
+"\n"
+"当「缓存系统」启用时，页面将会储存为静态 html文件，因此 PHP和 MySQL将不会执行。 MySQL和 PHP会在其他尚未建立静态 html文件的页面上继续运作。\n"
+"\n"
+"在缓存建立前，小工具每次都会不断产生。此功能可避免小工具重复产生以减少 sql查询次数。"
+
+#: admin/pages/class-pages-performance-cache.php:117
+msgid "Widget Cache"
+msgstr "小工具缓存"
+
+#: admin/pages/class-pages-performance-cache.php:108
+msgid "If you use a mobile theme, you should enable both “Mobile” and “Create cache for mobile theme” options. If you use a responsive theme, no need to use the mobile cache feature. You should disable “Mobile” and “Create cache for mobile theme” options."
+msgstr "如果你有使用行动版布景主题，则需要同时启用「行动装置」和「为行动版布景主题建立缓存」功能。如果你使用响应性布景主题，就不需要使用建立行动版布景主题缓存功能。你可以停用「行动装置」和「为行动版布景主题建立缓存」功能。"
+
+#: admin/pages/class-pages-performance-cache.php:106
+msgid "Create cache for mobile theme"
+msgstr "为移动主题创建缓存"
+
+#: admin/pages/class-pages-performance-cache.php:97
+msgid "Don't show the cached version for desktop to mobile devices"
+msgstr "不显示台式机到移动设备的缓存版本"
+
+#: admin/pages/class-pages-performance-cache.php:95
+msgid "Mobile"
+msgstr "手机端"
+
+#: admin/pages/class-pages-performance-cache.php:86
+msgid "This option enable cache to generates static html files from your dynamic WordPress blog. After a html file is generated your webserver will serve that file instead of processing the comparatively heavier and more expensive WordPress PHP scripts."
+msgstr "启用此选项会从你的动态 WordPress博客中生成静态html文件。生成html文件后，您的WEB服务器将直接使用html文件来提供服务，而无需处理相对较臃肿和昂贵的WordPress PHP脚本。"
+
+#: admin/pages/class-pages-performance-cache.php:84
+msgid "Enable cache"
+msgstr "启用缓存"
+
+#: admin/pages/class-pages-performance-cache.php:77
+msgid "A very fast caching engine for WordPress that produces static html files. You can configure caching in this section."
+msgstr "一项生成WordPress静态 html文件的超快速缓存引擎。你可以在此区块进行设定。"
+
+#: admin/pages/class-pages-performance-cache.php:77
+msgid "<strong>Cache settings</strong>"
+msgstr "<strong>缓存设定</strong>"
+
+#: admin/pages/class-pages-performance-cache.php:54
+msgid "Cache pages"
+msgstr "缓存页面"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:278
+msgid "CSS files"
+msgstr "CSS文件"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:178
+msgid "Don't move jQuery to footer"
+msgstr "不要将 jQuery移动至页尾"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:156
+msgid "Move js to footer?"
+msgstr "移动 js至页尾？"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:142
+msgid "Minify JavaScript removes whitespace and comments to reduce the file size."
+msgstr "移除空白和注解以便缩小 JavaScript文件。"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:133
+msgid "JavaScript Files"
+msgstr "JavaScript 文件"
+
+#. Author URI of the plugin
+msgid "https://cm-wp.com"
+msgstr "https://cm-wp.com"
+
+#. Author of the plugin
+msgid "Creative Motion <info@cm-wp.com>"
+msgstr "Creative Motion <info@cm-wp.com>"
+
+#: includes/classes/3rd-party/boot.php:24
+msgid "WARNING! You cannot enable this option as you are using a similar option in the wp rocket plugin. Using the same functionality in both plugins can lead to conflicts. To enable this option, you must disable a similar option in the wp rocket plugin."
+msgstr "注意！当你在 wp rocket插件中使用相同的功能时，你无法启用此选项。在两个插件中使用相同的功能可能会导致冲突。要启用此选项，你必须在 wp rocket外挂中关闭相同的功能。"
+
+#: admin/pages/class-pages-components.php:30
+msgid "You cannot activate the component while the wp rocket plugin is active!"
+msgstr "你无法在 wp rocket插件启用时启用此元件！"
+
+#: admin/boot.php:30
+msgid "You are using Clearfy and wp rocket together, to avoid conflicts, we have disabled similar features in Clearfy. For example, you cannot use caching in Clearfy and wp rocket at the same time. You can read more about this in <a href=\"%s\" target=\"_blank\" rel=\"noopener\">this article</a>."
+msgstr "你正将 Clearfy和 wp rocket一起使用，为了避免冲突，我们关闭了 Clearfy中的相同功能。例如，你无法同时使用 Clearfy和 wp rocket的缓存。要了解更多讯息请 <a href=\"%s\" target=\"_blank\" rel=\"noopener\">阅读此文章</a>。"
+
+#: libs/factory/clearfy/includes/ajax-handlers.php:66
+msgid "Unknown error while trying to subscribe to newsletter."
+msgstr "尝试邮件订阅时发生未知错误。"
+
+#: libs/factory/clearfy/includes/ajax-handlers.php:41
+msgid "Group ID is empty!"
+msgstr "分组 ID空白！"
+
+#: libs/factory/clearfy/includes/ajax-handlers.php:37
+msgid "You did not send your email address or it is incorrect!"
+msgstr "你没有传送你的邮箱或输入错误！"
+
+#: libs/factory/clearfy/pages/class-pages.php:502
+msgid "Subscribe"
+msgstr "订阅"
+
+#: libs/factory/clearfy/pages/class-pages.php:498
+msgid "I confirm to subscribe to the CreativeMotion newsletter to receive the latest news. You can find how we use your information on our %s Privacy Policy %s"
+msgstr "我确认要订阅 CreativeMotion 新闻通讯以接收最新讯息。你可以在%s 隐私权政策 %s了解我们如何使用你的资讯。"
+
+#: libs/factory/clearfy/pages/class-pages.php:495
+msgid "Enter your email address"
+msgstr "输入您的电子邮件地址"
+
+#: libs/factory/clearfy/pages/class-pages.php:490
+msgid "Thank you for your subscription, a confirmation email has been sent to you. You need to confirm your subscription to complete this process."
+msgstr "感谢你的订阅，已传送给你确认邮件。你需要经过确认后才完成订阅程序。"
+
+#: libs/factory/clearfy/pages/class-pages.php:487
+msgid "Thank you, you have successfully subscribed!"
+msgstr "感谢你，你已成功订阅！"
+
+#: libs/factory/clearfy/pages/class-pages.php:482
+msgid "Subscribe to plugin’s newsletter"
+msgstr "订阅插件新闻通讯"
+
+#: admin/pages/class-pages-components.php:33
+msgid "A very fast caching engine for WordPress that produces static html files."
+msgstr "一个提供静态 html文件的超快 WordPress缓存引擎。"
+
+#: admin/pages/class-pages-performance-cache.php:53
+#: admin/pages/class-pages-components.php:26
+msgid "Cache"
+msgstr "缓存"
+
+#: admin/pages/class-pages-performance.php:400
+msgid "In admin panel"
+msgstr "在管理员控制台"
+
+#: libs/factory/clearfy/pages/class-page-setup.php:179
+msgid "Not now"
+msgstr "现在不行"
+
+#: components/disable-admin-notices/includes/classes/class-configurate-notices.php:293
+msgid "Hide  <b>for all</b>"
+msgstr "<b>对所有人</b> 隐藏"
+
+#: components/disable-admin-notices/includes/classes/class-configurate-notices.php:289
+msgid "Hide  <b>for me</b>"
+msgstr "<b>只对自己</b> 隐藏"
+
+#: components/disable-admin-notices/includes/classes/class-configurate-notices.php:92
+msgid "Hidden for you"
+msgstr "对你隐藏"
+
+#: components/disable-admin-notices/admin/pages/class-pages-notices.php:52
+msgid "Manage hidden notices"
+msgstr "管理隐藏的通知"
+
+#: components/disable-admin-notices/admin/class-page-basic.php:41
+msgid "Webcraftic Disable Admin Notices"
+msgstr "Webcraftic停用管理员通知"
+
+#: admin/pages/class-pages-quick-start.php:230
+msgid "Start"
+msgstr "开始"
+
+#: admin/pages/class-pages-quick-start.php:228
+msgid "Configuration wizard"
+msgstr "配置向导"
+
+#: admin/pages/setup/steps/class-step-default.php:34
+msgid "Yes, I want to try the wizard"
+msgstr "是的，我想试试向导"
+
+#: admin/pages/setup/steps/class-step-default.php:30
+msgid "Optimize your site even faster using the setup wizard!"
+msgstr "使用向导可以更快速优化网站！"
+
+#: admin/pages/setup/steps/class-step-congratulation.php:138
+msgid "Go Pro"
+msgstr "取得专业版"
+
+#: admin/pages/setup/steps/class-step-congratulation.php:35
+msgid "However, you can still improve your site's Google Page Speed score by simply purchasing the Pro version of our plugin."
+msgstr "然而，你仍然可以透过购买我们的专业版插件来改善 Google Page Speed的分数。"
+
+#: admin/pages/setup/steps/class-step-congratulation.php:30
+msgid "You have successfully completed the basic plugin setup! You can go to the general plugin settings to enable other options that we did not offer you."
+msgstr "你已成功完成基础插件设定！你可以前往插件的一般设定来开启其他我们尚未提到的选项。"
+
+#: admin/pages/setup/steps/class-step-congratulation.php:28
+msgid "Congratulations, the plugin configuration is complete!"
+msgstr "恭喜你，插件设定完成！"
+
+#: admin/pages/setup/steps/class-step-google-page-speed-before.php:88
+#: admin/pages/setup/steps/class-step-google-page-speed-after.php:90
+msgid "on Google PageSpeed Insights."
+msgstr "在Google PageSpeed Insights。"
+
+#: admin/pages/setup/steps/class-step-google-page-speed-before.php:88
+#: admin/pages/setup/steps/class-step-google-page-speed-after.php:90
+msgid "View complete results"
+msgstr "查看完整结果"
+
+#: admin/pages/setup/steps/class-step-google-page-speed-before.php:76
+#: admin/pages/setup/steps/class-step-google-page-speed-after.php:78
+msgid "Time to Interactive"
+msgstr "互动时间"
+
+#: admin/pages/setup/steps/class-step-google-page-speed-before.php:70
+#: admin/pages/setup/steps/class-step-google-page-speed-after.php:72
+msgid "Speed Index"
+msgstr "速度分数"
+
+#: admin/pages/setup/steps/class-step-google-page-speed-before.php:64
+#: admin/pages/setup/steps/class-step-google-page-speed-after.php:66
+msgid "First Contentful Paint"
+msgstr "首次内容绘制"
+
+#: admin/pages/setup/steps/class-step-google-page-speed-before.php:53
+#: admin/pages/setup/steps/class-step-google-page-speed-after.php:55
+msgid "Mobile score"
+msgstr "移动版分数"
+
+#: admin/pages/setup/steps/class-step-google-page-speed-before.php:45
+#: admin/pages/setup/steps/class-step-google-page-speed-after.php:47
+msgid "Desktop score"
+msgstr "台式机分数"
+
+#: admin/pages/setup/steps/class-step-google-page-speed-before.php:37
+msgid ""
+"Memorize the results to make a comparison after\n"
+"\t\t\t\toptimization by the Clearfy plugin."
+msgstr ""
+"纪录最佳化结果以便比较\n"
+"\t\t\t\t使用 Clearfy插件前后的效果。"
+
+#: admin/pages/setup/steps/class-step-google-page-speed-before.php:33
+msgid ""
+"We analyzed your site on the Google Page Speed service. You can see the test results below. Our plugin\n"
+"\t\t\t\tis to improve the score of your site on Google Page Speed. Memorize the results to make a comparison after\n"
+"\t\t\t\toptimization by the Clearfy plugin."
+msgstr ""
+"我们已经在 Google Page Speed分析你的网站，你可以在下方看到检测结果。我们的插件\n"
+"\t\t\t\t可以改善你的网站在 Google Page Speed的分数，记下使用 Clearfy优化前后的结果\n"
+"\t\t\t\t作为对比。"
+
+#: admin/pages/setup/steps/class-step-google-page-speed-before.php:31
+msgid "Google Page Speed"
+msgstr "Google Page Speed"
+
+#: admin/pages/setup/steps/class-step-plugins.php:38
+msgid "Score with PRO"
+msgstr "使用专业版提高分数"
+
+#: admin/pages/setup/steps/class-step-plugins.php:37
+msgid "Score"
+msgstr "分数"
+
+#: admin/pages/setup/steps/class-step-plugins.php:31
+msgid ""
+"We analyzed your site and decided that in order to get the maximum result in\n"
+"\t\t\t\toptimizing your site, you will need to install additional plugins."
+msgstr ""
+"我们分析您的网站并了解到为获得最棒的优化结果\n"
+"\t\t\t\t，你需要安装额外的插件。"
+
+#: admin/pages/setup/steps/class-step-plugins.php:30
+msgid "Installing plugins"
+msgstr "正在安装插件"
+
+#: admin/pages/setup/steps/class-step-optimize-images.php:171
+msgid "Robin Image optimizer plugin isn't installed or activated, you need to install or activate it to optimize your images."
+msgstr "尚未安装或激活 Robin Image optimizer图像优化插件，你需要安装或激活后才能优化图像。"
+
+#: admin/pages/setup/steps/class-step-optimize-images.php:148
+msgid "Shedule optimization and Continue"
+msgstr "排程优化并继续"
+
+#: admin/pages/setup/steps/class-step-optimize-images.php:139
+msgid "that's the size you saved <br>by using Image Optimizer"
+msgstr "这是你已经使用图像优化工具 <br>所节省的容量"
+
+#: admin/pages/setup/steps/class-step-optimize-images.php:113
+msgid "Statistics"
+msgstr "统计资料"
+
+#: admin/pages/setup/steps/class-step-optimize-images.php:84
+msgid "of your website's images"
+msgstr "张你的网站图像"
+
+#: admin/pages/setup/steps/class-step-optimize-images.php:80
+msgid "You optimized"
+msgstr "你已经优化"
+
+#: admin/pages/setup/steps/class-step-optimize-images.php:64
+msgid "We found unoptimized images in your media library. You can run background image optimization with the Robin image optimizer component of the Clearfy plugin. Background optimization is a long process, your images will be optimized after some time, so you won't be able to immediately see the improvement in Google Page Speed, but when the images are fully optimized you will see a score increase in Google Page Speed."
+msgstr "我们在媒体库找到了尚未优化的图像，你可以使用 Clearfy插件的 Robin image optimizer元件在背景执行优化。背景优化是漫长的程序，你的图像将会在一段时间后才完成优化，所以你不会立即在Google Page Speed看到改善，但当图像全部完成优化后，你将看到Google Page Speed的分数提升。"
+
+#: admin/pages/setup/steps/class-step-optimize-images.php:62
+#: admin/pages/setup/steps/class-step-optimize-images.php:169
+msgid "Optimize images"
+msgstr "优化图像"
+
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:61
+msgid "Return an If-Modified-Since responce."
+msgstr "响应 If-Modified-Since."
+
+#. translators: %d: Numeric HTTP status code, e.g. 400, 403, 500, 504, etc.
+#: admin/ajax/google-page-speed.php:64
+msgid "Invalid API response code (%d)."
+msgstr "API响应代码无效（%d）。"
+
+#: libs/factory/clearfy/pages/class-page-setup.php:84
+msgid "Setup"
+msgstr "设置"
+
+#: libs/factory/clearfy/pages/class-page-setup.php:77
+#: libs/factory/clearfy/pages/class-page-setup.php:78
+msgid "Setup master"
+msgstr "主要设置"
+
+#: libs/factory/clearfy/pages/setup-parts/class-step-custom.php:35
+msgid "Skip"
+msgstr "跳过"
+
+#: libs/factory/clearfy/pages/setup-parts/class-step-custom.php:24
+#: admin/pages/setup/steps/class-step-congratulation.php:20
+msgid "Finish"
+msgstr "完成"
+
+#: libs/factory/clearfy/pages/setup-parts/class-step-form.php:93
+#: libs/factory/clearfy/pages/setup-parts/class-step-custom.php:21
+msgid "Continue"
+msgstr "继续"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:402
+msgid "Add critical CSS here. We will insert it into <style> tags in your <head> section of each page."
+msgstr "在这里新增关键 CSS。我们将会在每个页面的 <head>区块插入 <style>标签。"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:401
+msgid "Critical CSS code:"
+msgstr "关键 CSS 代码文件："
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:394
+msgid "A comma-separated list of Critical CSS files. (You can use the * mask in file names. * - these are any characters.)"
+msgstr "使用小写逗号分隔关键 CSS文件清单。 （你可以使用 *作为文档名称的万用字元。）"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:393
+msgid "Critical CSS files:"
+msgstr "关键 CSS 文件："
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:387
+msgid "Critical CSS"
+msgstr "关键CSS"
+
+#: components/minify-and-combine/admin/boot.php:131
+msgid "Critical CSS code"
+msgstr "关键 CSS 代码"
+
+#: components/minify-and-combine/admin/boot.php:125
+msgid "Critical CSS files"
+msgstr "关键 CSS 文件"
+
+#: components/disable-admin-notices/admin/pages/class-pages-edit-redirects.php:54
+msgid "Break advertising redirects"
+msgstr "中断广告重新导向"
+
+#: components/disable-admin-notices/admin/pages/class-pages-edit-redirects.php:53
+msgid "Block ad redirects"
+msgstr "封锁广告重新导向"
+
+#: components/disable-admin-notices/admin/pages/class-pages-edit-admin-bar.php:54
+msgid "You can hide an annoying adminbar menu"
+msgstr "你可以隐藏恼人的管理员工具列选单"
+
+#: components/disable-admin-notices/admin/pages/class-pages-edit-admin-bar.php:53
+msgid "Hide adminbar items"
+msgstr "隐藏管理员工具列项目"
+
+#: components/disable-admin-notices/admin/pages/class-pages-license.php:47
+msgid "Disable admin notices premium"
+msgstr "停用管理员通知 专业版"
+
+#: components/disable-admin-notices/admin/pages/class-pages-settings.php:73
+msgid "General settings"
+msgstr "常规设置"
+
+#: components/disable-admin-notices/admin/options.php:103
+#: components/disable-admin-notices/admin/options.php:105
+msgid "Disable core updates nags"
+msgstr "停用核心更新通知"
+
+#: components/disable-admin-notices/admin/options.php:92
+#: components/disable-admin-notices/admin/options.php:94
+msgid "Disable plugins updates nags"
+msgstr "停用插件更新通知"
+
+#: components/disable-admin-notices/admin/options.php:58
+msgid "Collapse all notifications in one line (panel with notification counters), to see the notifications, you will need to click this panel."
+msgstr "收阖所有通知于一列（面板包含通知数量），你将需要点开此面板以便查看通知。"
+
+#: components/disable-admin-notices/admin/options.php:57
+msgid "Compact panel"
+msgstr "紧凑面板"
+
+#: components/disable-admin-notices/admin/options.php:45
+#: components/disable-admin-notices/admin/options.php:50
+#: components/disable-admin-notices/admin/options.php:58
+msgid "Watch the <a href=\"%s\" target=\"_blank\">video</a> to find out how it works ."
+msgstr "查看如何运作<a href=\"%s\" target=\"_blank\">视频</a>。"
+
+#: components/disable-admin-notices/admin/boot.php:109
+msgid "Thanks for using the Disable admin notices plugin! If you need support or all the features of the plugin, please buy the pro version <a class=\"button\" href=\"%s\">Get PRO</a>"
+msgstr "感谢您使用停用管理员通知插件！如果你需要使用支援或完整的插件功能，请订购 <a class=\"button\" href=\"%s\">专业版</a>。"
+
+#: admin/pages/class-pages-components.php:60
+msgid "Async Javascript lets you add async or defer attribute to scripts to exclude to help increase the performance of your WordPres…"
+msgstr "非同步 Javascript让你在脚本中新增 async或 defer属性，从而协助改善你的 WordPress效能..."
+
+#: admin/pages/class-pages-components.php:55
+msgid "Async JS"
+msgstr "非同步 JS"
+
+#: admin/pages/class-pages-defence-titan.php:67
+msgid "Malware Scanner, Firewall"
+msgstr "恶意软件扫描器、防火墙"
+
+#: libs/factory/clearfy/pages/class-pages.php:539
+msgid "Can't find the settings you need? Use the search by the plugin options:"
+msgstr "找不到所需的设置？ 使用插件选项进行搜索："
+
+#: admin/pages/class-pages-defence-titan.php:107
+msgid "Titan is a comprehensive WordPress security solution, completed by a set of additional features as add-ons, which was placed into a simple and intuitive interface."
+msgstr "Titan透过一系列的扩展附加功能与简洁直观的介面，来提供全面性的 WordPress安全解决方案。"
+
+#: admin/pages/class-pages-defence-titan.php:105
+msgid "Titan includes anti-spam, firewall, malware scanner, site accessibility checking, security and threats audits for WordPress websites. Our security functions provide Titan with the latest firewall rules, malware signatures, and database of malicious IP addresses – all you need to ensure the security of your website."
+msgstr "Titan包含防垃圾评论、防火墙、恶意软件扫描器、网站可访问性检查、WordPress网站安全性和威胁审查。我们的安全功能为 Titan提供最新的防火墙规则、恶意软件签名和恶意 IP位置资料库 - 包含您所需要的各项网站安全功能。"
+
+#: libs/factory/core/ajax/install-addons.php:199
+msgid "Unable to connect to the filesystem. Please confirm your credentials."
+msgstr "无法连接至文件系统。 请确认您的凭据。"
+
+#: libs/factory/core/ajax/install-addons.php:144
+msgid "No plugin specified."
+msgstr "未指定插件。"
+
+#: admin/pages/class-pages-defence-titan.php:102
+msgid "Install Firewall and Malware scanner (Titan sucurity) component"
+msgstr "安装防火墙和恶意软件扫描器 (Titan security) 元件"
+
+#: admin/pages/class-pages-defence-titan.php:68
+msgid "Firewall and Anti-virus"
+msgstr "防火墙与防毒"
+
+#: admin/pages/class-pages-components.php:80
+msgid "Titan Security - Anti-virus, Firewall and Malware Scan"
+msgstr "Titan安全 - 防病毒，防火墙和恶意软件扫描"
+
+#: admin/pages/class-pages-components.php:74
+msgid "Firewall and Malware scanner"
+msgstr "防火墙与恶意软件扫描器"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1211
+msgid "An URL of the current page where a user who views your website is located. If you use the equals operator, paste in field the request url without the query string. For example: \"/my-page\" or \"/my-page/subpage\". If you use the \"Contains\" operator, use the request url part. For example: \"page\" will match 2 in the pages \"/my-page/subpage\" and \"/my-page\"."
+msgstr "浏览网站的使用者所在的目前页面网址。如果你使用等于运算，在栏位中贴上去除查询字串后的请求的网址，例如 ：「/my-page」或「/my-page/subpage」。如果你使用「包含」运算，则贴上部分的请求网址，例如：「page」，将会与「/my-page/subpage」和「/my-page」两个页面相符。"
+
+#: admin/pages/class-pages-license.php:72
+msgid "Clearfy [%s]"
+msgstr "Clearfy [%s]"
+
+#: admin/pages/class-pages-components-license.php:178
+msgid "Activate Premium License"
+msgstr "激活高级许可证"
+
+#: admin/pages/class-pages-components-license.php:176
+msgid "License details"
+msgstr "许可证详细资料"
+
+#: admin/pages/class-pages-components-license.php:163
+msgid "days remained"
+msgstr "天剩余"
+
+#: admin/pages/class-pages-components-license.php:162
+msgid "Expired"
+msgstr "过期"
+
+#: admin/pages/class-pages-components-license.php:150
+msgid "Plan"
+msgstr "计划"
+
+#: admin/pages/class-pages-components-license.php:144
+msgid "License key"
+msgstr "许可证密钥"
+
+#: admin/pages/class-pages-components-license.php:111
+msgid "<strong>Products activation</strong>."
+msgstr "<strong>激活产品</strong>。"
+
+#: libs/factory/clearfy/pages/class-page-license.php:335
+msgid "Сommercial license, only to the premium add-on to this free plugin. You cannot distribute or modify the premium add-on. But free plugin is a GPLv3 compatible license allowing you to change and use this version of the plugin for free."
+msgstr "商业许可在免费的插件上使用进阶的附加元件。你不能转发或修改专业版附加元件，但是免费的插件相容于 GPLv3的授权，允许你变更并免费使用此版本。"
+
+#: admin/pages/class-pages-components.php:42
+msgid "You can protect your WP by preventing the hacker from knowing which CMS, plugins, themes you use. It disables identification of your CMS."
+msgstr "透过关闭你的 CMS标示，你可以保护 WP避免骇客透过知悉你的 CMS、插件和布景主题进行攻击。"
+
+#: admin/pages/class-pages-components.php:37
+msgid "Hide my wp"
+msgstr "隐藏我的 WordPress"
+
+#: admin/includes/compatibility.php:83
+msgid "You must <a href=\"%s\">upgrade the premium version</a> of the Clearfy plugin to version 1.1.2, since the new Clearfy release isn't compatible with the previous version of the premium plugin."
+msgstr "自从新版的 Clearfy释出后，已不再相容先前的进阶版附加元件，因此你必须<a href=\"%s\">升级进阶版</a> 的 Clearfy插件为 1.1.2版。"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:75
+#: components/assets-manager/views/tab-content-assets.php:58
+msgid "Requires for"
+msgstr "需要"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:69
+#: components/assets-manager/views/tab-content-assets.php:52
+msgid "Dependency by"
+msgstr "基于"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1459
+msgid "Privacy"
+msgstr "隐私权"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1455
+msgid "Permalinks"
+msgstr "永久链接"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1451
+msgid "Media"
+msgstr "媒体"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1447
+msgid "Reading"
+msgstr "阅读"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1443
+msgid "Writing"
+msgstr "撰写"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1433
+msgid "Erase Personal Data"
+msgstr "抹除个人数据"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1429
+msgid "Export Personal Data"
+msgstr "导出个人数据"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1425
+msgid "Site Health"
+msgstr "站点健康"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1421
+msgid "Export"
+msgstr "导出"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1417
+msgid "Import"
+msgstr "导入"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1413
+msgid "Available Tools"
+msgstr "可用工具"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1407
+msgid "Your profile"
+msgstr "您的档案"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1399
+msgid "All Users"
+msgstr "所有用户"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1393
+msgid "Plugin Editor"
+msgstr "插件编辑器"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1389
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1403
+msgid "Add New"
+msgstr "新增"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1385
+msgid "Installed Plugins"
+msgstr "已安装的插件"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1379
+msgid "Theme Editor"
+msgstr "主题编辑器"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1375
+msgid "Menus"
+msgstr "菜单"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1367
+msgid "Customize"
+msgstr "自定义"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1353
+msgid "Library"
+msgstr "媒体库"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1347
+msgid "WordPress Updates"
+msgstr "WordPress更新"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1343
+msgid "Home"
+msgstr "首页"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1337
+msgid "All Taxonomies"
+msgstr "所有分类法"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1333
+msgid "Add New Post"
+msgstr "新增文章"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1325
+msgid "All Admin Pages"
+msgstr "所有管理员页面"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:636
+msgid "If you click OK, all conditions settings will be reset, including settings that you made on other pages and in the admin panel. "
+msgstr "如果你点选确定，所有设定条件，包含你在其他页面、管理员控制台的设置都将会重置。"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:635
+msgid "Are you sure you want to reset all plugin settings?"
+msgstr "您确定要重置所有插件设置吗？"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:634
+msgid "The asset is required for %s. If you will disable the asset, other assets which in dependence on this asset also will disabled."
+msgstr "此为 %s的必要资源，如果你停用它，其他相依的资源将一并停用。"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:633
+msgid "Warning"
+msgstr "警告"
+
+#: admin/pages/class-pages-license.php:47
+#: admin/pages/class-pages-components-license.php:67
+msgid "Clearfy Business"
+msgstr "Clearfy商务计画"
+
+#: admin/pages/class-pages-components.php:51
+msgid "Automatically assign alt and title for images, flexibly customize the template."
+msgstr "透过灵活自订的样板，自动分配图像的 alt 和 title属性。"
+
+#: admin/pages/class-pages-components.php:46
+msgid "Seo friendly images"
+msgstr "Seo友善图像"
+
+#: libs/factory/core/includes/updates/class-factory-premium-upgrader.php:816
+msgid ""
+"Congratulations, you have activated a premium license! Please activate premium add-on to use pro features now.\n"
+"        <a href=\"%s\">Activate</a> premium add-on or <a href=\"%s\">cancel</a> license."
+msgstr ""
+"太棒了，你已经成功启用进阶版授权！请立即启用进阶版附加元件来使用进阶功能。\n"
+"        <a href=\"%s\">启用</a>进阶版附加元件或<a href=\"%s\">取消</a>授权。"
+
+#: libs/factory/core/includes/updates/class-factory-premium-upgrader.php:814
+msgid ""
+"Congratulations, you have activated a premium license! Please install premium add-on to use pro features now.\n"
+"        <a href=\"%s\">Install</a> premium add-on or <a href=\"%s\">cancel</a> license."
+msgstr ""
+"太棒了，你已经成功启用进阶版授权！请立即安装进阶版附加元件来使用进阶功能。\n"
+"        <a href=\"%s\">安装</a>进阶版附加元件或<a href=\"%s\">取消</a>授权。"
+
+#: libs/factory/core/includes/updates/class-factory-premium-upgrader.php:813
+msgid "Your license has expired. You can no longer get premium plugin updates, premium support and your access to Webcraftic services has been suspended."
+msgstr "你的授权已过期，你将无法继续使用进阶版插件更新、进阶支援以及无法访问 Webcraftic服务。"
+
+#: libs/factory/core/includes/updates/class-factory-premium-upgrader.php:812
+msgid "License activation required. A license is required to get premium plugin updates, as well as to get additional services."
+msgstr "如要取得进阶版插件更新、额外服务则需要启用授权。"
+
+#: libs/factory/core/includes/class-factory-migrations.php:508
+msgid "There is no PHP Tokenizer extension installed on your server, you cannot use the token_get_all function."
+msgstr "你的伺服器上没有安装 PHP Tokenizer延伸模组，因此你无法使用 token_get_all功能。"
+
+#: libs/factory/core/includes/class-factory-migrations.php:177
+msgid "migrations DEBUG bar"
+msgstr "合并除错工具列"
+
+#: libs/factory/core/includes/class-factory-migrations.php:170
+msgid "Migrate now"
+msgstr "立即遷移"
+
+#: libs/factory/core/includes/class-factory-migrations.php:169
+msgid "Need migration:"
+msgstr "需要迁移："
+
+#: libs/factory/core/includes/class-factory-migrations.php:168
+msgid "Current plugin version:"
+msgstr "当前插件版本"
+
+#: libs/factory/core/includes/class-factory-migrations.php:167
+msgid "Old plugin version (debug):"
+msgstr "旧的外挂版本（除错用）："
+
+#: libs/factory/core/includes/class-factory-migrations.php:165
+msgid "Plugin activated:"
+msgstr "插件已启用。"
+
+#: libs/factory/core/includes/class-factory-migrations.php:139
+msgid "migration error"
+msgstr "迁移错误"
+
+#: libs/factory/core/includes/class-factory-migrations.php:132
+msgid "I fixed, confirm migration"
+msgstr "我已修复，确认迁移"
+
+#: libs/factory/clearfy/pages/class-page-license.php:284
+msgid "Activate %s"
+msgstr "激活%s"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:65
+msgid "Cyrlitera"
+msgstr "Cyrlitera"
+
+#: components/assets-manager/admin/ajax/save-settings.php:140
+msgid "If you use test mode, do not forget to disable it. We also recommend that you flush the cache if you use caching plugins."
+msgstr "如果你已设定使用测试模式，别忘了要停用它。如果你有使用缓存插件，我们也建议你要清理缓存。"
+
+#: components/assets-manager/admin/ajax/save-settings.php:139
+msgid "Settings saved successfully!"
+msgstr "设置已成功保存！"
+
+#: components/assets-manager/admin/ajax/save-settings.php:26
+msgid "Save settings failed!"
+msgstr "储存设定失败！"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:32
+msgid "Loaded resourses on current page"
+msgstr "目前页面已载入的资源"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:22
+msgid "Don't load plugin"
+msgstr "不要载入插件"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:19
+msgid "Don't load plugin assets"
+msgstr "不要载入插件资源"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:16
+msgid "Load plugin and its assets"
+msgstr "载入插件及资源"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:98
+#: components/assets-manager/views/tab-content-assets.php:76
+msgid ""
+"<strong> You must set rules to disable the resource.</strong>\n"
+"                            For example, if you select Page -> Equals -> All posts, then the script or style will not\n"
+"                            loaded on all pages of type post."
+msgstr ""
+"<strong> 你必须设定停用资源的规则。 </strong>\n"
+"                             例如，如果你选择页面 -> 等于 ->所有文章，如此一来脚本和样式将不会在\n"
+"                            所有的文章类型的页面中载入。"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:94
+#: components/assets-manager/views/tab-content-assets.php:72
+msgid "Don't remove query string (version)"
+msgstr "不要清除查询字串（版本）"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:89
+msgid "Don't optimize file"
+msgstr "不要优化文件"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:37
+#: components/assets-manager/views/tab-content-assets.php:20
+msgid "Handle/Source"
+msgstr "处理器／来源"
+
+#: admin/pages/class-pages-components-license.php:156
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:36
+#: components/assets-manager/views/tab-content-assets.php:19
+msgid "Type"
+msgstr "類型"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:35
+#: components/assets-manager/views/tab-content-assets.php:18
+msgid "Actions"
+msgstr "操作"
+
+#: components/assets-manager/views/part-assets-manager-info-bar.php:18
+msgid ""
+"Use this feature to disable unwanted scripts and styles by setting up the logic for\n"
+"                        different types of pages. We recommend working in \"Safe mode\" because disabling any necessary\n"
+"                        system script file can corrupt the website. All changes done in Safe mode are available for\n"
+"                        administrator only. This way only you, as the administrator, can see the result of optimization.\n"
+"                        To enable the changes for other users, uncheck Safe mode."
+msgstr ""
+"透过逻辑功能停用不想要的脚本和样式\n"
+"                        于不同页面类型上。我们建议使用「安全模式」，因为停用任何必要的\n"
+"                        系统脚本可能损坏网站。所有安全模式下的变更\n"
+"                        只会对管理员生效。此方法，只有身为管理员的你，可以检视优化的成果。\n"
+"                        要对其它用户生效，只要取消安全模式即可。"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:108
+msgid "Add new group"
+msgstr "添加新组"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:103
+msgid "AND"
+msgstr "和"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:102
+msgid "X"
+msgstr "X"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:97
+msgid "Between"
+msgstr "介于"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:96
+msgid "Doesn't Сontain"
+msgstr "不包含"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:95
+msgid "Contains"
+msgstr "包含"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:94
+msgid "Younger Than"
+msgstr "早于"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:93
+msgid "Older Than"
+msgstr "晚于"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:92
+msgid "Less Than"
+msgstr "少于"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:91
+msgid "Greater Than"
+msgstr "大于"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:90
+msgid "Doesn't Equal"
+msgstr "不等于"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:89
+msgid "Equals"
+msgstr "等于"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:41
+msgid "and"
+msgstr "和"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:24
+msgid "OR"
+msgstr "或"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:22
+msgid "Disable If"
+msgstr "停用，如果"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:13
+#: components/assets-manager/views/conditions-logic-editor-template.php:35
+msgid "to add one."
+msgstr "加入一个。"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:13
+#: components/assets-manager/views/conditions-logic-editor-template.php:35
+msgid "Click here"
+msgstr "点击这里"
+
+#: components/assets-manager/views/conditions-logic-editor-template.php:12
+#: components/assets-manager/views/conditions-logic-editor-template.php:34
+msgid "No filters specified."
+msgstr "未指定筛选器。"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1314
+msgid "A taxonomy of the current page."
+msgstr "目前页面的分类。"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1311
+msgid "Taxonomy"
+msgstr "分类"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1307
+msgid "A post type of the current page."
+msgstr "目前页面的文章类型。"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1304
+msgid "Post type"
+msgstr "文章类型"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1300
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1463
+msgid "List of specific pages."
+msgstr "特定页面清单。"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1295
+msgid "All Pages Archive"
+msgstr "所有页面存档"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1291
+msgid "All Pages"
+msgstr "所有页面"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1285
+msgid "All Tags Archive"
+msgstr "所有标签存档"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1281
+msgid "All Categories Archive"
+msgstr "所有分类存档"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1277
+msgid "All Posts Archive"
+msgstr "所有文章存档"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1273
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1329
+msgid "All Posts"
+msgstr "所有文章"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1267
+msgid "Author Archive"
+msgstr "作者存档"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1263
+msgid "Date Archive"
+msgstr "日期存档"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1259
+msgid "Front Page"
+msgstr "首页"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1255
+msgid "Blog / Posts Page"
+msgstr "博客/文章页面"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1251
+msgid "Search Page"
+msgstr "搜索页面"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1247
+msgid "404 Page"
+msgstr "404页"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1241
+msgid "All Archives"
+msgstr "所有存档"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1237
+msgid "All Singulars"
+msgstr "所有详情页"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1233
+msgid "Entire Website"
+msgstr "整个网站"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1216
+msgid "Regular Expression"
+msgstr "正则表达式"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1209
+msgid "Custom URL"
+msgstr "自定义 URL"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1205
+msgid "Current Url"
+msgstr "目前网址"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1509
+msgid "Location"
+msgstr "位置"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1502
+msgid "Determines whether the user's browser has a cookie with a given name."
+msgstr "判断用户的浏览器是否具有给予名称的 cookie。"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1499
+msgid "Cookie Name"
+msgstr "Cookie名称"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1494
+msgid "Determines whether the user views your website from mobile device or not."
+msgstr "判断用户是否透过移动装置浏览你的网站。"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1488
+msgid "Mobile Device"
+msgstr "移动装置"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1477
+msgid "A role of the user who views your website. The role \"guest\" is applied to unregistered users."
+msgstr "可以检视网站的用户角色。 「访客」角色适用于未注册的用户。"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1474
+msgid "Role"
+msgstr "角色"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1470
+msgid "User"
+msgstr "用户"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1159
+msgid "Guest"
+msgstr "访客"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:146
+#: components/updates-manager/admin/pages/class-page-themes.php:173
+#: components/updates-manager/admin/pages/class-page-themes.php:194
+#: components/updates-manager/admin/pages/class-page-themes.php:219
+#: components/updates-manager/admin/pages/class-page-themes.php:239
+#: components/updates-manager/admin/pages/class-page-themes.php:258
+#: components/updates-manager/admin/pages/class-page-themes.php:277
+#: components/updates-manager/admin/pages/class-page-plugins.php:144
+#: components/updates-manager/admin/pages/class-page-plugins.php:171
+#: components/updates-manager/admin/pages/class-page-plugins.php:192
+#: components/updates-manager/admin/pages/class-page-plugins.php:217
+#: components/updates-manager/admin/pages/class-page-plugins.php:237
+#: components/updates-manager/admin/pages/class-page-plugins.php:256
+#: components/updates-manager/admin/pages/class-page-plugins.php:278
+msgid "Sorry, you are not allowed to access this page."
+msgstr "抱歉，您不能访问此页面。"
+
+#: admin/pages/class-pages-performance.php:338
+msgid "This funcitons will remove query strings from static resources like CSS & JS files inside the HTML <head> element to improve your speed scores in services like Pingdom, GTmetrix, PageSpeed and YSlow. <b style=\"color:#ff5722\">Important:</b> This does not work for authorized users. To avoid problems after plugins update!"
+msgstr "此功能将会清除位于 HTML <head>中如 CSS和 JS静态资源的查询字串，以改善如 Pingdom, GTmetrix, PageSpeed 和 YSlow的载入速度分数。 <b style=\"color:#ff5722\">注意：</b>此功能对授权的用户无效，为了避免问题请更新插件！"
+
+#: admin/pages/class-pages-performance.php:321
+msgid "By activating this option autosave feature in the Gutenberg editor will be disabled. Alternatively it also provides options in the editor to select a longer autosave interval time than the default 10 seconds."
+msgstr "启用此选项将会使古腾堡编辑器的自动储存功能失效。替代方案是，你可以选择较长的自动储存间隔，预设为 10秒。"
+
+#: admin/pages/class-pages-performance.php:319
+msgid "Gutenberg autosave control"
+msgstr "古腾堡编辑器自动储存控制"
+
+#: admin/pages/class-pages-performance.php:274
+msgid "Classic editor and Gutenberg"
+msgstr "经典的编辑器和古腾堡"
+
+#: includes/classes/class.configurate-performance.php:155
+msgid "No interval specified"
+msgstr "未指定间隔"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:374
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:395
+msgid "Assets Manager"
+msgstr "资源管理者"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:216
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:489
+msgid "<b>This could break things!</b><br>If you notice any errors on your website after having activated this setting, just deactivate it again, and your site will be back to normal."
+msgstr "<b>这可能会导致问题！</b> <br>如果在激活此设置后发现网站上有任何错误，只需再次将其禁用即可，您的网站将恢复正常。"
+
+#: includes/boot.php:80
+msgid "Getting started free support"
+msgstr "取得免费支援"
+
+#: admin/pages/class-pages-clearfy-settings.php:177
+msgid "Create a new ticket in our <a href=\"%s\" target=\"_blank\">support forum</a>, include the debug report into the message body."
+msgstr "在我们的<a href=\"%s\" target=\"_blank\">支持论坛</a>中创建新工单，请在消息正文中附上调试报告。"
+
+#: admin/pages/class-pages-clearfy-settings.php:114
+msgid "When the plugin is deleted from the Plugins menu, also delete all plugin settings."
+msgstr "当插件从插件页面删除时，一并删除所有插件设定。"
+
+#: admin/pages/class-pages-clearfy-settings.php:112
+msgid "Complete Uninstall"
+msgstr "完全卸载"
+
+#: admin/pages/class-pages-performance.php:472
+msgid "<b>Use this option carefully!</b><br> Plugins like Contact form 7, Anycomments may have problems using this option."
+msgstr "<b>请谨慎使用此选项！</b> <br>类似于Contact form 7的插件，使用此选项可能会有任何问题。"
+
+#: admin/pages/class-pages-defence.php:150
+msgid "<b>Use this option carefully!</b><br> Plugins like jetpack may have problems using this option."
+msgstr "<b>请谨慎使用此选项！</b> <br>使用jetpack之类的插件可能会出现问题。"
+
+#: libs/factory/clearfy/pages/class-pages.php:467
+#: admin/includes/sidebar-widgets.php:72
+msgid "If you find a php error or a vulnerability in plugin, you can <a href=\"%s\" target=\"_blank\" rel=\"noopener\">create ticket</a> in hot support that we responded instantly."
+msgstr "如果你发现插件有任何 php错误或安全漏洞，你可以<a href=\"%s\" target=\"_blank\" rel=\"noopener\">建立支援请求</a> 我们将会立即回覆。"
+
+#: libs/factory/clearfy/pages/class-pages.php:463
+#: admin/includes/sidebar-widgets.php:68
+msgid "Get starting free support"
+msgstr "取得免费支援"
+
+#: libs/factory/clearfy/pages/class-pages.php:458
+#: admin/includes/sidebar-widgets.php:63
+msgid "We provide free support for this plugin. If you are pushed with a problem, just create a new ticket. We will definitely help you!"
+msgstr "我们提供免费的插件支援，如果你有使用困难，请建立支援请求，我们一定会协助你！"
+
+#: libs/factory/clearfy/pages/class-pages.php:455
+#: admin/includes/sidebar-widgets.php:60
+msgid "Having Issues?"
+msgstr "遇到使用困难？"
+
+#: components/assets-manager/admin/boot.php:193
+msgid "Get premium"
+msgstr "购买进阶版"
+
+#: libs/factory/core/includes/class-factory-plugin-abstract.php:582
+msgid "You cannot use this feature on the frontend."
+msgstr "无法在前台使用这项功能。"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:77
+msgid "More features"
+msgstr "更多功能"
+
+#: libs/factory/clearfy/pages/class-pages-components.php:111
+msgid "An unknown error occurred while updating plugin components. Please contact the plugin support team to resolve this issue."
+msgstr "更新插件元件时发生未知错误，请联系插件支援团队以解决此问题。"
+
+#: libs/factory/clearfy/pages/class-pages-components.php:95
+msgid "Components have been successfully updated to the latest version."
+msgstr "元件已更新至最新版。"
+
+#: libs/factory/pages/pages.php:73
+msgid "You are trying to call this earlier than the plugin menu will be registered."
+msgstr "你正尝试在插件选单注册前进行呼叫。"
+
+#: libs/factory/core/includes/class-check-compatibility.php:78
+#: libs/factory/core/includes/class-factory-requirements.php:245
+msgid "The %s plugin has stopped."
+msgstr "%s插件已停止。"
+
+#: libs/factory/clearfy/pages/class-pages.php:330
+msgid "Upgrade for $%s"
+msgstr "$%s 的升级"
+
+#: libs/factory/clearfy/pages/class-pages.php:291
+msgid "Perfect support."
+msgstr "最棒的支援。"
+
+#: libs/factory/clearfy/pages/class-pages.php:290
+msgid "No ads;"
+msgstr "无广告；"
+
+#: libs/factory/clearfy/pages/class-pages.php:289
+msgid "Advanced settings;"
+msgstr "高级设置"
+
+#: libs/factory/clearfy/pages/class-pages.php:288
+msgid "Multisite support;"
+msgstr "多站点支持"
+
+#: libs/factory/clearfy/pages/class-pages.php:287
+msgid "40 new premium components within a year for the single price;"
+msgstr "一个价格获得每年 40个新的进阶元件；"
+
+#: libs/factory/clearfy/pages/class-pages.php:286
+msgid "4 premium components now;"
+msgstr "立即获得 4个进阶元件；"
+
+#: libs/factory/clearfy/pages/class-pages.php:297
+msgid "MORE IN CLEARFY <span>BUSINESS</span>"
+msgstr "更多 CLEARFY <span>商务计画</span>"
+
+#: admin/pages/class-page.php:30
+msgid "Activate license "
+msgstr "激活许可证"
+
+#: admin/pages/class-page.php:28
+msgid "You can activate the plugin on each website and use it with zero limitations. But you can’t save the plugin’s settings under the Super Administrator role!"
+msgstr "你可以无限制的在每个网站启用插件，但是无法在超级管理员权限下储存插件设置！"
+
+#: admin/pages/class-page.php:27
+msgid "Complete multisite support is available in Clearfy Business and Clearfy Business Revolution packages only!"
+msgstr "只有在 Clearfy商务计画和 Clearfy商务进阶版能完整支援多网站！"
+
+#: admin/pages/class-page.php:26
+msgid "Oops... Sorry for the inconvenience caused!"
+msgstr "噢... 很抱歉造成您的不便！"
+
+#: admin/includes/sidebar-widgets.php:31 admin/pages/class-page.php:25
+#: admin/pages/class-page.php:31
+msgid "Upgrade to Clearfy Business"
+msgstr "升级至 Clearfy商务计画"
+
+#: libs/factory/core/includes/class-factory-requirements.php:290
+msgid "Plugin %s is already activated, you are trying to activate it again."
+msgstr "插件%s已被激活，您正尝试再次激活它。"
+
+#: libs/factory/core/includes/class-check-compatibility.php:90
+#: libs/factory/core/includes/class-factory-requirements.php:283
+msgid "You need to update WordPress to %s or higher!"
+msgstr "你需要更新 WordPress至 %s或更新版本！"
+
+#: libs/factory/core/includes/class-check-compatibility.php:85
+#: libs/factory/core/includes/class-factory-requirements.php:276
+msgid "You need to update the PHP version to %s or higher!"
+msgstr "您需要更新PHP版本至 %s或更新版！"
+
+#: libs/factory/core/includes/class-check-compatibility.php:79
+#: libs/factory/core/includes/class-factory-requirements.php:246
+msgid "Possible reasons:"
+msgstr "可能的原因："
+
+#: libs/factory/core/includes/class-check-compatibility.php:76
+#: libs/factory/core/includes/class-factory-requirements.php:243
+msgid "warning"
+msgstr "警告"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:268
+msgid "By default wordpress sends an email when a core update happend. Uncheck this box to disable these emails."
+msgstr "WordPress预设在核心更新后传送邮件，取消选取可停用此类邮件。"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:260
+msgid "Core notifications are handled by WordPress and not by this plugin. You can only disable them, changing your email address in the settings above will not affect these notifications."
+msgstr "核心通知由WordPress处理，而不由此插件处理。 您只能禁用它们，在上述设置中更改您的电子邮件地址不会影响这些通知。"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:252
+msgid "Seperate email addresses using commas."
+msgstr "使用英文逗号（,）分隔多个邮箱地址。"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:241
+msgid "Send me emails when something has been updated."
+msgstr "当有任何更新事件完成请传送电子邮箱。"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:240
+msgid "Successful update"
+msgstr "更新成功"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:230
+msgid "Send me emails when an update is available."
+msgstr "当有任何更新可用请传送电子邮箱。"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:229
+msgid "Update available"
+msgstr "更新可用"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:222
+msgid "Email notifications are send once a day, you can choose what notifications to send below."
+msgstr "电子邮箱通知一天传送一次，你可以在下方选择要传送那些通知。"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:222
+msgid "Email Notifications"
+msgstr "邮件通知"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:58
+msgid "Manage all site updates"
+msgstr "管理全部网站的更新"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:376
+msgid "Theme"
+msgstr "主题"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:343
+msgid "This page you can individually disable theme updates and auto updates."
+msgstr "在这里你可以个别停用主题更新和自动更新。"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:341
+msgid "Themes list"
+msgstr "主题列表"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:113
+msgid "- To configure theme auto updates individually, choose the “Enable auto updates” option then save settings and comeback to this page."
+msgstr "-要单独配置主题自动更新，请选择“启用自动更新”选项，然后保存设置并返回此页面。"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:109
+msgid "- To disable updates individually choose the “Manual or automatic theme updates” option then save settings and comeback to this page."
+msgstr "- 要针对布景主题个别停用更新，选择「手动或自动更新布景主题」选项并保存设置后回到此页面。"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:91
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1363
+msgid "Themes"
+msgstr "主题"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:384
+#: components/updates-manager/admin/pages/class-page-plugins.php:403
+msgid "Translation updates"
+msgstr "翻译更新"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:381
+#: components/updates-manager/admin/pages/class-page-plugins.php:400
+msgid "Auto-updates"
+msgstr "自动更新"
+
+#: components/updates-manager/admin/pages/class-page-plugins.php:384
+msgid "Show plugin"
+msgstr "显示插件"
+
+#: components/updates-manager/admin/pages/class-page-plugins.php:383
+#: components/updates-manager/admin/pages/class-page-plugins.php:406
+msgid "Hide plugin"
+msgstr "隐藏插件"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:365
+#: components/updates-manager/admin/pages/class-page-plugins.php:382
+msgid "Enable translation updates"
+msgstr "启用翻译更新"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:364
+#: components/updates-manager/admin/pages/class-page-plugins.php:381
+msgid "Disable translation updates"
+msgstr "停用翻译更新"
+
+#: components/updates-manager/admin/boot.php:222
+msgid "Translation update disabled"
+msgstr "翻译更新失败"
+
+#: components/updates-manager/admin/boot.php:221
+msgid "Update disabled"
+msgstr "已停用更新"
+
+#: components/updates-manager/admin/boot.php:220
+msgid "Auto-update enabled"
+msgstr "自动更新已启用"
+
+#: components/updates-manager/admin/boot.php:219
+msgid "Auto-update disabled"
+msgstr "自动更新已禁用"
+
+#: components/updates-manager/admin/boot.php:121
+#: components/updates-manager/admin/pages/class-page-updates.php:251
+msgid "Email address"
+msgstr "邮箱地址"
+
+#: components/updates-manager/admin/boot.php:116
+msgid "Notify me when update successful installed"
+msgstr "当有更新完成安装时通知我"
+
+#: components/updates-manager/admin/boot.php:111
+#: components/updates-manager/admin/pages/class-page-updates.php:260
+#: components/updates-manager/admin/pages/class-page-updates.php:267
+msgid "Core notifications"
+msgstr "核心通知"
+
+#: components/updates-manager/admin/ajax/change-flag.php:43
+msgid "Method %s is not found!"
+msgstr "找不到 %s方法！"
+
+#: components/updates-manager/admin/ajax/change-flag.php:31
+msgid "Required arguments of slug, flag is empty!"
+msgstr "需要动态资料栏位参数，标记为空！"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:81
+msgid "Minify (Html/JS/CSS)"
+msgstr "缩小化 (Html/JS/CSS)"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:60
+msgid "Minify (JS/CSS)"
+msgstr "缩小化 (JS/CSS)"
+
+#: components/disable-admin-notices/admin/options.php:257
+msgid "Reset notices"
+msgstr "重置通知"
+
+#: components/disable-admin-notices/admin/options.php:253
+msgid "all users"
+msgstr "所有用户"
+
+#: components/disable-admin-notices/admin/options.php:249
+msgid "current user"
+msgstr "当前用户"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:181
+msgid "This will make persistent changes to your database &mdash; comments will remain closed even if you later disable the plugin! You should not use it if you only want to disable comments temporarily."
+msgstr "这将会直接对资料库变更&mdash;即使未来拟停用插件评论也将会关闭！如果你只是想要暂时停用评论，你不应该使用此功能。"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:171
+msgid "Only the built-in post types appear above. If you want to disable comments on other custom post types on the entire network, you can supply a comma-separated list of post types below (use the slug that identifies the post type)."
+msgstr "只有内置文章类型出现以上情况。 如果您想要禁用整个网络上其他自定义文章类型的评论，您可以在下面提供以逗号分隔的帖子类型列表（使用标识帖子类型的slug）。"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:59
+msgid "Manage site comments"
+msgstr "管理网站评论"
+
+#: components/comments-plus/admin/boot.php:143
+#: components/comments-plus/admin/pages/class-page-comments.php:179
+msgid "Use persistent mode"
+msgstr "使用持续模式"
+
+#: components/comments-plus/admin/boot.php:138
+#: components/comments-plus/admin/pages/class-page-comments.php:168
+msgid "Custom post types"
+msgstr "自定义帖子类型"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:90
+msgid "You’ve enabled the &#34;Optimize js scripts?&#34; and &#34;Optimize CSS options&#34; in the &#34;Minify & Combine plugin&#34;. These settings exclude scripts and styles that you don’t want to optimize. Press No to add a file to the excluded list."
+msgstr "你已在&#34;缩小与合并插件&#34;中启动 &#34;js脚本优化&#34;及&#34;CSS优化&#34;选项。这些设定不包含你不想优化的脚本和样式，点选取消以在排除清单中加入文件。"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:95
+#: components/assets-manager/views/tab-content-assets.php:73
+msgid "You’ve enabled &#34;Remove query strings&#34; from static resources in the &#34;Clearfy&#34; plugin. This list of settings helps you to exclude the necessary scripts and styles with remaining query strings. Press No to add a file to the excluded list."
+msgstr "你已在&#34;Clearfy插件&#34;中启动从固定资源中 &#34;清除查询字串&#34;。这些设定清单协助你排除必要留存查询字串的脚本和样式，点选取消以在排除清单中加入文件。"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1219
+msgid "Regular expressions can be used by experts. This tool creates flexible conditions to disable the resource. For example, if you specify this expression: ^([A-z0-9]+-)?gifts? then the resource will be disabled at the following pages http://yoursite.test/get-gift/, http://yoursite.test/gift/, http://yoursite.test/get-gifts/, http://yoursite.test/gifts/. The plugin ignores the backslash at the beginning of the query string, so you can dismiss it. Check your regular expressions in here: https://regex101.com, this will prevent you from the mistakes. This feature is available at the paid version."
+msgstr "专家可以使用这个工具和正则表达式，灵活的停用资源。例如，如果你指定这个规则^([A-z0-9]+-)?gifts? 则以下的页面将会停用资源http://yoursite.test/get-gift/, http://yoursite.test/gift/, http://yoursite.test/get-gifts/, http://yoursite.test/gifts/。插件会忽略在查询字串前的反斜线，因此你可以忽略它。在这里可以检查你的正则表达式： https://regex101.com ，以避免错误。此功能仅供付费版使用。"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1491
+msgid "Yes"
+msgstr "是"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1492
+msgid "No"
+msgstr "否"
+
+#: components/assets-manager/views/tab-content-assets-plugins.php:33
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:38
+#: components/assets-manager/views/tab-content-assets.php:21
+msgid "Version"
+msgstr "版本"
+
+#: components/assets-manager/views/tab-content-assets-plugins.php:32
+msgid "Author"
+msgstr "作者"
+
+#: components/assets-manager/admin/boot.php:181
+#: components/assets-manager/views/part-assets-manager-info-bar.php:41
+msgid "Statistics and optimization results"
+msgstr "统计资讯及优化结果"
+
+#: components/assets-manager/admin/boot.php:180
+#: components/assets-manager/views/part-assets-manager-info-bar.php:40
+msgid "Safe mode"
+msgstr "安全模式"
+
+#: components/assets-manager/admin/boot.php:179
+#: components/assets-manager/views/part-assets-manager-info-bar.php:39
+msgid "Conditions by the regular expression"
+msgstr "根据正则表达式的条件"
+
+#: components/assets-manager/admin/boot.php:178
+#: components/assets-manager/views/part-assets-manager-info-bar.php:38
+msgid "Conditions by the link template"
+msgstr "根据连结范本的条件"
+
+#: components/assets-manager/admin/boot.php:177
+#: components/assets-manager/views/part-assets-manager-info-bar.php:37
+msgid "Disable plugins (groups of scripts)"
+msgstr "停用插件（群组语法）"
+
+#: components/assets-manager/views/part-assets-manager-info-bar.php:34
+msgid "MORE IN CLEARFY BUSINESS"
+msgstr "更多都在 CLEARFY商务计画"
+
+#: libs/factory/clearfy/pages/class-page-license.php:301
+#: components/assets-manager/views/part-assets-manager-info-bar.php:31
+msgid "Upgrade to Premium"
+msgstr "升级到高级版"
+
+#: components/assets-manager/views/part-assets-manager-info-bar.php:25
+msgid "For more details and user guides, check the plugin’s <a href=\"%s\" target=\"_blank\" rel=\"noreferrer noopener\">documentation</a>."
+msgstr "检视更多详细资讯和使用指南，请前往插件的 <a href=\"%s\" target=\"_blank\" rel=\"noreferrer noopener\">说明文件</a>。"
+
+#: components/assets-manager/views/part-assets-manager-info-bar.php:14
+msgid "Important! Each page of your website has different sets of scripts and styles files."
+msgstr "注意！你的网站每个页面有不同的语法和样式文件设定。"
+
+#: components/assets-manager/views/part-assets-manager-header.php:39
+msgid "Close"
+msgstr "关闭"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:205
+msgid "Safe mode <b>PRO</b>"
+msgstr "安全模式 <b>进阶版</b>"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:203
+msgid "In test mode, you can experiment with disabling unused scripts safely for your site. The resources that you disabled will be visible only to you (the administrator), and all other users will receive an unoptimized version of the site, until you remove this tick"
+msgstr "在测试模式中，你可以安全的在网站上尝试实验停用未使用的脚本。只有你（管理员）能看到被停用的资源，且其他的使用者将会收到没有优化的网站版本，直到你移除这个选项"
+
+#: libs/factory/pages/templates/impressive-page.class.php:631
+#: components/assets-manager/views/part-assets-manager-header.php:37
+msgid "Save"
+msgstr "保存"
+
+#: components/assets-manager/views/part-assets-manager-header.php:28
+msgid "Disabled css"
+msgstr "已停用的CSS"
+
+#: components/assets-manager/views/part-assets-manager-header.php:25
+msgid "Disabled js"
+msgstr "已停用的 js"
+
+#: components/assets-manager/views/part-assets-manager-header.php:18
+msgid "Total size"
+msgstr "总容量"
+
+#: components/assets-manager/views/part-assets-manager-header.php:14
+msgid "Total requests"
+msgstr "请求总数"
+
+#: admin/pages/class-pages-widgets.php:38
+msgid "Disable unused widgets"
+msgstr "停用未使用的小工具"
+
+#: admin/pages/class-pages-seo.php:38
+msgid "Additional small fixes SEO"
+msgstr "额外的 SEO小修复"
+
+#: admin/pages/class-pages-quick-start.php:166
+msgid "<strong>Quick start</strong>."
+msgstr "<strong>快速开始</strong>。"
+
+#: admin/pages/class-pages-quick-start.php:67
+msgid "One-click settings"
+msgstr "一键设置"
+
+#: admin/pages/class-pages-performance.php:49
+msgid "Optimization js, css, fonts"
+msgstr "优化 js, css, 字体"
+
+#: admin/pages/class-pages-license.php:46
+#: admin/pages/class-pages-components-license.php:66
+#: components/disable-admin-notices/admin/pages/class-pages-license.php:46
+msgid "Product activation"
+msgstr "产品激活"
+
+#: admin/pages/class-pages-defence-titan.php:111
+#: admin/pages/class-pages-performance-cache.php:284
+#: admin/pages/class-pages-image-optimization.php:99
+msgid "Installing the component will not take you long, just click the install button, then\tactivate."
+msgstr "安装元件一点都不麻烦，只要点选安装按钮，然后 启用。"
+
+#: admin/pages/class-pages-image-optimization.php:98
+msgid "To start optimizing images, you need to install the additional component  Robin image optimizer!"
+msgstr "要开始优化图像，你必须安装额外的元件 Robin image optimizer！"
+
+#: admin/pages/class-pages-image-optimization.php:97
+msgid "Install Robin Image Optimizer component"
+msgstr "安装 Robin Image Optimizer元件"
+
+#: admin/pages/class-pages-image-optimization.php:65
+msgid "Compress bulk of images"
+msgstr "批量压缩图像"
+
+#: admin/pages/class-pages-image-optimization.php:64
+msgid "Image optimization"
+msgstr "图像优化"
+
+#: admin/pages/class-pages-hide-login-page.php:100
+msgid "Installing the component will not take you long, just click the install button, then activate."
+msgstr "安装元件一点都不难，只要点选安装，然后启用。"
+
+#: admin/pages/class-pages-hide-login-page.php:98
+msgid "To start protect login page, you need to install the additional component Hide login page!"
+msgstr "为了保护登入页，你必须安装额外的隐藏登入页面元件！"
+
+#: admin/pages/class-pages-hide-login-page.php:96
+msgid "Install Hide login page component"
+msgstr "安装隐藏登入页面元件"
+
+#: admin/pages/class-pages-defence.php:36
+msgid "Protective hacks, privacy"
+msgstr "防护骇客、隐私"
+
+#: libs/factory/clearfy/pages/class-pages-components.php:49
+msgid "More features for plugin"
+msgstr "更多插件功能"
+
+#: admin/pages/class-pages-clearfy-settings.php:120
+msgid "Import/Export"
+msgstr "导入/导出"
+
+#: admin/pages/class-pages-clearfy-settings.php:95
+msgid "Advanced settings"
+msgstr "高级设置"
+
+#: admin/pages/class-pages-clearfy-settings.php:48
+msgid "Clearfy Settings"
+msgstr "Clearfy 设置"
+
+#: admin/pages/class-pages-advanced.php:39
+#: admin/pages/class-pages-clearfy-settings.php:49
+msgid "Useful tweaks"
+msgstr "实用的设置"
+
+#: admin/includes/options.php:394
+#: admin/pages/class-pages-clearfy-settings.php:102
+msgid "Disable menu in adminbar"
+msgstr "停用管理员工具列选单"
+
+#: admin/includes/options.php:388
+msgid "Freemius activated addons"
+msgstr "已启用的 Freemius附加元件"
+
+#: admin/includes/compatibility.php:49
+msgid "Please update the plugin Hide login page to the latest version, as it may not work correctly with the new version of Clearfy!"
+msgstr "请更新隐藏登入页面插件至最新版本，否则可能无法和新版的 Clearfy共同运作！"
+
+#: admin/includes/compatibility.php:19
+msgid "Please update the plugin Robin image Optimizer to the latest version, as it may not work correctly with the new version of Clearfy!"
+msgstr "请更新 Robin image Optimizer插件至最新版本，否则可能无法和新版的 Clearfy共同运作！"
+
+#: admin/pages/setup/steps/class-step-optimize-images.php:123
+#: components/assets-manager/views/part-assets-manager-header.php:21
+msgid "Optimized size"
+msgstr "优化后的容量"
+
+#: admin/pages/setup/steps/class-step-optimize-images.php:115
+msgid "Original size"
+msgstr "原始容量"
+
+#: admin/pages/setup/steps/class-step-optimize-images.php:106
+msgid "Error"
+msgstr "错误"
+
+#: admin/pages/setup/steps/class-step-optimize-images.php:99
+msgid "Optimized"
+msgstr "已优化"
+
+#: admin/pages/setup/steps/class-step-optimize-images.php:92
+msgid "Unoptimized"
+msgstr "尚未优化"
+
+#: admin/boot.php:80
+msgid "Clearfy settings"
+msgstr "Clearfy 设置"
+
+#: libs/factory/clearfy/includes/ajax-handlers.php:121
+msgid "Subscription success cancelled"
+msgstr "已成功取消订阅"
+
+#: libs/factory/clearfy/includes/ajax-handlers.php:105
+msgid "License key is empty or license key too long (license key is 32 characters long)"
+msgstr "许可证空白或密钥太长（密钥长度为 32个字元）"
+
+#: libs/factory/clearfy/includes/ajax-handlers.php:94
+msgid "Licensing action not passed or this action is prohibited!"
+msgstr "授权操作未通过或操作被禁止！"
+
+#: libs/factory/core/ajax/install-addons.php:154
+msgid "Sorry, you are not allowed to install plugins on this site."
+msgstr "抱歉，您不能在此站点上安装插件。"
+
+#: includes/classes/class.configurate-performance.php:376
+msgid "REST API restricted to authenticated users."
+msgstr "REST API仅限于验证的用户。"
+
+#: includes/boot.php:87
+msgid "Upgrade to premium"
+msgstr "升级到高级版"
+
+#: includes/boot.php:75
+msgid "Do you like our plugin?"
+msgstr "您喜欢这个插件吗？"
+
+#: includes/boot.php:69
+msgid "Documentation"
+msgstr "文献资料"
+
+#: libs/factory/clearfy/pages/class-page-license.php:322
+#: admin/pages/class-pages-license.php:79
+msgid "Automatic renewal, every %s"
+msgstr "自动续约，每%s"
+
+#: admin/boot.php:117
+msgid "Business"
+msgstr "商务计画"
+
+#: libs/factory/core/includes/components/class-install-component-button.php:428
+#: admin/includes/classes/class.install-plugins-button.php:338
+msgid "Preparation..."
+msgstr "准备..."
+
+#: admin/boot.php:34
+msgid "When you deactivate some components, permanent links may work incorrectly. If this happens, please, <a href=\"%s\">update the permalinks</a>, so you could complete the deactivation."
+msgstr "当你停用一些元件，固定连结可能无法正常运作。如果发生此现象，请<a href=\"%s\">更新固定连结</a>，然后完全停用。"
+
+#: libs/factory/core/ajax/install-addons.php:116
+msgid "Required attribute [component_name] is empty."
+msgstr "必要属性 [component_name] 是空的。"
+
+#: libs/factory/core/ajax/install-addons.php:27
+msgid "Something went wrong."
+msgstr "发生了一些问题。"
+
+#: components/minify-and-combine/admin/boot.php:23
+msgid "Clearfy: Minify and Combine component is not compatible with the Autoptimize plugin, please do not use them together to avoid conflicts. Please disable the Minify and Combine component"
+msgstr "Clearfy：缩小与合并元件不相容 Autoptimize插件，请不要同时使用以避免冲突。请停用缩小与合并功能。"
+
+#: components/html-minify/admin/boot.php:24
+msgid "Clearfy: Html minify component is not compatible with the Autoptimize plugin, please do not use them together to avoid conflicts. Please disable the Html minify component"
+msgstr "Clearfy：Html缩小化元件不相容 Autoptimize插件，请不要同时使用以避免冲突。请停用 Html缩小化功能。"
+
+#: admin/pages/class-pages-clearfy-settings.php:104
+msgid "This setting allows you to disable the additional menu of the Clearfy plugin, in the admin bar. This menu is required to work with the Minify and Combine and Assets Manager components."
+msgstr "这个设定让你停用在管理员列上 Clearfy以外的额外选单。选单必须要与缩小与合并元件及资源管理器元件一起使用。"
+
+#: admin/pages/class-pages-clearfy-settings.php:95
+#: admin/pages/class-pages-clearfy-settings.php:120
+#: admin/pages/class-pages-clearfy-settings.php:130
+msgid "This group of settings allows you to configure the work of the Clearfy plugin."
+msgstr "这个设定群组让你调整 Clearfy插件的运作。"
+
+#: admin/pages/class-pages-components.php:99
+msgid "Ever look at the HTML markup of your website and notice how sloppy and amateurish it looks? The Minify HTML options cleans up sloppy looking markup and minifies, which also speeds up download"
+msgstr "曾经看过你的网站 HTML标记并注意到它们是多么的松散吗？缩小化 HTML可以清理松散的标记，以提升下载速度。"
+
+#. Plugin URI of the plugin
+msgid "https://clearfy.pro"
+msgstr "https://clearfy.pro"
+
+#: libs/factory/clearfy/includes/ajax-handlers.php:108
+msgid "Your license has been successfully activated"
+msgstr "你的授权已成功激活。"
+
+#: libs/factory/clearfy/includes/ajax-handlers.php:117
+msgid "The license has been updated"
+msgstr "授权已更新。"
+
+#: libs/factory/clearfy/includes/ajax-handlers.php:113
+msgid "The license is deactivated"
+msgstr "授权已停用。"
+
+#: components/minify-and-combine/minify-and-combine.php:41
+msgid "Webcraftic minify and combine"
+msgstr "Webcraftic缩小与合并"
+
+#. Translators: %s is the cache directory location.
+#: components/minify-and-combine/includes/classes/class-main.php:416
+msgid "Мinify And Combine cannot write to the cache directory (%s), please fix to enable CSS/ JS optimization!"
+msgstr "缩小与合并无法写入缓存目录 (%s)，请修复后启动 CSS/JS 优化！"
+
+#: components/minify-and-combine/includes/classes/class-cache-checker.php:101
+msgid "<strong>Мinify And Combine's cache size is getting big</strong>, consider purging the cache. Have a look at <a href=\"https://wordpress.org/plugins/\" target=\"_blank\" rel=\"noopener noreferrer\">the Мinify And Combine FAQ</a> to see how you can keep the cache size under control."
+msgstr "<strong>缩小与合并的缓存容量太大了</strong>，请考虑清除缓存。查看<a href=\"https://wordpress.org/plugins/\" target=\"_blank\" rel=\"noopener noreferrer\">缩小与合并 FAQ</a>了解如何控制缓存项目。"
+
+#: components/minify-and-combine/includes/classes/class-cache-checker.php:80
+msgid "Мinify And Combine's cache size is getting big, consider purging the cache. Have a look at https://wordpress.org/plugins/ to see how you can keep the cache size under control."
+msgstr "缩小与合并的缓存容量太大了，请考虑清除缓存。查看 https://wordpress.org/plugins/了解如何控制缓存项目。"
+
+#: components/minify-and-combine/includes/classes/class-cache-checker.php:79
+msgid "Мinify And Combine cache size warning"
+msgstr "缩小与合并缓存文件容量警示"
+
+#: components/minify-and-combine/includes/boot.php:51
+#: components/minify-and-combine/includes/boot.php:69
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:470
+msgid "Clear cache"
+msgstr "清除缓存"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:408
+msgid "Cache Info"
+msgstr "缓存信息"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:375
+msgid "A comma-separated list of CSS you want to exclude from being optimized."
+msgstr "输入需要排除的 CSS（以英文逗号分隔）。"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:373
+msgid "Exclude CSS from Мinify And Combine:"
+msgstr "不要缩小与合并以下 CSS："
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:366
+msgid "Inlining all CSS can improve performance for sites with a low pageviews/ visitor-rate, but may slow down performance otherwise."
+msgstr "内联所有 CSS可以改善网站低点阅率／访客到访率，但也可能降低效能。"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:355
+msgid ""
+"Inline \"above the fold CSS\" while loading the main auto optimized CSS only after page load. Check the FAQ for more info.\n"
+"This can be fully automated for different types of pages with the Мinify And Combine CriticalCSS Power-Up."
+msgstr ""
+"页面读取后，只读入主要自动优化的 CSS时内联「禁止转译的 CSS」。检视 FAQ以了解更多资讯。\n"
+"这可以完全自动的针对不同类型的页面缩小与合并 CriticalCSS Power-Up。"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:345
+msgid "Enable this to include small background-images in the CSS itself instead of as separate downloads."
+msgstr "启用它可以在CSS中包含小的背景图像, 而不是单独的下载。"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:324
+msgid "Check this option for Мinify And Combine to also aggregate CSS in the HTML."
+msgstr "勾选缩小与合并的选项以合并 CSS在 HTML中。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:120
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:303
+msgid "Aggregate all linked CSS-files? If this option is off, the individual CSS-files will remain in place but will be minified."
+msgstr "合并所有链接的CSS文件？ 如果禁用此选项，则各个CSS文件将保留在原位但将缩小。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:104
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:266
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:287
+msgid "If your scripts break because of a JS-error, you might want to try this."
+msgstr "如果您的脚本由于JS错误而中断，则可能需要尝试此操作。"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:185
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:256
+msgid "A comma-separated list of scripts you want to exclude from being optimized, for example 'whatever.js, another.js' (without the quotes) to exclude those scripts from being aggregated and minimized by Мinify And Combine."
+msgstr "使用小写逗号分隔你想要排除在优化以外的脚本，例如：「whatever.js, another.js」（不包含引号），这些脚本将被排除在缩小与合并之外。"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:247
+msgid "Load JavaScript early, this can potentially fix some JS-errors, but makes the JS render blocking."
+msgstr "提前读取 Javascript可以修复部分潜在的 JS错误，但是也可能造成 JS编译卡住。"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:226
+msgid "Let Мinify And Combine also extract JS from the HTML. Warning: this can make Мinify And Combine's cache size grow quickly, so only enable this if you know what you're doing."
+msgstr "也将 HTML中额外的 JS缩小与合并。注意：这可能会让缩小与合并的缓存容量快速变大，所以请确认你知道这个功能在做什么。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:77
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:205
+msgid "Aggregate all linked JS-files to have them loaded non-render blocking? If this option is off, the individual JS-files will remain in place but will be minified."
+msgstr "合并所有链接的JS文件以使它们加载而不渲染阻塞？ 如果禁用此选项，则单个JS文件将保留在原位但将缩小。"
+
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:115
+msgid "The cache has been successfully cleaned."
+msgstr "已成功清除缓存。"
+
+#: components/minify-and-combine/admin/boot.php:147
+msgid "One click optimize scripts (js, css)"
+msgstr "一键最佳化脚本 (js, css)"
+
+#: components/minify-and-combine/admin/boot.php:119
+msgid "Exclude CSS from Мinify And Combine"
+msgstr "排除 CSS缩小与合并"
+
+#: components/minify-and-combine/admin/boot.php:113
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:364
+msgid "Inline all CSS?"
+msgstr "内联所有 CSS?"
+
+#: components/minify-and-combine/admin/boot.php:107
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:353
+msgid "Inline and Defer CSS?"
+msgstr "内联并延迟加载CSS?"
+
+#: components/minify-and-combine/admin/boot.php:101
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:343
+msgid "Generate data: URIs for images?"
+msgstr "产生图像 data: URIs？"
+
+#: components/minify-and-combine/admin/boot.php:95
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:322
+msgid "Also aggregate inline CSS?"
+msgstr "合并内联 CSS?"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:118
+#: components/minify-and-combine/admin/boot.php:89
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:301
+msgid "Aggregate CSS-files?"
+msgstr "合并CSS文件？"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:102
+#: components/minify-and-combine/admin/boot.php:83
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:285
+msgid "Optimize CSS Code?"
+msgstr "启用 CSS 优化?"
+
+#: components/minify-and-combine/admin/boot.php:75
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:264
+msgid "Add try-catch wrapping?"
+msgstr "加入 try-catch包装？"
+
+#: components/minify-and-combine/admin/boot.php:70
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:254
+msgid "Exclude scripts from Мinify And Combine:"
+msgstr "不要缩小化及合并以下脚本："
+
+#: components/minify-and-combine/admin/boot.php:65
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:245
+msgid "Force JavaScript in &lt;head&gt;?"
+msgstr "强制移动JavaScript文件至 &lt;head&gt; ?"
+
+#: components/minify-and-combine/admin/boot.php:60
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:224
+msgid "Also aggregate inline JS?"
+msgstr "合并内联JS?"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:75
+#: components/minify-and-combine/admin/boot.php:55
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:203
+msgid "Aggregate JS-files?"
+msgstr "合并JS文件？"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:54
+#: components/minify-and-combine/admin/boot.php:50
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:140
+msgid "Optimize JavaScript Code?"
+msgstr "启用 JavaScript 优化?"
+
+#: components/html-minify/html-minify.php:41
+msgid "Webcraftic HTML Minify"
+msgstr "Webcraftic HTML缩小化"
+
+#: components/html-minify/admin/boot.php:109
+msgid "Enable this if you want HTML comments to remain in the page."
+msgstr "若你想在页面中保留 HTML评论请启动此项目。"
+
+#: components/html-minify/admin/boot.php:89
+msgid "HTML Options"
+msgstr "HTML选项"
+
+#: components/html-minify/admin/boot.php:73
+#: components/minify-and-combine/admin/boot.php:149
+msgid "One click optimize html code and scripts"
+msgstr "一键优化 html代码及脚本"
+
+#: components/html-minify/admin/boot.php:71
+msgid "One click optimize html code"
+msgstr "一键优化 html代码"
+
+#: components/html-minify/admin/boot.php:53
+#: components/html-minify/admin/boot.php:107
+msgid "Keep HTML comments?"
+msgstr "保持 html评论？"
+
+#: components/html-minify/admin/boot.php:47
+#: components/html-minify/admin/boot.php:97
+msgid "Optimize HTML Code?"
+msgstr "优化 HTML代码？"
+
+#: components/ga-cache/simple_google_analytics.php:45
+msgid "Webcraftic Local Google Analytics"
+msgstr "Webcraftic 本地化 Google Analytics"
+
+#: components/ga-cache/admin/pages/class-pages-general-settings.php:54
+msgid "Local Google Analytics"
+msgstr "本地化Google Analytics"
+
+#: components/ga-cache/admin/boot.php:72
+msgid ""
+"We are aimed to pay more attention to the speed and security aspects of your website. That’s why you should definitely try our basic WordPress optimization plugin as well. Clearfy includes functionality of this plugin and has many additional features for the website optimization:\n"
+"<a href=\"%s\">Donwload Clearfy for free</a>"
+msgstr ""
+"我们针对你网站的速度和安全性花费很多精神，这就是为什么你应该要尝试我们的基本版 WordPress优化插件。 Clearfy包含此插件的内容，而且加入更多网站优化功能。\n"
+"<a href=\"%s\">免费下载 Clearfy</a>"
+
+#: components/ga-cache/admin/boot.php:71
+msgid "Please, check <a href=\"%s\">plugin settings</a> and its performance on your website. We do care about you and want to avoid any problems with the new version."
+msgstr "请在你的网站上，检查<a href=\"%s\">插件设定</a>和它的成效。我们很关心你是否在新版本上遇到任何问题。"
+
+#: components/ga-cache/admin/boot.php:70
+msgid "We’ve updated the code and fixed the compatibility issue for the latest WordPress and PHP versions. We’ve also added additional feature of the Local Google Analytics – this way your website will load faster. The plugin’s name has been changed to Local Google Analytics, but all features remained the same."
+msgstr "我们更新了代码并修复了最新 WordPress与 PHP版本相容性问题。我们也替本地化 Google Analystics加入额外功能–让你的网站读取更快速，插件名称已变更为本地化 Google Analystics，但是所有功能与过去相同。"
+
+#: components/ga-cache/admin/boot.php:69
+msgid "Unfortunately, the old version of the plugin (2.2.2) is no longer supported, but you still can download it from the WordPress repository in case if the new release doesn’t work for you."
+msgstr "很抱歉，旧版的外挂（2.2.2）已经不支援了，除非你无法使用新版，才前从 WordPress下载先前的版本。"
+
+#: components/ga-cache/admin/boot.php:68
+msgid "The <b>Simple Google Analytics</b> plugin has some major changes!"
+msgstr "<b>简易版 Google Analytics</b>插件有了重点变更！"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:176
+msgid "Enable when have a problem in frontend."
+msgstr "当你在前台遇到问题时启用。"
+
+#: components/cyrlitera/admin/boot.php:202
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:174
+msgid "Don't use transliteration in frontend"
+msgstr "不要在前台使用音译。"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:291
+msgid "Delete (%s)"
+msgstr "删除 (%s)"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:252
+msgid "Delete "
+msgstr "删除"
+
+#: admin/pages/class-pages-seo.php:132
+msgid "Disable Last Modified header on front page"
+msgstr "在前台页面停用上次修改标头"
+
+#: libs/factory/clearfy/pages/class-page-license.php:270
+msgid "Can’t find your key? Go to <a href=\"%s\" target=\"_blank\" rel=\"noopener\">this page</a> and login using the e-mail address associated with your purchase."
+msgstr "找不到密钥？前往<a href=\"%s\" target=\"_blank\" rel=\"noopener\">此页</a>并使用购买密钥的电子邮箱登入。"
+
+#: libs/factory/clearfy/pages/class-page-license.php:266
+msgid "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">Lean more</a> about the premium version and get the license key to activate it now!"
+msgstr "<a href=\"%s\" target=\"_blank\" rel=\"noopener\">阅读更多</a>关于进阶版并立即取得并启用授权密钥！"
+
+#: libs/factory/clearfy/pages/class-page-license.php:406
+msgid "Submit Key"
+msgstr "提交密钥"
+
+#: libs/factory/clearfy/pages/class-page-license.php:401
+msgid "Have a key to activate the plugin? Paste it here:"
+msgstr "已经有插件激活密钥？贴在此处："
+
+#: libs/factory/clearfy/pages/class-page-license.php:399
+msgid "Have a key to activate the premium version? Paste it here:"
+msgstr "已经有进阶版插件激活密钥？贴在此处："
+
+#: libs/factory/clearfy/pages/class-page-license.php:388
+msgid "remained"
+msgstr "剩馀"
+
+#: libs/factory/clearfy/pages/class-page-license.php:386
+msgid "day(s)"
+msgstr "天"
+
+#: libs/factory/clearfy/pages/class-page-license.php:376
+msgid "please update the key"
+msgstr "请更新密钥"
+
+#: libs/factory/clearfy/pages/class-page-license.php:375
+msgid "EXPIRED!"
+msgstr "已过期！"
+
+#: libs/factory/clearfy/pages/class-page-license.php:365
+msgid "active sites"
+msgstr "启用网站"
+
+#: libs/factory/clearfy/pages/class-page-license.php:363
+#: admin/pages/class-pages-license.php:78
+msgid "of"
+msgstr "于"
+
+#: libs/factory/clearfy/pages/class-page-license.php:357
+msgid "plan"
+msgstr "计划"
+
+#: libs/factory/clearfy/pages/class-page-license.php:353
+msgid "domain"
+msgstr "域名"
+
+#: libs/factory/clearfy/pages/class-page-license.php:345
+msgid "Your license has expired, please extend the license to get updates and support."
+msgstr "你的授权已过期，请续约授权以获得更新与支援。"
+
+#: libs/factory/clearfy/pages/class-page-license.php:339
+msgid "You use a paid subscription for the plugin updates. In case you don’t want to receive paid updates, please, click <a data-action=\"unsubscribe\" class=\"wcl-control-btn\" href=\"#\">cancel subscription</a>"
+msgstr "你正使用此插件的付费订阅更新，如果你不想收到付费更新，请按一下<a data-action=\"unsubscribe\" class=\"wcl-control-btn\" href=\"#\">取消订阅</a>"
+
+#: libs/factory/clearfy/pages/class-page-license.php:333
+#: admin/pages/class-pages-license.php:82
+msgid "Public License is a GPLv3 compatible license allowing you to change and use this version of the plugin for free. Please keep in mind this license covers only free edition of the plugin. Premium versions are distributed with other type of a license."
+msgstr "公开的授权与 GPLv3相容，允许你变更并免费使用此插件，请谨记此授权仅包含免费版本的插件。进阶版则是透过其他类型的授权进行发布。"
+
+#: libs/factory/clearfy/pages/class-page-license.php:314
+msgid "Synchronization"
+msgstr "同步"
+
+#: libs/factory/clearfy/pages/class-page-license.php:310
+msgid "Delete Key"
+msgstr "删除密钥"
+
+#: libs/factory/clearfy/pages/class-page-license.php:304
+msgid "Your current license for %1$s:"
+msgstr "你目前的密钥 %1$s:"
+
+#: admin/pages/class-pages-license.php:45
+#: admin/pages/class-pages-components-license.php:65
+#: components/disable-admin-notices/admin/pages/class-pages-license.php:45
+msgid "License"
+msgstr "许可证"
+
+#: admin/pages/class-pages-performance.php:338
+msgid "Remove query strings from static resources"
+msgstr "从静态资源清除查询字串"
+
+#: admin/pages/class-pages-defence.php:104
+msgid "<strong>Hide WordPress versions</strong>"
+msgstr "<strong>隐藏 WordPress版本</strong>"
+
+#: admin/pages/class-pages-components.php:117
+msgid "To improve Google Page Speed indicators Analytics caching is needed. However, it can also slightly increase your website loading speed, because Analytics js files will load locally."
+msgstr "缓存 Google Analytics是为了改善 Google Pagespeed指标。由于 Analystics脚本将会储存于本机,因此可以略为提高你的网站读取速度。"
+
+#: admin/pages/class-pages-components.php:108
+msgid "Improve your speed score on GTmetrix, Pingdom Tools and Google PageSpeed Insights by merging and minifying CSS, JavaScript."
+msgstr "缩小与合并 CSS, Javascript可以改善你在 GTmetrix, Pingdom和 Google Page Speed Insights的分数。"
+
+#: admin/pages/class-pages-components.php:103
+msgid "Minify and combine (JS, CSS)"
+msgstr "缩小与合并 (JS, CSS)"
+
+#: admin/pages/class-pages-components.php:70
+msgid "Automatic image optimization without any quality loss. No limitations, no paid plans. The best Wordpress image optimization plugin allows optimizing any amount of images for free!"
+msgstr "不必损失画质就能自动优化图像。无限制，无须付费，这个 WordPress最棒的图像优化插件让你免费优化图像！"
+
+#: admin/pages/class-pages-components.php:64
+msgid "Robin image optimizer"
+msgstr "Robin图像优化"
+
+#: admin/includes/options.php:383
+msgid "Deactivate preinstall components"
+msgstr "停用预安装的元件"
+
+#: libs/factory/core/includes/components/class-install-component-button.php:429
+#: libs/factory/clearfy/pages/class-pages-components.php:232
+#: admin/includes/classes/class.install-plugins-button.php:339
+#: admin/pages/class-pages-defence-titan.php:108
+msgid "Read more"
+msgstr "阅读更多"
+
+#: libs/factory/core/includes/components/class-install-component-button.php:427
+#: admin/includes/classes/class.install-plugins-button.php:337
+msgid "Please wait..."
+msgstr "请稍候…"
+
+#: libs/factory/core/includes/components/class-install-component-button.php:426
+#: admin/includes/classes/class.install-plugins-button.php:336
+#: components/assets-manager/views/conditions-logic-editor-template.php:28
+msgid "Delete"
+msgstr "删除"
+
+#: libs/factory/core/includes/components/class-install-component-button.php:424
+#: admin/includes/classes/class.install-plugins-button.php:334
+msgid "Install"
+msgstr "安装"
+
+#: admin/includes/sidebar-widgets.php:28 admin/pages/class-pages-license.php:99
+msgid "Paid license guarantees that you can download and update existing and future paid components of the plugin."
+msgstr "付费授权将保证你可以下载并更新从今往后此插件的付费元件。"
+
+#: admin/includes/sidebar-widgets.php:27 admin/pages/class-pages-license.php:98
+msgid "<b>Clearfy Business</b> is a paid package of components for the popular free WordPress plugin named Clearfy. You get access to all paid components at one price."
+msgstr "<b>Clearfy商务计画</b>是受欢迎的 WordPress Clearfy插件中的元件，你可以以一个价格使用所有付费元件。"
+
+#: admin/includes/sidebar-widgets.php:24
+msgid "Activation Clearfy Business"
+msgstr "启动 Clearfy商务计画"
+
+#: libs/factory/clearfy/pages/class-pages-components.php:103
+msgid "Activate license"
+msgstr "激活许可证"
+
+#: libs/factory/clearfy/pages/class-pages-components.php:103
+msgid "To use premium components, you need activate a license!"
+msgstr "想要使用进阶版元件，请启动授权！"
+
+#: libs/factory/core/ajax/install-addons.php:97
+msgid "An unknown error occurred during the activation of the component."
+msgstr "启用元件时发生未知错误。"
+
+#: libs/factory/core/ajax/install-addons.php:47
+msgid "You are trying to perform an invalid action."
+msgstr "你正在尝试无效的操作。"
+
+#: libs/factory/core/ajax/install-addons.php:31
+msgid "Required attributes are not passed or empty."
+msgstr "必要属性无法略过或空白。"
+
+#: components/cyrlitera/cyrlitera.php:46
+msgid "Webcraftic Cyrlitera"
+msgstr "Webcraftic Cyrlitera"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:277
+msgid "The rollback of new changes was successful!"
+msgstr "新的更改回滚成功！"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:275
+msgid "Rollback changes"
+msgstr "回滚更改"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:267
+msgid "Allows you to restore converted URLs by using the \"Convert already created posts and categories\" button. This can be useful in case of incorrect URLs or incorrect transliteration of some characters. You can roll back changes and advance the character sets above to correct the plugin's work. "
+msgstr "允许您使用“转换已创建的文章和分类 ”按钮恢复转换后的网址。如果 URL 不正确或某些字符的音译不正确，这可能很有用。您可以回滚更改并推进上面的字符集以纠正插件的工作。"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:259
+msgid "Url of old posts, pages,terms,tags successfully converted into Latin!"
+msgstr "旧文章的网址，页面，项目，标签已成功转换为拉丁文！"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:257
+msgid "Convert already created posts and categories"
+msgstr "已创建的转换员额和分类"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:249
+msgid "If at the time of the plugin installation you already had posts, pages, tags and categories, click on this button and the plugin will automatically convert URLs into Latin. Attention! Previously uploaded files will not be converted."
+msgstr "如果插件安装时已经有文章，页面，标签和分类，点击此按钮，插件会自动将 URL 转换为拉丁文。注意！以前上传的文件不会被转换。"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:185
+msgid "You can supplement current base of transliteration characters. Write pairs of values separated by commas. Example:"
+msgstr "您可以补充当前音译字符的基础。写入由逗号分隔的值对。例："
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:166
+msgid "If at the time of the plugin installation you had pages with unconverted links, use this option to redirect users from old to new URLs with the Latin alphabet."
+msgstr "如果在安装该插件时您还有未转变的页面链接，使用此选项将用户从旧的重定向新的，使用拉丁字母的 URL。"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:156
+msgid "This function works only for new upload files. Example: File_Name.jpg -> file_name.jpg"
+msgstr "该功能仅适用于新的上传文件。例如：File_Name.jpg  - > file_name.jpg"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:147
+msgid "If any of your plugins affects transliteration of links and file names, you can use this option to change the plugin of %s to overwrite the changes of the other plugins."
+msgstr "如果任何你 的插件影响的链接和文件名的音译，您可以使用此选项更改插件的%s覆盖其他插件的更改。"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:129
+msgid "If you enable this option, all URLs of new pages, posts, tags, and categories will automatically be converted to Latin."
+msgstr "如果您启用该选项，所有新的页面，文章，标签，和分类的 URL 会将自动转换为拉丁文。"
+
+#: components/cyrlitera/admin/boot.php:226
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:184
+msgid "Character Sets"
+msgstr "字符集"
+
+#: components/cyrlitera/admin/boot.php:220
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:164
+msgid "Redirection old URLs to new ones"
+msgstr "将旧网址重定向到新网址"
+
+#: components/cyrlitera/admin/boot.php:214
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:154
+msgid "Convert file names into lowercase"
+msgstr "将文件名转换为小写"
+
+#: components/cyrlitera/admin/boot.php:196
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:145
+msgid "Force transliteration"
+msgstr "强制音译"
+
+#: admin/pages/class-pages-performance.php:382
+msgid "Exclude stylesheet/script file names"
+msgstr "排除样式表/脚本文件名"
+
+#: admin/pages/class-pages-components.php:90
+msgid "Hide Login Page is a very light plugin that lets you easily and safely change the url of the login form page to anything you want."
+msgstr "隐藏登录页面是一个非常轻的插件，可让您轻松安全地将登录页面的网址更改为任何您想要的内容。"
+
+#: admin/pages/class-pages-hide-login-page.php:64
+#: admin/pages/class-pages-components.php:84
+msgid "Hide login page"
+msgstr "隐藏登录页"
+
+#: components/ga-cache/includes/classes/class-configurate-ga.php:55
+msgid "Once Monthly"
+msgstr "每月一次"
+
+#: components/ga-cache/includes/classes/class-configurate-ga.php:50
+msgid "Twice Monthly"
+msgstr "每月两次"
+
+#: components/ga-cache/includes/classes/class-configurate-ga.php:45
+msgid "Once Weekly"
+msgstr "每周一次"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:113
+msgid "This page, you can enable or disable automatic updates. To test the automatic updates, click the \"Advanced\" tab."
+msgstr "此页面中，您可以启用或禁用自动更新。要测试自动更新，请单击“高级”选项卡。"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:113
+msgid "General settings for WordPress, plugins and themes updates"
+msgstr "WordPress 插件和主题更新设置"
+
+#: components/updates-manager/admin/pages/class-page-plugins.php:358
+msgid "Plugins list"
+msgstr "插件列表"
+
+#: components/updates-manager/admin/boot.php:153
+msgid "If you do not want to deactivate the plugin %s for some reason, we strongly recommend do not use the same plugins' functions at the same time!"
+msgstr "如果你不想停用插件 %s ，出于某种原因，我们强烈建议不要同时使用，相同的插件功能！"
+
+#: components/updates-manager/admin/boot.php:152
+msgid "We found that you have the plugin %s installed. The functions of this plugin already exist in %s. Please deactivate plugin %s to avoid conflicts between plugins' functions."
+msgstr "我们发现你有这个插件 %s安装。这个插件的功能已经存在于%s。请停用插件 %s以避免插件功能之间的冲突。"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:82
+msgid "Transliteration"
+msgstr "音译"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:138
+msgid "This option works only for new media library files. All Cyrillic names of the downloaded files will be converted to names with Latin characters."
+msgstr "该选项仅适用于新媒体库文件。下载文件的所有西里尔语名称将被转换为带拉丁字符的名称。"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:120
+msgid "Converts Cyrillic permalinks of post, pages, taxonomies and media files to the Latin alphabet. Supports Russian, Ukrainian, Georgian, Bulgarian languages. Example: http://site.dev/последние-новости -> http://site.dev/poslednie-novosti"
+msgstr "西里尔的永久链接转换后，页面，分类和媒体文件拉丁字母。支持俄语，乌克兰语，格鲁吉亚语，保加利亚语。例如：http://site.dev/последние-новости -> http://site.dev/poslednie-novosti"
+
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:120
+msgid "Transliteration of Cyrillic alphabet."
+msgstr "音译西里尔字母。"
+
+#: components/cyrlitera/admin/boot.php:208
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:136
+msgid "Convert file names"
+msgstr "转换文件名称"
+
+#: components/cyrlitera/admin/boot.php:190
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:127
+msgid "Use transliteration"
+msgstr "使用音译"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:259
+msgid "These functions can be useful for global disabling comments or bulk cleaning spam comments."
+msgstr "这些功能可用于全局禁用评论或批量清除垃圾评论。"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:257
+msgid "Comments clearing tools"
+msgstr "评论清除工具"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:191
+msgid "These settings will help you improve SEO and reduce the amount of spam."
+msgstr "这些设置将帮助您改进 SEO 并减少垃圾邮件数量。"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:191
+msgid "General settings for comments"
+msgstr "评论常规设置"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:96
+msgid "What is the difference between these and native WordPress functions? WordPress disables comments only for new posts! Using the functions below, you can disable comments globally, even for old posts, and you can choose which post types comments to disable. The plugin also disables the comment functionality itself, which creates a certain load on the site."
+msgstr "这些和本地 WordPress 功能有什么区别？WordPress 仅对新文章禁用评论！使用以下功能，您可以全局禁用评论，即使是对于旧文章，也可以选择要禁用的文章类型评论。该插件还会禁用评论功能本身，从而在站点上创建一定的负载。"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:96
+msgid "Global disabling of comments"
+msgstr "全局禁用评论"
+
+#: components/assets-manager/admin/pages/class-pages-settings.php:98
+msgid "There is a button in the adminbar called \"Script Manager\". If you click on it you will see a list of loaded scripts, styles and fonts on the current page of your site. If you think that one of the assets is superfluous on this page, you can disable it individually, so that it does not create unnecessary queries when page loading. Use the script manager very carefull to non-corrupt your website. We recommend to test this function at a local server."
+msgstr "管理栏中有一个名为“Script Manager”的按钮。如果你点击它，你将看到当前对加载的脚本，样式和字体列表页的您的站点。如果您认为资产之一是这对多余的页面，您可以单独禁用它，所以它不会产生不必要的查询时，页面加载。使用脚本管理器非常小心，不会破坏您的站点。我们建议在本地服务器上测试此功能。"
+
+#: components/assets-manager/admin/pages/class-pages-settings.php:98
+msgid "Disable unused scripts, styles, and fonts"
+msgstr "禁用未使用的脚本，样式和字体"
+
+#: admin/pages/class-pages-widgets.php:57
+msgid "Some widgets, such as the Calendar or Tag Cloud, create an extra query to the database, even if they are not displayed on the website. Of course, a couple of hits to the database will not do much harm to the whole site. However, if the resource contains a huge amount of content, and the speed of its work above all else, disabling unused functionality is the first step to optimizing and accelerating it."
+msgstr "一些小工具（如日历或标签云）会为数据库创建额外的查询，即使它们未显示在站点上。当然，对数据库的几次命中并不会对整个站点造成太大的伤害。但是，如果资源包含大量内容，并且其工作速度高于其他任何内容，则禁用未使用的功能是优化和加速它的第一步。"
+
+#: admin/pages/class-pages-widgets.php:57
+msgid "<strong>Disable unused widgets</strong>."
+msgstr "<strong>禁用未使用的小工具</strong>。"
+
+#: admin/pages/class-pages-seo.php:72
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:24
+msgid "Recommended settings that can complement your SEO plugin."
+msgstr "推荐的设置，可以补充你的 SEO 插件。"
+
+#: admin/pages/class-pages-seo.php:72
+msgid "<strong>Basic SEO optimization settings</strong>."
+msgstr "<strong>SEO 基本优化设置</strong>。"
+
+#: admin/pages/class-pages-seo-double-pages.php:74
+msgid "Search engines perceive these pages as website separate pages, therefore their content ceases to be unique because of duplication. In addition, page reference weight is reduced if it has a duplicate. A small number of duplicated pages will not be a serious problem, but if there are more than 50 percents of them - you urgently need to correct the situation."
+msgstr "搜索引擎将这些页面视为站点的独立页面，因此它们的内容因重复而不再是唯一的。此外，如果页面参考重量有重复，则页面参考重量会减少。少数重复的页面不会是一个严重的问题，但是如果它们超过50％ - 您迫切需要纠正这种情况。"
+
+#: admin/pages/class-pages-seo-double-pages.php:74
+msgid "<strong>Delete duplicate pages.</strong>."
+msgstr "<strong>删除重复的页面。</strong>。"
+
+#: admin/pages/class-pages-performance.php:266
+msgid ""
+"This function that prevents the user’s gravatar being automatically obtained from gravatar.com based on their registered email. This would be useful for sites where users require an extra layer of privacy, or if you just want to prevent potentially silly or embarrasing avatar accidents.\n"
+"\t\t\tIf you’re using Identicons or any other generated default avatar, the user should keep a consistent avatar unless they change their registered email.\n"
+"\t\t\t"
+msgstr ""
+"此功能可防止用户的gravatar根据其注册邮件从gravatar.com自动获取。这对于用户需要额外隐私保护的站点或者您只是想要防止潜在的愚蠢或尴尬化身事故很有用。\n"
+"\t\t\t如果您 “使用Identicons或任何其他产生默认的头像再次，用户应保持一致的形象，除非他们改变自己的注册邮箱。\n"
+"\t\t\t"
+
+#: admin/pages/class-pages-performance.php:256
+msgid "Dashicons is the official icon font of the WordPress admin as of 3.8. Some of you have requested that we add a feature to remove Dashicons. Some themes and developers utilize this (dashicons.min.css) on the front-end of their sites."
+msgstr "Dashicons 是 WordPress 3.8 版本之后的管理区的官方图标字体。您们中的一些人要求我们添加一项功能来删除 Dashicons。注意，有些主题和开发人员在他们站点的前端使用这图标字体（dashicons.min.css）。"
+
+#: admin/pages/class-pages-performance.php:246
+msgid "By default, WordPress loads Font Awesome icons synchronously, that is, your page will not be fully loaded until Font Awesome icons are loaded. This algorithm slows down the loading of your page and leads to errors when checking the site in Google Page Speed. Using this option, your Font Awesome icons will be loaded after your page is fully loaded. This method has a negative — you and visitors of your site will see changes while loading a page, from the placeholders to icons."
+msgstr "默认情况下，WordPress 会同步加载 Font Awesome 图标，也就是说，加载 Font Awesome 图标之前，您的页面不会完全加载。该算法减慢的加载您的页面，并检查时，会导致错误的站点在 Google Page Speed。使用此选项，您的 Font Awesome 图标将在您的页面完全加载后加载。这种方法有一个负面影响 - 您和您站点的访问者将会看到的变化，而加载页面，从占位符图标。"
+
+#: admin/pages/class-pages-performance.php:196
+msgid "Remove link tag"
+msgstr "删除链接标记"
+
+#: admin/pages/class-pages-performance.php:194
+msgid ""
+"The profile attribute specifies the metadata profile address. Usually, the browser recognizes the value of this attribute and executes some conventions related to the specified profile. Loading the document itself at the specified address does not really happen, moreover, it may not exist at all.\n"
+"In particular, the profile is used for the XFN microformat (XHTML Friends Network) - a way of representing relationships between people using links and rel attributes with different values. WordPress also actively uses profile in its templates.\n"
+msgstr ""
+"配置文件属性指定元数据配置文件地址。通常，浏览器识别该属性的值并执行与指定配置文件相关的一些约定。将文档本身加载到指定地址并不会真的发生，而且，它可能根本不存在。\n"
+"在特别地，轮廓用于 XFN 微（XHTML 社交网络） -表示使用链接，并与不同的值相对属性，人与人之间的关系的一种方式。WordPress 还在其模板中积极使用配置文件。\n"
+
+#: admin/pages/class-pages-performance.php:114
+msgid "Forward all requests to page 404 or to the main page through 301 redirects."
+msgstr "转发到所有的请求404页面或到主网页通过301个重定向。"
+
+#: admin/pages/class-pages-performance.php:113
+msgid "Redirect feed requests"
+msgstr "重定向 Feed 请求"
+
+#: admin/pages/class-pages-performance.php:111
+msgid "Page 404"
+msgstr "页面 404"
+
+#: admin/pages/class-pages-performance.php:110
+msgid "Redirect 301"
+msgstr "重定向 301"
+
+#: admin/pages/class-pages-performance.php:86
+msgid "This set of settings will help you remove unnecessary links and code from the head section, as well as reduce your website's pages weight."
+msgstr "这套设置将帮助您从头部删除不必要的链接和代码，并减少您站点的页面重量。"
+
+#: admin/pages/class-pages-performance.php:86
+msgid "<strong>Clear the unnecessary scripts</strong>"
+msgstr "<strong>清除不必要的脚本</strong>"
+
+#: admin/pages/class-pages-performance.php:48
+msgid "Performance"
+msgstr "性能"
+
+#: components/html-minify/admin/boot.php:89
+msgid "Ever look at the HTML markup of your website and notice how sloppy and amateurish it looks? The Minify HTML options cleans up sloppy looking markup and minifies, which also speeds up download."
+msgstr "看看您的站点的 HTML 标记，并注意它看起来是多么草率和业余吗？HTML缩小化可清除看起来马虎和缩小的内容，加快下载速度。"
+
+#: admin/pages/class-pages-components.php:94
+msgid "Html minify"
+msgstr "Html微小化"
+
+#: components/ga-cache/admin/options.php:100
+msgid "Use <a href=\"%s\">Anonymize IP?</a> (Required by law for some countries)"
+msgstr "使用<a href=\"%s\">匿名 IP？</a> （一些国家的法律上的要求）"
+
+#: components/ga-cache/admin/options.php:91
+msgid "Disable all <a href=\"%s\">display features functionality?</a>"
+msgstr "禁用所有 <a href=\"%s\">显示功能的功能？</a>"
+
+#: components/ga-cache/admin/options.php:83
+msgid "By default, Google Analytics code is loaded before other scripts and javasscript code, but if you set the value to 100, the GA code will be loaded after all other scripts. By changing the priority, you can set code position on the page."
+msgstr "默认情况下，Google Analytics（分析）代码被其他脚本和使用 JavaScript 代码之前加载，但如果您的值设置为100，GA 代码将所有其它脚本后加载。通过更改优先级，您可以在页面上设置代码位置。"
+
+#: components/ga-cache/admin/options.php:74
+msgid "Essentially, you set up an event which is triggered after a user spends a certain amount of time on the landing page, telling Google Analytics not to count these users as bounces. A user may come to your website, find all of the information they need (a phone number, for example) and then leave the site without visiting another page. Without adjusted bounce rate, such a user would be considered a bounce, even though they had a successful experience. By defining a time limit after which you can consider a user to be \"engaged,\" that user would no longer count as a bounce, and you'd get a more accurate idea of whether they found what they were looking for."
+msgstr "实质上，您设置了一个事件，该事件在用户在着陆页上花了一段时间后触发，这表明 Google Analytics 不会将这些用户计为反弹。用户可以访问您的站点，查找他们需要的所有信息（例如电话号码），然后离开该站点而不访问其他页面。如果没有调整跳出率，这样的用户即使拥有成功的经验，也会被视为反弹。通过定义一个时间限制，在这个时间限制之后，您可以将用户视为“参与”，该用户将不再被视为反弹，并且您会更准确地了解他们是否找到了他们正在寻找的内容。"
+
+#: components/ga-cache/admin/options.php:64
+msgid "Select location for the Google Analytics code."
+msgstr "选择 Google Analytics 代码的位置。"
+
+#: components/ga-cache/admin/options.php:63
+msgid "Save GA in"
+msgstr "保存 GA"
+
+#: components/ga-cache/admin/options.php:52
+msgid "Set the Google Analytics tracking code."
+msgstr "设置 Google Analytics 跟踪代码。"
+
+#: components/ga-cache/admin/options.php:32
+msgid "ATTENTION! Before using this option, remove the previously installed Google Analytics code inside your theme or plugins associated with this feature!"
+msgstr "注意！在使用此选项之前，请删除您的主题或与此功能关联的插件中以前安装的Google Analytics 代码！"
+
+#: components/ga-cache/admin/options.php:32
+msgid "If you enable this option, the plugin will begin to save a local copy of Google Analytics to speed up the loading of your website and improve Google Page Speed."
+msgstr "如果您启用这个选项，插件将会在您的服务器保存 Google Analytics JS 文件，以加快您站点的加载，并提高 Google Page Speed。"
+
+#: components/ga-cache/admin/options.php:23
+msgid "To improve Google Page Speed indicators Analytics caching is needed. However, it can also slightly increase your website loading speed, because Analytics js files will load locally. The second case that you might need these settings is the usual Google Analytics connection to your website. You do not need to do this with other plugins or insert the tracking code into your theme."
+msgstr "改进 Google Page Speed 指标需要分析缓存。然而，它也可以稍微提高您站点的加载速度，因为分析 JS 文件将在本地加载。您可能需要这些设置的第二种情况是通常的 Google Analytics 连接到您的站点。您无需使用其他插件执行此操作，也无需将跟踪代码插入到您的主题中。"
+
+#: components/ga-cache/admin/options.php:23
+msgid "<strong>Google Analytics cache</strong>."
+msgstr "<strong>Google Analytics 缓存</strong>。"
+
+#: admin/pages/class-pages-performance-google.php:143
+msgid "Posts or Pages IDs separated by a ,"
+msgstr "由\",\"分隔文章或页面的ID"
+
+#: admin/pages/class-pages-performance-google.php:134
+msgid "By default, the \"Disable Google Maps\" option removes maps inserted with the SCRIPT tag from the page source code. However, you can also cut out all maps inserted via the iframe by enabling this option."
+msgstr "默认情况下，“禁用 Google 地图”选项会从页面源代码中删除使用 SCRIPT 标记插入的地图。但是，您也可以通过启用此选项来剪切通过 iframe 插入的所有地图。"
+
+#: admin/pages/class-pages-performance-google.php:117
+msgid ""
+"This function stops loading of Google Maps used by some themes or plugins.\n"
+"Reasons for not using Google Maps might be privacy and security, local development or production, blocking of Google’s servers, performance, not necessary, etc."
+msgstr ""
+"此功能可停止加载由某些主题或插件使用的Google地图。\n"
+" \n"
+"为何没有使用谷歌地图可能是隐私和安全，地方发展或生产，谷歌的服务器阻塞，性能，不必等"
+
+#: admin/pages/class-pages-performance-google.php:106
+msgid ""
+"This function stops loading of Open Sans and other fonts used by WordPress and bundled themes (Twenty Twelve, Twenty Thirteen, Twenty Fourteen, Twenty Fifteen, Twenty Sixteen, Twenty Seventeen) from Google Fonts.\n"
+"Reasons for not using Google Fonts might be privacy and security, local development or production, blocking of Google’s servers, characters not supported by font, performance."
+msgstr ""
+"此功能可停止加载WordPress使用的Open Sans和其他字体以及来自Google Fonts的捆绑主题（二十二，二十三，十二，二十四，二十五，二十十六，二十七）。\n"
+" \n"
+"不使用谷歌的字体可能的隐私和安全，地方发展或生产，谷歌的服务器堵塞，不按字体支持的字符，性能方面的原因。"
+
+#: admin/pages/class-pages-performance-google.php:96
+msgid "By default, WordPress loads Google fonts synchronously, that is, your page will not be fully loaded until Google Fonts are loaded. This algorithm slows down the loading of your page and leads to errors when checking the site in Google Page Speed. Using this option, your Google Fonts will be loaded after your page is fully loaded. This method has a negative — you and visitors of your site will see how the font changes while loading a page, from the system to the downloadable one."
+msgstr "默认情况下，WordPress 会同步加载 Google 字体，也就是说，加载 Google 字体之前，您的页面不会完全加载。该算法减慢的加载您的页面，并检查时，会导致错误的站点在 Google Page Speed。使用此选项，您的 Google 字体将在您的页面完全加载后加载。这种方法有一个负面影响 - 您和您站点的访问者将看到加载页面时字体如何变化，从系统到可下载页面。"
+
+#: admin/pages/class-pages-performance-google.php:87
+msgid "Google Fonts and Maps strongly affect your website loading speed. Use settings below to disable or optimize Google fonts and Maps."
+msgstr "Google 字体和地图强烈影响您的站点加载速度。使用下面的设置停用或优化 Google 字体和地图。"
+
+#: admin/pages/class-pages-performance-google.php:87
+msgid "<strong>Fonts and Maps</strong>."
+msgstr "<strong>字体和地图</strong>。"
+
+#: admin/pages/class-pages-performance-google.php:48
+msgid "Google services"
+msgstr "Google 服务"
+
+#: admin/pages/class-pages-defence.php:54
+msgid "Basic recommended security settings."
+msgstr "推荐的基础安全设置。"
+
+#: admin/pages/class-pages-defence.php:54
+msgid "<strong>Base settings</strong>."
+msgstr "<strong>基础设置</strong>。"
+
+#: admin/pages/class-pages-defence.php:104
+msgid "WordPress itself and many plugins shows their version at the public areas of your site. An attacker received this information may be aware of the vulnerabilities found in the version of the WordPress core or plugins."
+msgstr "WordPress 本身和许多插件在您的站点的公共区域显示他们的版本。收到此信息的攻击者可能会发现在 WordPress 核心或插件版本中发现的漏洞。"
+
+#: libs/factory/clearfy/pages/class-pages-components.php:176
+msgid "<strong>Plugin Components</strong>."
+msgstr "<strong>插件组件</strong>。"
+
+#: admin/pages/class-pages-components.php:205
+msgid "Converts Cyrillic permalinks of post, pages, taxonomies and media files to the Latin alphabet. Supports Russian, Ukrainian, Georgian, Bulgarian languages."
+msgstr "转换文章，页面，分类和媒体文件永久链接里的西里尔字母为拉丁字母。支持俄语，乌克兰语，格鲁吉亚语，保加利亚语。"
+
+#: admin/pages/class-pages-components.php:200
+msgid "Transliteration of Cyrillic alphabet"
+msgstr "音译西里尔字母"
+
+#: admin/includes/options.php:60 admin/pages/class-pages-performance.php:264
+msgid "Disable gravatars"
+msgstr "禁用 gravatars"
+
+#: admin/includes/options.php:55 admin/pages/class-pages-performance.php:254
+msgid "Disable Dashicons"
+msgstr "禁用 Dashicons"
+
+#: admin/includes/options.php:50 admin/pages/class-pages-performance.php:244
+msgid "Font Awesome asynchronous"
+msgstr "字体超快异步"
+
+#: admin/includes/options.php:45 admin/pages/class-pages-performance.php:192
+msgid "Removing XFN (XHTML Friends Network) Profile Link"
+msgstr "删除XFN（XHTML朋友的网络）配置文件链接"
+
+#: admin/includes/options.php:39
+#: admin/pages/class-pages-performance-google.php:115
+msgid "Disable Google maps"
+msgstr "禁用 Google 地图"
+
+#: components/ga-cache/admin/options.php:107
+#: components/ga-cache/admin/options.php:109
+#: components/ga-cache/admin/boot.php:266
+msgid "Track logged in Administrators?"
+msgstr "记录已登录管理员的行动？"
+
+#: components/ga-cache/admin/options.php:98
+#: components/ga-cache/admin/boot.php:261
+msgid "Use Anonymize IP? (Required by law for some countries)"
+msgstr "使用匿名IP？（一些国家的法律要求）"
+
+#: components/ga-cache/admin/options.php:89
+#: components/ga-cache/admin/boot.php:256
+msgid "Disable all display features functionality?"
+msgstr "禁用所有显示功能功能？"
+
+#: components/ga-cache/admin/options.php:80
+#: components/ga-cache/admin/boot.php:251
+msgid "Change enqueue order?"
+msgstr "改变排列顺序？"
+
+#: components/ga-cache/admin/options.php:71
+#: components/ga-cache/admin/boot.php:246
+msgid "Use adjusted bounce rate?"
+msgstr "使用调整后的跳出率？"
+
+#: components/ga-cache/admin/options.php:50
+#: components/ga-cache/admin/boot.php:241
+msgid "Google analytic Code"
+msgstr "Google 分析代码"
+
+#: admin/pages/class-pages-components.php:112
+#: components/ga-cache/admin/options.php:30
+#: components/ga-cache/admin/boot.php:235
+msgid "Google Analytics Cache"
+msgstr "Google 分析缓存"
+
+#: admin/includes/options.php:33
+#: admin/pages/class-pages-performance-google.php:142
+msgid "Exclude pages from Disable Google Maps filter"
+msgstr "从禁用 Google 地图过滤器中排除页面"
+
+#: admin/includes/options.php:28
+#: admin/pages/class-pages-performance-google.php:132
+msgid "Remove iframe Google maps"
+msgstr "删除 iframe Google 地图"
+
+#: admin/includes/options.php:23
+#: admin/pages/class-pages-performance-google.php:104
+msgid "Disable Google Fonts"
+msgstr "禁用 Google 字体"
+
+#: admin/includes/options.php:18
+#: admin/pages/class-pages-performance-google.php:94
+msgid "Google Fonts asynchronous"
+msgstr "Google 字体异步"
+
+#: components/cyrlitera/admin/boot.php:56
+msgid "If you do not want to deactivate the plugin %s for some reason, we strongly recommend do not use the same plugins functions at the same time!"
+msgstr "如果您有什原因不想停用插件 %s ，我们强烈建议不要同时使用相同的插件功能！"
+
+#: components/cyrlitera/admin/boot.php:55
+msgid "We found that you have the plugin %s installed. The functions of this plugin already exist in %s. Please deactivate plugin %s to avoid conflicts between plugins functions."
+msgstr "我们发现您有安装这插件 %s。这插件的功能已经存在于 %s。请停用插件 %s 已避免插件功能发生冲突。"
+
+#. Plugin Name of the plugin
+msgid "Webcraftic Clearfy – WordPress optimization plugin"
+msgstr "Webcraftic Clearfy – WordPress 优化插件"
+
+#: components/disable-admin-notices/includes/classes/class-configurate-notices.php:105
+msgid "Restore notice"
+msgstr "恢复通知"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:310
+msgid "You can remove only trashed comments from the database with one click."
+msgstr "只需单击一次, 即可从数据库中删除垃圾评论。"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:309
+msgid "Remove trashed comments"
+msgstr "删除垃圾评论"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:304
+msgid "You can remove only unapproved comments from the database with one click."
+msgstr "只需单击一次, 即可从数据库中删除未经批准的批注。"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:303
+msgid "Remove unapproved comments"
+msgstr "删除未经批准的批注"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:298
+msgid "You can remove only spam comments from the database with one click."
+msgstr "只需点击一下，您就可以从数据库中只删除垃圾评论。"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:297
+msgid "Remove spam comments"
+msgstr "删除垃圾评论"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:300
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:306
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:312
+msgid "Delete (%d)"
+msgstr "删除（%d）"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:285
+msgid "Delete Woocommerce order notices? (%d)"
+msgstr "删除Woocommerce订单通知？（%d）"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:269
+msgid "Select all"
+msgstr "全选"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:265
+msgid "Choose post types"
+msgstr "选择文章类型"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:264
+msgid "You can delete all comments in your database with one click."
+msgstr "您可以删除所有评论您与点击数据库。"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:263
+msgid "Remove all comments"
+msgstr "删除所有评论"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:237
+msgid "Are you sure you want to delete comments from the database without restoring?"
+msgstr "难道您确定您想不恢复到从数据库中删除评论？"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:72
+msgid "Comments cleaner"
+msgstr "评论清理"
+
+#: libs/factory/clearfy/pages/class-pages-components.php:178
+#: admin/pages/class-pages-components-license.php:113
+msgid "These are components of the plugin bundle. When you activate the plugin, all the components turned on by default. If you don’t need some function, you can easily turn it off on this page."
+msgstr "这些是插件包的组件。当您激活插件时，默认情况下所有组件都会打开。如果您不需要某些功能，您可以轻松地将其关闭这个上页。"
+
+#: admin/pages/class-pages-components.php:171
+msgid "Set of optimization functions for the popular Yoast SEO plugin."
+msgstr "一套流行的Yoast SEO 插件的优化功能。"
+
+#: admin/pages/class-pages-components.php:166
+msgid "Yoast SEO optimization"
+msgstr "Yoast SEO优化"
+
+#: admin/pages/class-pages-components.php:162
+msgid "Disables admin bar. Allows to change and remove admin bar elements."
+msgstr "禁用管理栏。允许更改和删除管理栏元素。"
+
+#: admin/pages/class-pages-components.php:157
+msgid "Admin bar manager"
+msgstr "管理栏管理员"
+
+#: admin/pages/class-pages-components.php:153
+msgid "Disables admin notices bulk or individually. Collects notices into the admin bar."
+msgstr "批量或单独禁用管理员通知。将通知收集到管理栏中。"
+
+#: admin/pages/class-pages-components.php:183
+#: admin/pages/class-pages-components.php:194
+msgid "Selectively disable unused scripts and styles on the pages of your website."
+msgstr "在选择性地禁用未使用的脚本和样式的网页的您的站点。"
+
+#: admin/pages/class-pages-components.php:178
+#: admin/pages/class-pages-components.php:188
+msgid "Asset manager"
+msgstr "资产管理器"
+
+#: admin/pages/class-pages-components.php:144
+msgid "Disable unused widgets such as tag cloud, links, calendar etc."
+msgstr "禁用未使用的小部件，如标签云，链接，日历等"
+
+#: admin/pages/class-pages-components.php:139
+msgid "Widgets tools"
+msgstr "小部件工具"
+
+#: admin/pages/class-pages-components.php:135
+msgid "Bulk disable and remove comments, disable “Website” field, hides external links, disable XML-RPC."
+msgstr "批量禁用和删除评论，禁用“站点”字段，隐藏外部链接，禁用XML-RPC。"
+
+#: admin/pages/class-pages-components.php:130
+msgid "Comments tools"
+msgstr "评论工具"
+
+#: admin/pages/class-pages-components.php:126
+msgid "Disable updates enable auto updates for themes, plugins and WordPress."
+msgstr "禁用更新为主题，插件和WordPress 启用自动更新。"
+
+#: libs/factory/forms/controls/multiple-textbox.php:89
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1357
+msgid "Add new"
+msgstr "新增"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:214
+msgid ""
+"This plugin allows you to hide the update WordPress reminder from all users that are not assumed Administrators (cannot upgrade plugins).\n"
+"\n"
+"If you have multiple users then this means those who are not admins don’t need to see the message. Useful for CMS based sites, so the client doesn’t see the notice."
+msgstr ""
+"这个插件允许您隐藏所有用户没有采用的更新 WordPress提醒管理员（不能升级插件）。\n"
+" \n"
+"\n"
+" \n"
+"如果您有多个用户，那么这意味着那些谁不管理员不需要看到的消息。对基于CMS的站点很有用，所以客户端看不到通知。"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:434
+#: components/updates-manager/admin/pages/class-page-plugins.php:471
+msgid "Select"
+msgstr "选择"
+
+#: admin/pages/setup/steps/class-step-plugins.php:36
+#: components/updates-manager/admin/pages/class-page-plugins.php:395
+msgid "Plugin"
+msgstr "插件"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:367
+#: components/updates-manager/admin/pages/class-page-plugins.php:386
+msgid "Apply"
+msgstr "应用"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:362
+#: components/updates-manager/admin/pages/class-page-plugins.php:379
+msgid "Enable auto-updates"
+msgstr "启用自动更新"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:361
+#: components/updates-manager/admin/pages/class-page-plugins.php:378
+msgid "Enable updates"
+msgstr "启用更新"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:359
+#: components/updates-manager/admin/pages/class-page-plugins.php:376
+msgid "Bulk actions"
+msgstr "批量操作"
+
+#: components/updates-manager/admin/pages/class-page-plugins.php:111
+msgid "- To configure plugin auto updates individually, choose the “Enable auto updates” option then save settings and comeback to this page."
+msgstr "- 要单独配置插件自动更新，请选择“启用自动更新 ”选项，然后保存设置并回到此页面。"
+
+#: components/updates-manager/admin/pages/class-page-plugins.php:107
+msgid "- To disable updates individually choose the “Manual or automatic plugin updates” option then save settings and comeback to this page."
+msgstr "- 要单独禁用更新，请选择“手动或自动插件 更新 ”选项，然后保存设置并回到此页面。"
+
+#: components/updates-manager/admin/pages/class-page-plugins.php:360
+msgid "This page you can individually disable plugin updates and auto updates."
+msgstr "此页面 您可以单独禁用插件 的更新和自动更新。"
+
+#: components/updates-manager/admin/pages/class-page-plugins.php:89
+#: components/assets-manager/views/tab-content-assets-plugins.php:20
+msgid "Plugins"
+msgstr "插件"
+
+#: components/updates-manager/admin/pages/class-page-advanced.php:114
+msgid "Force update"
+msgstr "强制更新"
+
+#: components/updates-manager/admin/pages/class-page-advanced.php:113
+msgid "This will attempt to force automatic updates. This is useful for debugging."
+msgstr "这将尝试强制自动更新。这对调试很有用。"
+
+#: components/updates-manager/admin/pages/class-page-advanced.php:112
+msgid "Force Automatic Updates"
+msgstr "强制自动更新"
+
+#: components/updates-manager/admin/pages/class-page-advanced.php:103
+msgid "Please, wait 90 sec. to see the forced automatic update result."
+msgstr "请等待90秒。查看强制自动更新结果。"
+
+#: components/updates-manager/admin/boot.php:132
+msgid "One click disable all updates"
+msgstr "一次点击禁用所有更新"
+
+#: components/updates-manager/admin/boot.php:106
+#: components/updates-manager/admin/pages/class-page-updates.php:212
+msgid "Updates nags only for Admin"
+msgstr "更新仅适用于管理员"
+
+#: components/updates-manager/admin/boot.php:101
+msgid "Plugin filters"
+msgstr "插件过滤器"
+
+#: components/disable-admin-notices/includes/classes/class-configurate-notices.php:81
+msgid "Notifications %s"
+msgstr "通知 %s"
+
+#: components/disable-admin-notices/disable-admin-notices.php:46
+msgid "Webcraftic disable admin notices"
+msgstr "Webcraftic禁用管理员通知"
+
+#: components/disable-admin-notices/admin/options.php:261
+#: components/disable-admin-notices/admin/pages/class-pages-settings.php:116
+msgid "Hidden notices are successfully reset, now you can see them again!"
+msgstr "隐藏通知已成功重置，现在您可以再次看到它们！"
+
+#: components/disable-admin-notices/admin/options.php:235
+msgid "Reset hidden notices for"
+msgstr "重置隐藏通知"
+
+#: components/disable-admin-notices/admin/options.php:238
+msgid "Push reset hidden notices if you need to show hidden notices again."
+msgstr "如果需要再次显示隐藏通知，请按下重置隐藏通知。"
+
+#: components/disable-admin-notices/admin/options.php:150
+msgid "By default, the plugin hides all notices, which you specified. If you enable this option, the plugin will collect all hidden notices and show them into the top admin toolbar. It will not disturb you but will allow to look notices at your convenience."
+msgstr "默认情况下，插件会隐藏您指定的所有通知。如果您启用这个选项，插件将收集所有隐藏的通知，并将其显示到顶部的管理工具。它不会打扰您，但会允许您在方便时查看通知。"
+
+#: components/disable-admin-notices/admin/options.php:69
+msgid "Some plugins shows notifications about premium version, data collecting or promote their services. Even if you push close button (that sometimes are impossible), notices are shows again in some time. This option allows you to control notices. Hide them all or each individually. Some plugins shows notifications about premium version, data collecting or promote their services. Even if you push close button (that sometimes are impossible), notices are shows again in some time. This option allows you to control notices. Hide them all or each individually."
+msgstr "一些插件显示关于高级版本，数据收集或推广其服务的通知。即使您按下关闭按钮（有时不可能），通知仍会在一段时间内再次显示。此选项允许您来控制的通知。全部或分别隐藏它们。一些插件显示关于高级版本，数据收集或推广其服务的通知。即使您按下关闭按钮（有时不可能），通知仍会在一段时间内再次显示。此选项允许您来控制的通知。全部或分别隐藏它们。"
+
+#: components/disable-admin-notices/admin/options.php:40
+msgid "Do not hide notices and do not show “Hide notification forever” link for admin."
+msgstr "不要隐藏通知，并且不要为管理员显示“永远隐藏通知”链接。"
+
+#: components/disable-admin-notices/admin/options.php:39
+msgid "Don't hide"
+msgstr "不要隐藏"
+
+#: components/disable-admin-notices/admin/options.php:50
+msgid "Hide selected notices only. You will see the link \"Hide notification forever\" in each notice. Push it and they will not bother you anymore."
+msgstr "仅隐藏选定的通知。您会在每个通知中看到“永远隐藏通知”链接。推它，他们不会再打扰您了。"
+
+#: components/disable-admin-notices/admin/options.php:49
+msgid "Only selected"
+msgstr "仅选中"
+
+#: components/disable-admin-notices/admin/options.php:45
+msgid "Hide all notices globally."
+msgstr "全局隐藏所有通知。"
+
+#: components/disable-admin-notices/admin/options.php:44
+msgid "All notices"
+msgstr "所有通知"
+
+#: components/disable-admin-notices/admin/options.php:33
+msgid "Do you know the situation, when some plugin offers you to update to premium, to collect technical data and shows many annoying notices? You are close these notices every now and again but they newly appears and interfere your work with WordPress. Even worse, some plugin’s authors delete “close” button from notices and they shows in your admin panel forever."
+msgstr "难道您知道的情况下，当一些插件提供您要更新溢价，收集技术数据和显示多烦人的通知？您现在每隔一段时间都会收到这些通知，但它们最近出现并干扰了WordPress 的工作。更糟的是，一些插件的作者删除‘关闭’按钮，从通知他们显示在您的管理面板，直到永远。"
+
+#: components/disable-admin-notices/admin/options.php:33
+msgid "Admin notifications, Update nags"
+msgstr "管理员通知，更新耿耿于怀"
+
+#: components/disable-admin-notices/admin/pages/class-pages-notices.php:51
+msgid "Hidden notices"
+msgstr "隐藏通知"
+
+#: components/disable-admin-notices/admin/options.php:148
+#: components/disable-admin-notices/admin/boot.php:88
+msgid "Enable hidden notices in adminbar"
+msgstr "在管理栏中启用隐藏通知"
+
+#: components/disable-admin-notices/admin/options.php:66
+#: components/disable-admin-notices/admin/boot.php:82
+#: components/disable-admin-notices/admin/pages/class-pages-settings.php:72
+msgid "Hide admin notices"
+msgstr "隐藏管理员通知"
+
+#: components/disable-admin-notices/admin/ajax/hide-notice.php:27
+#: components/disable-admin-notices/admin/ajax/restore-notice.php:24
+msgid "Undefinded notice id."
+msgstr "未定义的通知ID。"
+
+#: components/comments-plus/admin/boot.php:169
+msgid "One click disable all comments"
+msgstr "点击一下即可停用所有评论"
+
+#: admin/pages/class-pages-quick-start.php:218
+msgid "Do It!"
+msgstr "做到这一点！"
+
+#: admin/pages/class-pages-quick-start.php:216
+#: components/assets-manager/views/part-assets-manager-header.php:35
+msgid "Reset"
+msgstr "重启"
+
+#: admin/pages/class-pages-quick-start.php:203
+msgid "Reset settings"
+msgstr "重新设置"
+
+#: admin/pages/class-pages-quick-start.php:175
+msgid "After selecting any optimization case, the plugin will automatically enable the necessary settings in safe mode and one click."
+msgstr "选择任何优化案例后，插件将自动启用安全模式下的必要设置并单击一次。"
+
+#: admin/pages/class-pages-quick-start.php:173
+msgid "Select what you need to do"
+msgstr "选择您需要做的事情"
+
+#: admin/pages/class-pages-quick-start.php:167
+msgid "These are quick optimization options for your website. You can activate the groups of necessary settings in one click. With the fast optimization mode, we are enable the only safe settings that do not break your website. That is why we recommend you to look at each setting of the plugin individually. The settings with grey and red question mark will not be active, until you do it yourself."
+msgstr "这些是您的站点的快速优化选项。您只需点击一下即可激活必要的设置组。在快速优化模式下，我们启用唯一不会破坏您站点的安全设置。这就是为什么我们建议您分别查看插件的每个设置。带灰色和红色问号的设置不会激活，直到您自己完成。"
+
+#: admin/pages/class-pages-quick-start.php:137
+msgid "One click remove default Widgets"
+msgstr "点击一下即可移除默认的小部件"
+
+#: admin/pages/class-pages-quick-start.php:133
+msgid "One click seo optimization"
+msgstr "点击seo优化"
+
+#: admin/pages/class-pages-quick-start.php:131
+msgid "One click security"
+msgstr "一键安全"
+
+#: admin/pages/class-pages-quick-start.php:130
+msgid "One click code clearing"
+msgstr "一键清除代码"
+
+#: admin/pages/class-pages-performance.php:447
+msgid "Select the heartbeat frequency wordpress. We recommend you 60 seconds, default is 20 seconds."
+msgstr "选择心跳频率 wordpress。我们建议您60秒, 默认为20秒。"
+
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1202
+msgid "Current URL"
+msgstr "当前网址"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:48
+#: components/assets-manager/views/tab-content-assets.php:31
+msgid "Enable"
+msgstr "启用"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:51
+#: components/assets-manager/views/tab-content-assets.php:34
+msgid "Disable"
+msgstr "禁用"
+
+#: components/assets-manager/views/part-tab-content-assets-plugins-settings.php:39
+#: components/assets-manager/views/tab-content-assets.php:22
+msgid "Size"
+msgstr "大小"
+
+#: components/assets-manager/gonzales.php:46
+msgid "Webcraftic assets manager"
+msgstr "Webcraftic资产管理器"
+
+#: components/assets-manager/admin/pages/class-pages-settings.php:149
+msgid "Disables assets manager initialization for backend."
+msgstr "为后端禁用资产管理器初始化。"
+
+#: components/assets-manager/admin/pages/class-pages-settings.php:140
+msgid "Disables assets manager initialization for frontend."
+msgstr "为前端禁用资产管理器初始化。"
+
+#: components/assets-manager/admin/pages/class-pages-settings.php:131
+msgid "By default in your admin bar there is a button for control the assets scripts and styles. With this option, you can turn off the script manager on front and back-end."
+msgstr "默认情况下，在管理栏中有一个用于控制资产脚本和样式的按钮。使用此选项，您可以关闭前端和后端的脚本管理器。"
+
+#: components/assets-manager/admin/pages/class-pages-settings.php:107
+msgid "Full disable of the module."
+msgstr "完全禁用模块。"
+
+#: components/assets-manager/admin/pages/class-pages-settings.php:55
+#: components/assets-manager/admin/pages/class-pages-settings.php:76
+#: components/assets-manager/admin/pages/class-pages-settings.php:84
+msgid "Assets manager"
+msgstr "资产管理器"
+
+#: components/assets-manager/admin/boot.php:135
+msgid "Assets manager options"
+msgstr "资产管理选项"
+
+#: components/assets-manager/admin/boot.php:129
+#: components/assets-manager/admin/pages/class-pages-settings.php:147
+msgid "Disable assets manager on back-end"
+msgstr "在后端禁用资产管理器"
+
+#: components/assets-manager/admin/boot.php:123
+#: components/assets-manager/admin/pages/class-pages-settings.php:138
+msgid "Disable assets manager on front"
+msgstr "禁用资产管理器"
+
+#: components/assets-manager/admin/boot.php:117
+#: components/assets-manager/admin/pages/class-pages-settings.php:129
+msgid "Disable assets manager panel"
+msgstr "禁用资产管理器面板"
+
+#: components/assets-manager/admin/boot.php:110
+#: components/assets-manager/admin/pages/class-pages-settings.php:105
+msgid "Disable assets manager"
+msgstr "禁用资产管理器"
+
+#: admin/pages/class-pages-seo.php:205
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:106
+msgid "Disable Structured Data in plugin Yoast SEO."
+msgstr "在插件 Yoast SEO中禁用结构化数据。"
+
+#: admin/pages/class-pages-seo.php:203
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:104
+msgid ""
+"Prevents output of the script tag of type application/ld+json containing\n"
+"schema.org data from the popular Yoast SEO and Yoast SEO Premium plugins.\n"
+"There is currently no UI to do so."
+msgstr ""
+"防止了脚本的输出标签包含类型application / LD + JSON的\n"
+" \n"
+"从流行Yoast SEO和Yoast SEO高级schema.org数据的插件。\n"
+" \n"
+"目前还没有UI这样做。"
+
+#: admin/pages/class-pages-seo.php:193
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:94
+msgid "Disable JSON-LD sitelinks searchbox using WordPress in plugin Yoast SEO."
+msgstr "使用插件 Yoast SEO中的WordPress禁用JSON-LD附加链接搜索框。"
+
+#: admin/pages/class-pages-seo.php:193
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:94
+msgid "If you’re not familiar with Search Action it’s the mark-up that helps search engines add a shiny Sitelinks Search Box below your search engine results. For the majority of webmasters the extra search box is an absolutely fantastic feature but for many it’s not required or wanted, especially if a site only has a few pages or if the site uses a customised search platform that only searches blog posts and not pages."
+msgstr "如果您不熟悉搜索操作，则可以帮助搜索引擎在搜索引擎搜索结果下方添加一个闪亮的搜索框。对于大多数站点管理员来说，额外的搜索框绝对是一个非常出色的功能，但对于许多站点管理员来说，这并不是必需或想要的，特别是如果站点只有几页，或者该站点使用只搜索博客帖子而不搜索页面的自定义搜索平台。"
+
+#: libs/factory/core/includes/components/class-install-component-button.php:425
+#: admin/includes/classes/class.install-plugins-button.php:335
+msgid "Deactivate"
+msgstr "停用"
+
+#: libs/factory/core/includes/components/class-install-component-button.php:423
+#: admin/includes/classes/class.install-plugins-button.php:333
+msgid "Activate"
+msgstr "启用"
+
+#: admin/includes/options.php:137 admin/pages/class-pages-seo.php:201
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:102
+msgid "Disable Yoast Structured Data"
+msgstr "禁用Yoast结构化数据"
+
+#: admin/includes/options.php:132 admin/pages/class-pages-seo.php:191
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:92
+msgid "Disable JSON-LD sitelinks searchbox"
+msgstr "禁用JSON-LD附加链接搜索框"
+
+#: libs/factory/pages/templates/impressive-page.class.php:622
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1227
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1319
+msgid "Page"
+msgstr "页"
+
+#: libs/factory/pages/templates/impressive-page.class.php:358
+msgid "It seems that a caching/performance plugin is active on this site. Please manually invalidate that plugin's cache after making any changes to the settings below."
+msgstr "看起来这个站点上的缓存/性能插件是活跃的。在对下面的设置进行任何更改后，请手动使该插件的缓存无效。"
+
+#: libs/factory/core/includes/functions.php:152
+msgid "%1$s is <strong>deprecated</strong> since version %2$s with no alternative available."
+msgstr "%1$s 是 <strong>弃用</strong> 自版本 %2$s没有其他选择。"
+
+#: libs/factory/core/includes/functions.php:150
+msgid "%1$s is <strong>deprecated</strong> since version %2$s! Use %3$s instead."
+msgstr "%1$s 是 <strong>弃用</strong> 自版本 %2$s！使用%3$s 代替。"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:164
+msgid "Get the ultimate plugin 100% FREE"
+msgstr "获得100％免费的终极插件"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:150
+msgid "In quick mode, you can easily configure the plugin according to your needs."
+msgstr "在快速模式下，您可以轻松地配置的插件，根据您的需求。"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:149
+msgid "Easy setup"
+msgstr "简易安装"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:142
+msgid ""
+"Allows you to hide the version of the site and plugins. Allows you to hide your\n"
+"\t\t\t\t\t\t\tWordPress."
+msgstr ""
+"允许您隐藏站点和插件的版本。允许您隐藏\n"
+"\t\t\t\t\t\t\tWordPress."
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:141
+msgid "Site privacy"
+msgstr "站点隐私"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:135
+msgid "Increases performance by disabling unused functions and reducing the number of requests."
+msgstr "通过禁用未使用的功能并减少请求数量来提高性能。"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:134
+msgid "Speed Optimization"
+msgstr "速度优化"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:128
+msgid "Allows you to remove unused widgets."
+msgstr "允许您删除未使用的小部件。"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:127
+msgid "Manage widgets"
+msgstr "管理小部件"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:120
+msgid ""
+"Enables or disables automatically updates for plugins, themes and core. It is also possible\n"
+"\t\t\t\t\t\t\tto disable all updates."
+msgstr ""
+"启用或禁用插件、主题和核心的自动更新。这也是可能的\n"
+"\t\t\t\t\t\t\t禁用所有更新。"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:119
+msgid "Manage updates"
+msgstr "管理更新"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:113
+msgid "Disables comments on the entire site or on specific pages."
+msgstr "禁用整个站点或特定页面上的评论。"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:106
+msgid "Enables and disables features that improve the protection of your site."
+msgstr "启用和禁用完善的保护功能，您的站点。"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:105
+msgid "Site protection"
+msgstr "站点保护"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:99
+msgid "Removes duplicate pages, closes external links, changes the headers of the server."
+msgstr "删除重复页面，关闭外部链接，更改服务器的标题。"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:98
+msgid "Improve SEO"
+msgstr "改进SEO"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:92
+msgid "Clears the source code of the page from unused code."
+msgstr "从未使用的代码中清除页面的源代码。"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:64
+msgid "More features (<b>free</b>)"
+msgstr "更多功能（<b>free</b>）"
+
+#: admin/pages/setup/steps/class-step-default.php:18
+msgid "Welcome"
+msgstr "欢迎"
+
+#: components/updates-manager/webcraftic-updates-manager.php:46
+msgid "Webcraftic Updates Manager"
+msgstr "Webcraftic 更新管理器"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:81
+msgid "Updates"
+msgstr "更新"
+
+#: admin/pages/class-pages-components.php:121
+#: components/updates-manager/admin/pages/class-page-updates.php:57
+msgid "Updates manager"
+msgstr "更新管理器"
+
+#: components/comments-plus/includes/classes/class-configurate-comments.php:209
+msgid "Note: The <em>%s</em> plugin is currently active, and comments are completely disabled on: %s. Many of the settings below will not be applicable for those post types."
+msgstr "注意： <em>%s</em> 插件目前处于活动状态，并且在以下情况下完全禁用注释：%s。下面的许多设置将不适用于这些帖子类型。"
+
+#: components/comments-plus/includes/classes/class-configurate-comments.php:168
+#: components/comments-plus/includes/classes/class-configurate-comments.php:220
+msgid "Comments are closed."
+msgstr "评论被关闭。"
+
+#: components/comments-plus/comments-plus.php:46
+msgid "Webcraftic Disable comments"
+msgstr "Webcraftic禁用评论"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:160
+msgid "Select the post types for which comments will be disabled"
+msgstr "选择要禁用评论的帖子类型"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:136
+msgid "On certain post types - Disabling comments will also disable trackbacks and pingbacks. All comment-related fields will also be hidden from the edit/quick-edit screens of the affected posts. These settings cannot be overridden for individual posts."
+msgstr "在某些帖子类型上 - 禁用评论也会禁用trackbacks和pingbacks。所有与评论相关的字段也将隐藏在受影响文章的编辑/快速编辑屏幕中。这些设置无法覆盖个别帖子。"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:136
+msgid "Everywhere - Warning: This option is global and will affect your entire site. Use it only if you want to disable comments everywhere. A complete description of what this option does is available here"
+msgstr "所有 - 警告：这个选项是全局的，会影响您的整个站点。只有当您想禁止任何地方的评论时才使用它。这个选项的完整描述可以在这里找到"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:132
+msgid "You can delete all comments for the selected post types. Select the post types below and save the settings. After that, click the link (<a href=\"%s\">delete all comments for the selected post types in database</a>)."
+msgstr "您可以删除所选帖子类型的所有评论。选择下面的帖子类型并保存设置。之后，点击链接（<a href=\"%s\">删除数据库中所选帖子类型的所有注释</a>）。"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:131
+msgid "On certain post types"
+msgstr "在某些帖子类型上"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:127
+msgid "You can delete all comments in the database by clicking on this link (<a href=\"%s\">cleaning comments in database</a>)."
+msgstr "您可以点击此链接删除数据库中的所有评论（<a href=\"%s\">清理数据库中的注释</a>）。"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:123
+msgid "Not disable"
+msgstr "不禁用"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:102
+msgid "An error occurred while trying to delete comments. Internal error occured. Please try again later."
+msgstr "尝试删除评论时发生错误。发生内部错误。请稍后再试。"
+
+#: components/comments-plus/admin/pages/class-page-delete-comments.php:93
+msgid "All comments have been deleted."
+msgstr "所有评论已被删除。"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:81
+#: components/ga-cache/admin/pages/class-pages-general-settings.php:75
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1439
+#: components/assets-manager/admin/pages/class-pages-settings.php:76
+#: components/assets-manager/admin/pages/class-pages-settings.php:84
+#: components/comments-plus/admin/pages/class-page-comments.php:82
+#: components/html-minify/admin/pages/class-pages-settings.php:77
+#: components/cyrlitera/admin/pages/class-page-cyrlitera.php:82
+#: components/minify-and-combine/admin/pages/class-pages-settings.php:81
+msgid "General"
+msgstr "常规"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:82
+msgid "Comments"
+msgstr "注释"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:112
+#: components/comments-plus/admin/pages/class-page-comments.php:58
+#: components/comments-plus/admin/pages/class-page-comments.php:121
+msgid "Disable comments"
+msgstr "禁用评论"
+
+#: components/updates-manager/admin/boot.php:25
+#: components/ga-cache/admin/boot.php:152
+#: components/comments-plus/admin/boot.php:80
+#: components/disable-admin-notices/admin/boot.php:27
+#: components/cyrlitera/admin/boot.php:114
+msgid "Get ultimate plugin free"
+msgstr "免费获取终极插件"
+
+#: components/comments-plus/admin/boot.php:133
+#: components/comments-plus/admin/pages/class-page-comments.php:157
+msgid "Select post types"
+msgstr "选择帖子类型"
+
+#: components/comments-plus/admin/boot.php:127
+msgid "Disable comments on the entire site"
+msgstr "禁用整个站点的评论"
+
+#: libs/factory/clearfy/pages/class-pages-components.php:48
+msgid "Components"
+msgstr "组件"
+
+#: admin/pages/class-pages-defence.php:113
+msgid "Remove html comments in source code."
+msgstr "删除源代码中的html注释。"
+
+#: admin/pages/class-pages-defence.php:113
+msgid "This function will remove all html comments in the source code, except for special and hidden comments. This is necessary to hide the version of installed plugins."
+msgstr "此功能将删除源代码中的所有html注释，特殊和隐藏注释除外。这是隐藏已安装插件的版本所必需的。"
+
+#: admin/pages/class-pages-performance.php:428
+#: admin/pages/class-pages-performance.php:429
+#: admin/pages/class-pages-performance.php:430
+#: admin/pages/class-pages-performance.php:431
+#: admin/pages/class-pages-performance.php:432
+#: admin/pages/class-pages-performance.php:433
+#: admin/pages/class-pages-performance.php:434
+#: admin/pages/class-pages-performance.php:435
+#: admin/pages/class-pages-performance.php:436
+#: admin/pages/class-pages-performance.php:437
+#: admin/pages/class-pages-performance.php:438
+#: admin/pages/class-pages-performance.php:439
+#: admin/pages/class-pages-performance.php:440
+#: admin/pages/class-pages-performance.php:441
+#: admin/pages/class-pages-performance.php:442
+#: admin/pages/class-pages-performance.php:443
+#: admin/pages/class-pages-performance.php:444
+msgid "seconds"
+msgstr "秒"
+
+#: admin/pages/class-pages-performance.php:401
+msgid "Only allow when editing Posts/Pages"
+msgstr "只有在编辑Posts / Pages时才允许"
+
+#: admin/pages/class-pages-performance.php:399
+#: components/comments-plus/admin/pages/class-page-comments.php:126
+msgid "Everywhere"
+msgstr "全部"
+
+#: admin/pages/class-pages-performance.php:398
+msgid "Default"
+msgstr "默认"
+
+#: admin/pages/class-pages-performance.php:389
+msgid "The WordPress Heartbeat API uses /wp-admin/admin-ajax.php to run AJAX calls from the web-browser. While this is great and all it can also cause high CPU usage and crazy amounts of PHP calls. For example, if you leave your dashboard open it will keep sending POST requests to this file on a regular interval, every 15 seconds. Here is an example below of it happening."
+msgstr "WordPress Heartbeat API使用/wp-admin/admin-ajax.php从网络浏览器运行AJAX调用。虽然这很好，但它也会导致高CPU使用率和疯狂的PHP调用。例如，如果您离开您的 仪表板打开它会不停地发送POST定期间隔请求该文件，每15秒。下面是它发生的一个例子。"
+
+#: admin/pages/class-pages-performance.php:389
+msgid "Heartbeat"
+msgstr "心跳"
+
+#: admin/pages/class-pages-performance.php:331
+msgid "Disables automatic saving of drafts."
+msgstr "禁用自动保存草稿。"
+
+#: admin/pages/class-pages-performance.php:331
+msgid "WordPress by default automatically saves a draft every 60 seconds (1 minute). There are reasons why you might want to change this."
+msgstr "WordPress默认每60秒自动保存一次草稿（1分钟）。有理由为什么您可能想改变这一点。"
+
+#: admin/pages/class-pages-performance.php:296
+#: admin/pages/class-pages-performance.php:427
+msgid "Wordpress default"
+msgstr "WordPress 默认"
+
+#: admin/pages/class-pages-performance.php:274
+msgid "In this group of options, you can manage revisions and post autosave."
+msgstr "在这组选项中，您可以管理修订并发布自动保存。"
+
+#: admin/pages/class-pages-advanced.php:81
+msgid "Disable admin top bar."
+msgstr "禁用管理顶部栏。"
+
+#: admin/pages/class-pages-advanced.php:81
+msgid "In some cases, you need to disable the floating top admin panel. You can disable this panel."
+msgstr "在某些情况下, 您需要禁用浮动顶部管理面板。您可以禁用此面板。"
+
+#: admin/pages/class-pages-advanced.php:77
+msgid "For all users except administrator"
+msgstr "除管理员以外的所有用户"
+
+#: admin/pages/class-pages-advanced.php:74
+msgid "For all users"
+msgstr "对于所有用户"
+
+#: admin/pages/class-pages-advanced.php:73
+msgid "Default enable"
+msgstr "默认启用"
+
+#: admin/pages/class-pages-advanced.php:64
+msgid "In this group of settings, you can manage the adminbar."
+msgstr "在这组设置中，您可以管理管理栏。"
+
+#: admin/pages/class-pages-advanced.php:64
+msgid "Admin bar"
+msgstr "管理栏"
+
+#: admin/pages/class-pages-components.php:148
+msgid "Disable admin notices"
+msgstr "禁用管理员通知"
+
+#: admin/includes/options.php:378 admin/pages/class-pages-defence.php:111
+msgid "Remove html comments"
+msgstr "删除html评论"
+
+#: admin/includes/options.php:373 admin/pages/class-pages-performance.php:425
+msgid "Heartbeat frequency"
+msgstr "心跳频率"
+
+#: admin/includes/options.php:368 admin/pages/class-pages-performance.php:396
+msgid "Disable Heartbeat"
+msgstr "禁用心跳"
+
+#: admin/includes/options.php:363
+msgid "Disable auto inserted paragraphs (i.e. p tags)"
+msgstr "禁用自动插入的段落（i.e. p tags）"
+
+#: admin/includes/options.php:358
+msgid "Disable capitalization in Wordpress branding"
+msgstr "在Wordpress品牌中禁用大小写"
+
+#: admin/includes/options.php:353
+msgid "Disable Texturization - Smart Quotes"
+msgstr "禁用组织化 - 智能引用"
+
+#: admin/includes/options.php:348 admin/pages/class-pages-performance.php:329
+msgid "Disable autosave"
+msgstr "禁用自动保存"
+
+#: admin/includes/options.php:333
+msgid "Replace \"Howdy\" text with \"Welcome\""
+msgstr "用 \"欢迎\" 取代 \"您好\" 文本"
+
+#: admin/includes/options.php:328
+msgid "Remove admin bar WP logo"
+msgstr "删除管理栏的 WP Logo"
+
+#: admin/includes/options.php:323 admin/pages/class-pages-advanced.php:71
+msgid "Disable admin top bar"
+msgstr "禁用管理顶部栏"
+
+#: admin/includes/options.php:318
+msgid "Enable Sanitization of WordPress"
+msgstr "启用 清除处理WordPress"
+
+#. Description of the plugin
+msgid "Disables unused Wordpress features, improves performance and increases SEO rankings, using Clearfy, which makes WordPress very easy."
+msgstr "禁用未使用的Wordpress功能，提高性能并增加SEO排名，使用Clearfy，这使WordPress非常容易。"
+
+#: libs/factory/forms/controls/pattern.php:117
+msgid "Changing the color may takes a minute or more. Please be patient."
+msgstr "更改颜色可能需要一分钟或更长时间。请耐心等待。"
+
+#: libs/factory/forms/controls/pattern.php:114
+msgid "Select color:"
+msgstr "选择颜色："
+
+#: libs/factory/forms/controls/pattern.php:107
+msgid "re-color"
+msgstr "重彩"
+
+#: libs/factory/forms/controls/pattern.php:105
+msgid "Change color"
+msgstr "换颜色"
+
+#: libs/factory/forms/controls/paddings-editor.php:70
+msgid "Select a side and move the slider to set up:"
+msgstr "选择一侧并移动滑块进行设置："
+
+#: libs/factory/forms/controls/holders/more-link.php:58
+msgid "hide extra options"
+msgstr "隐藏额外的选项"
+
+#: libs/factory/forms/controls/gradient.php:70
+msgid "horizontal"
+msgstr "横"
+
+#: libs/factory/forms/controls/gradient.php:69
+msgid "vertical"
+msgstr "竖"
+
+#: libs/factory/forms/controls/google-font.php:136
+msgid "Unexpected error. The list of Google Fonts are empty."
+msgstr "意外的错误。Google字体列表为空。"
+
+#: libs/factory/forms/controls/google-font.php:126
+msgid "Invalide response from the Google Fonts API."
+msgstr "Google Fonts API 无效响应。"
+
+#: libs/factory/forms/controls/google-font.php:118
+msgid "Unable to retrieve the list of Google Fonts."
+msgstr "无法检索Google字体列表。"
+
+#: libs/factory/forms/controls/google-font.php:68
+msgid "Google Fonts:"
+msgstr "Google字体："
+
+#: libs/factory/forms/controls/google-font.php:57
+msgid "Standard:"
+msgstr "标准："
+
+#: libs/factory/forms/controls/font.php:190
+msgid "Monospaced:"
+msgstr "等宽："
+
+#: libs/factory/forms/controls/font.php:134
+msgid "Serif:"
+msgstr "衬线:"
+
+#: libs/factory/forms/controls/font.php:83
+msgid "Sans Serif:"
+msgstr "无衬线字体："
+
+#: libs/factory/forms/controls/font.php:80
+#: libs/factory/forms/controls/google-font.php:52
+msgid "(use default website font)"
+msgstr "（使用默认的站点字体）"
+
+#: libs/factory/forms/controls/dropdown.php:271
+#: libs/factory/forms/controls/dropdown.php:352
+msgid "- empty -"
+msgstr " - 空 - "
+
+#: libs/factory/forms/controls/dropdown.php:126
+#: libs/factory/forms/controls/list.php:96
+#: libs/factory/forms/controls/list.php:139
+msgid "The list is empty."
+msgstr "该列表是空的。"
+
+#: libs/factory/forms/controls/checkbox.php:136
+#: components/updates-manager/admin/pages/class-page-themes.php:458
+#: components/updates-manager/admin/pages/class-page-themes.php:477
+#: components/updates-manager/admin/pages/class-page-themes.php:496
+#: components/updates-manager/admin/pages/class-page-plugins.php:499
+#: components/updates-manager/admin/pages/class-page-plugins.php:516
+#: components/updates-manager/admin/pages/class-page-plugins.php:532
+#: components/updates-manager/admin/pages/class-page-plugins.php:548
+msgid "Off"
+msgstr "关闭"
+
+#: libs/factory/forms/controls/checkbox.php:133
+#: components/updates-manager/admin/pages/class-page-themes.php:457
+#: components/updates-manager/admin/pages/class-page-themes.php:476
+#: components/updates-manager/admin/pages/class-page-themes.php:495
+#: components/updates-manager/admin/pages/class-page-plugins.php:498
+#: components/updates-manager/admin/pages/class-page-plugins.php:515
+#: components/updates-manager/admin/pages/class-page-plugins.php:531
+#: components/updates-manager/admin/pages/class-page-plugins.php:547
+msgid "On"
+msgstr "开启"
+
+#: includes/classes/class.zip-archive.php:15
+msgid "The ZipArchive class does not exist in this version of php."
+msgstr "ZipArchive类在这个版本的php中不存在。"
+
+#: includes/classes/class.configurate-security.php:214
+msgid "<strong>ERROR</strong>: Wrong login or password"
+msgstr "<strong>ERROR</strong>：错误的登录名或密码"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:204
+msgid "Enable Automatic Updates even if a VCS folder (.git, .hg, .svn) was found in the WordPress directory"
+msgstr "即使在WordPress目录中找到VCS文件夹（.git，.hg，.svn），也启用自动更新"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:177
+msgid "Development - update automatically to Bleeding Edge releases."
+msgstr "开发 - 自动更新到Bleeding Edge版本。"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:177
+msgid "Minor - automatically update to minor releases (e.g., 4.1.1, 4.1.2, 4.1.3).."
+msgstr "次要 - 自动更新为次要版本（例如，4.1.1,4.1.2,4.1.3）.."
+
+#: components/updates-manager/admin/pages/class-page-updates.php:177
+msgid "Major - automatically update to major releases (e.g., 4.1, 4.2, 4.3)."
+msgstr "重大 - 自动更新到主要版本（例如4.1,4.2,4.3）。"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:177
+msgid "You can disable all core WordPress updates, or disable only automatic updates. Also you can select the update mode. By default (minor)"
+msgstr "您可以禁用所有核心WordPress 更新，或仅禁用自动更新。此外，您可以选择更新模式。默认情况下（次要）"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:173
+msgid "Allow development auto updates"
+msgstr "允许开发自动更新"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:169
+msgid "Allow major auto updates"
+msgstr "允许主要的自动更新"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:165
+msgid "Allow minor auto updates"
+msgstr "允许次要的自动更新"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:162
+msgid "Disable auto updates"
+msgstr "禁用自动更新"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:159
+msgid "WordPress Core Updates"
+msgstr "WordPress核心更新"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:142
+msgid "You can disable all themes updates or choose manual or automatic update mode."
+msgstr "您可以禁用所有主题 更新或选择手动或自动更新模式。"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:135
+msgid "Theme Updates"
+msgstr "主题 更新"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:127
+msgid "You can disable all plugin updates or choose manual or automatic update mode."
+msgstr "您可以禁用所有插件 更新或选择手动或自动更新模式。"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:360
+#: components/updates-manager/admin/pages/class-page-themes.php:378
+#: components/updates-manager/admin/pages/class-page-updates.php:124
+#: components/updates-manager/admin/pages/class-page-updates.php:139
+#: components/updates-manager/admin/pages/class-page-updates.php:161
+#: components/updates-manager/admin/pages/class-page-plugins.php:377
+#: components/updates-manager/admin/pages/class-page-plugins.php:397
+msgid "Disable updates"
+msgstr "禁用更新"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:123
+#: components/updates-manager/admin/pages/class-page-updates.php:138
+msgid "Enable auto updates"
+msgstr "启用自动更新"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:122
+#: components/updates-manager/admin/pages/class-page-updates.php:137
+msgid "Manual updates"
+msgstr "手动更新"
+
+#: components/updates-manager/admin/pages/class-page-updates.php:120
+msgid "Plugin Updates"
+msgstr "插件更新"
+
+#: admin/pages/class-pages-seo.php:228
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:116
+msgid "Removes the Yoast SEO plugin comment of their section %s"
+msgstr "删除他们部分的Yoast SEO 插件评论%s"
+
+#: admin/pages/class-pages-seo.php:228
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:116
+msgid "The Yoast SEO plugin displays a comment of the form %s in %s section"
+msgstr "Yoast SEO 插件显示表单的评论%s 在 %s 部分"
+
+#: admin/pages/class-pages-seo.php:175
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:83
+msgid "In older versions of Yoast SEO may not work - update the plugin Yoast"
+msgstr "在旧版本的Yoast SEO可能无法正常工作- 更新的插件 Yoast"
+
+#: admin/pages/class-pages-seo.php:175
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:83
+msgid "Attention! After activation, turn off the site map and enable it back to regenerate it."
+msgstr "注意！激活后，关闭站点地图并启用它以重新生成它。"
+
+#: admin/pages/class-pages-seo.php:175
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:83
+msgid "Remove the tag %s from XML site map of the plugin Yoast SEO."
+msgstr "删除标签 %s从插件 Yoast SEO的XML站点地图。"
+
+#: admin/pages/class-pages-seo.php:175
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:83
+msgid "Yandex.Webmaster swears on a standard XML card from the plugin Yoast, tk. it has a specific tag"
+msgstr "Yandex.Webmaster在插件 Yoast，tk 的标准XML卡上发誓。它有一个特定的标签"
+
+#: admin/pages/class-pages-seo.php:165
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:73
+msgid "Removes duplication of the name in the breadcrumbs of the WP SEO plugin from Yoast."
+msgstr "从Yoast 删除WP SEO 插件breadcrumbs中名称的重复。"
+
+#: admin/pages/class-pages-seo.php:165
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:73
+msgid "The last element in the breadcrumbs in the Yoast SEO plugin duplicates the title of the article. Some SEO-specialists consider this duplication to be superfluous."
+msgstr "Yoast SEO 插件中breadcrumbs的最后一个元素重复了文章的标题。一些SEO专家认为这种重复是多余的。"
+
+#: admin/pages/class-pages-seo.php:156
+msgid "These settings will help you eliminate some problems associated with the popular Yoast SEO plugin"
+msgstr "这些设置将帮助您消除与流行的Yoast SEO 插件相关的一些问题"
+
+#: admin/pages/class-pages-seo.php:156
+msgid "For the Yoast SEO plugin"
+msgstr "对于Yoast SEO 插件"
+
+#: admin/pages/class-pages-seo.php:142
+msgid "You can specify a page mask, for example: %s or %s. All pages that contain the string will be excluded. Each exclude must begin with a new line."
+msgstr "您可以指定一个页面掩码，例如：%s 或 %s。所有包含该字符串的页面都将被排除。每个排除都必须以新行开始。"
+
+#: admin/pages/class-pages-seo.php:111
+msgid "WordPress does not know how to give the Last Modified header in the server's responses. You can do this using the settings below."
+msgstr "WordPress不知道如何在服务器的响应中提供Last Modified标题。您可以使用下面的设置来执行此操作。"
+
+#: admin/pages/class-pages-seo.php:111
+msgid "Server headers and response"
+msgstr "服务器标题和响应"
+
+#: admin/pages/class-pages-seo.php:91
+msgid "Automatically creates the perfect robots.txt file"
+msgstr "自动创建完美的robots.txt文件"
+
+#: admin/pages/class-pages-seo.php:91
+msgid "After installation, WP does not contain a robots.txt file and create it manually. We re-read about 30 different articles, instructions from Yandex and Google to create the perfect robots.txt"
+msgstr "安装后，WP不包含robots.txt文件并手动创建。我们重新阅读了大约30篇不同的文章，来自Yandex和Google的说明，以创建完美的robots.txt"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:217
+msgid "In some Wordpress topics this may not work."
+msgstr "在一些Wordpress主题中，这可能不起作用。"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:217
+msgid "Replaces the links of the authors of comments on the JavaScript code, it is impossible to distinguish it from usual links."
+msgstr "替换JavaScript代码中评论作者的链接，不可能将其与通常的链接区分开来。"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:217
+msgid "Up to 90 percent of comments in the blog can be left for the sake of an external link. Even nofollow from page weight loss here does not help."
+msgstr "为了实现外部链接，博客中最多有90％的评论可以留下。即使从页面减肥nofollow 这没有帮助。"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:208
+msgid "Replaces the links of this kind of %s, on links of this kind %s"
+msgstr "取代这种类型的链接 %s，在这种链接上 %s"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:208
+msgid "Superfluous external links from comments, which can be typed from a dozen and more for one article, do not bring anything good for promotion."
+msgstr "来自评论的多余的外部链接，可以从一篇文章中打出十几篇更多的文章，不会带来任何有利于促销的内容。"
+
+#: admin/pages/class-pages-seo.php:81
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:35
+msgid "Replaces the %s, on attribute with an article name %s"
+msgstr "取代了 %s，与属性和文章名称 %s"
+
+#: admin/pages/class-pages-seo.php:81
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:35
+msgid "The alt attribute is mandatory, so most SEO experts say. If you missed or did not fill it at all, it will be automatically assigned and will be equal to the title of the article."
+msgstr "alt属性是强制性的，所以大多数SEO专家说。如果您错过了或根本没有填写它，它将被自动分配并且将等于文章的标题。"
+
+#: admin/pages/class-pages-clearfy-settings.php:180
+msgid "We guarantee to respond you within 7 business day."
+msgstr "我们保证在7个工作日内回复您。"
+
+#: admin/pages/class-pages-clearfy-settings.php:173
+msgid "Generate Debug Report"
+msgstr "生成调试报告"
+
+#: admin/pages/class-pages-clearfy-settings.php:171
+msgid "Generate a debug report which will contains inforamtion about your configuratin and installed plugins"
+msgstr "生成一个调试报告，其中将包含关于您的配置和安装插件的信息"
+
+#: admin/pages/class-pages-clearfy-settings.php:168
+msgid "If you faced with any issues, please follow the steps below to get quickly quality support:"
+msgstr "如果您遇到任何问题，请按照以下步骤快速获得质量支持："
+
+#: admin/pages/class-pages-clearfy-settings.php:130
+msgid "Support"
+msgstr "支持"
+
+#: admin/pages/class-pages-clearfy-settings.php:158
+msgid "Import options"
+msgstr "导入选项"
+
+#: admin/pages/class-pages-clearfy-settings.php:155
+msgid "Import/Export settings"
+msgstr "导入/导出设置"
+
+#: admin/pages/class-pages-quick-start.php:106
+#: admin/pages/class-pages-clearfy-settings.php:75
+msgid "During the setup, an unknown error occurred, please try again or contact the plugin support."
+msgstr "在安装过程中，发生未知错误，请重试或联系插件支持。"
+
+#: admin/pages/class-pages-quick-start.php:105
+#: admin/pages/class-pages-clearfy-settings.php:74
+msgid "Settings successfully updated!"
+msgstr "设置已成功更新！"
+
+#: admin/pages/class-pages-quick-start.php:161
+msgid "Cancel"
+msgstr "取消"
+
+#: admin/pages/class-pages-quick-start.php:160
+msgid "Confirm"
+msgstr "确认"
+
+#: admin/pages/class-pages-quick-start.php:156
+#: admin/pages/class-pages-quick-start.php:204
+msgid "After confirmation, all the settings of the plug-in will return to the default state. Make backup settings by copying data from the export field."
+msgstr "确认后，插件的所有设置将恢复为默认状态。通过从导出字段复制数据来进行备份设置。"
+
+#: admin/pages/class-pages-quick-start.php:153
+msgid "Are you sure you want to enable the this options?"
+msgstr "难道您确定您要启用这个选项？"
+
+#: admin/pages/class-pages-quick-start.php:147
+msgid "Reset all settings"
+msgstr "重置所有设置"
+
+#: components/updates-manager/admin/pages/class-page-themes.php:363
+#: components/updates-manager/admin/pages/class-page-plugins.php:380
+msgid "Disable auto-updates"
+msgstr "禁用自动更新"
+
+#: admin/pages/class-pages-quick-start.php:122
+msgid "On this page you can quickly configure the plug-in without going into details."
+msgstr "在此页面上， 您可以快速配置插件，而不必详细介绍。"
+
+#: admin/pages/class-pages-performance.php:384
+msgid "Example"
+msgstr "例"
+
+#: admin/pages/class-pages-performance.php:384
+msgid "Enter Stylesheet/Script file names to exclude from version removal (each exclude file starts with a new line)"
+msgstr "输入样式表/脚本文件名称以从版本删除中排除（每个排除文件都以新行开头）"
+
+#: admin/pages/class-pages-performance.php:348
+msgid "Removes wordpress version number from scripts (not logged in user only)."
+msgstr "从脚本中删除wordpress版本号（未登录用户）。"
+
+#: admin/pages/class-pages-performance.php:359
+msgid "Removes the wordpress version number from stylesheets (not logged in user only)."
+msgstr "从样式表中删除wordpress版本号（未登录用户）。"
+
+#: admin/pages/class-pages-performance.php:347
+#: admin/pages/class-pages-performance.php:358
+msgid ""
+"To make it more difficult for others to hack your website you can remove the WordPress version number from your site, your css and js. Without that number it's not possible to see if you run not the current version to exploit bugs from the older versions. <br><br>\n"
+"\t\t\t\t\tAdditionally it can improve the loading speed of your site, because without query strings in the URL the css and js files can be cached."
+msgstr ""
+"为了让别人更难以破解您的站点，您可以从您的站点，您的 CSS和JS中删除WordPress的版本号。如果没有这个数字是不可能的，看看您跑不是当前版本，从旧版本的漏洞错误。 <br><br>\n"
+"\t\t\t\t\t此外，它可以提高加载速度您的站点，因为没有查询字符串的URL中的CSS和JS文件可以被缓存。"
+
+#: admin/pages/class-pages-defence.php:123
+msgid "Removes the meta tag from the %s section"
+msgstr "从中删除元标记%s 部分"
+
+#: admin/pages/class-pages-defence.php:123
+msgid "Allows attacker to learn the version of WP installed on the site. This meta tag has no useful function."
+msgstr "允许攻击者了解站点上安装的WP版本。这个元标记没有有用的功能。"
+
+#: admin/pages/class-pages-seo-double-pages.php:133
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:157
+msgid "?relpytocom remove and and puts a redirect."
+msgstr "?relpytocom 删除并放置重定向。"
+
+#: admin/pages/class-pages-seo-double-pages.php:133
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:157
+msgid "WordPress adds %s to the link \"Reply\" in the comments, if you use hierarchical comments."
+msgstr "WordPress增加了 %s到评论中的链接“回复”，如果您使用分层注释。"
+
+#: admin/pages/class-pages-seo-double-pages.php:123
+msgid "Removes the pagination from the post and puts a redirect. Example: %s"
+msgstr "从帖子中删除分页并放置重定向。例：%s"
+
+#: admin/pages/class-pages-seo-double-pages.php:123
+msgid "In WordPress, any post can be divided into parts (pages), each part will have its own address. But this functionality is rarely used, but it can create trouble for you. For example, you can add a number to the address of any entry of your blog, %s - the post itself will open, which will be a duplicate. You can substitute any number."
+msgstr "在WordPress中，任何帖子都可以分成部分（页面），每个部分都会有自己的地址。但是这个功能很少使用，但它可能会给您带来麻烦。例如，您可以添加一个数字的任何条目的地址您的博客，%s- 帖子本身将打开，这将是重复的。您可以替换任何数字。"
+
+#: admin/pages/class-pages-seo-double-pages.php:113
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:46
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:61
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:147
+msgid "Removes attachment pages and puts a redirect."
+msgstr "删除附件页面并放置重定向。"
+
+#: admin/pages/class-pages-seo-double-pages.php:113
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:147
+msgid "Every of the pictures has its own page on the site. Such pages are successfully indexed and create duplicates. The site can have thousands of same-type attachment pages."
+msgstr "每一个图片都有自己的网页上的站点。这些页面已成功建立索引并创建重复项。该站点可以拥有数千个相同类型的附件页面。"
+
+#: admin/pages/class-pages-seo-double-pages.php:103
+msgid "Removes all pages with the tag archives and puts a redirect."
+msgstr "使用标记存档移除所有页面并放置重定向。"
+
+#: admin/pages/class-pages-seo-double-pages.php:103
+msgid "If you use tags only for the block Similar records, or do not use them at all - it will be more correct to close them to avoid duplicates."
+msgstr "如果您仅将标签用于块类似的记录，或根本不使用它们 - 关闭它们以避免重复将更为正确。"
+
+#: admin/pages/class-pages-seo-double-pages.php:93
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:137
+msgid "Removes all pages with the author archives and puts a redirect."
+msgstr "使用作者档案删除所有页面并放置重定向。"
+
+#: admin/pages/class-pages-seo-double-pages.php:93
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:137
+msgid "If the site is only filled by you - a mandatory item. Allows you to get rid of duplicates on user archives, for example %s."
+msgstr "如果站点只是由您填写- 一个强制性项目。例如，允许您摆脱用户归档中的重复项%s。"
+
+#: admin/pages/class-pages-seo-double-pages.php:83
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:127
+msgid "Removes all pages with the date archives and puts a redirect."
+msgstr "删除包含日期归档的所有页面并放入重定向。"
+
+#: admin/pages/class-pages-seo-double-pages.php:83
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:127
+msgid "Many duplicates in date archives. Imagine, in addition, that your article will be displayed in the main and in the category, you will still receive at least 3 duplicates: in archives by year, month and date, for example %s."
+msgstr "日期归档中有许多重复项。另外，想象一下，您的文章将显示在主类别和类别中，但您仍然会收到至少3个副本：例如，按年份，月份和日期归档%s。"
+
+#: admin/pages/class-pages-defence.php:83
+msgid "Removes the server responses a reference to the xmlrpc file."
+msgstr "删除服务器响应中对xmlrpc文件的引用。"
+
+#: admin/pages/class-pages-defence.php:83
+msgid "A pingback is basically an automated comment that gets created when another blog links to you. A self-pingback is created when you link to an article within your own blog. Pingbacks are essentially nothing more than spam and simply waste resources."
+msgstr "pingback基本上是一个自动评论，当另一个博客链接到您时，它会被创建。当创建一个自参照通知您中链接到一篇文章您自己的博客。Pingbacks实际上只不过是垃圾邮件，简直就是浪费资源。"
+
+#: admin/pages/class-pages-defence.php:81
+msgid "Disable XML-RPC"
+msgstr "禁用XML-RPC"
+
+#: admin/pages/class-pages-defence.php:73
+msgid "Changes in the text of the error so that attackers could not find the login."
+msgstr "错误文本的更改使攻击者无法找到登录名。"
+
+#: admin/pages/class-pages-defence.php:73
+msgid "WP by default shows whether you entered a wrong login or incorrect password, which allows attackers to understand if there is a certain user on the site, and then start searching through the passwords."
+msgstr "WP默认显示是否您输入了错误的登录名或密码不正确，这允许攻击者了解是否存在对特定用户的站点，然后开始通过密码进行搜索。"
+
+#: admin/pages/class-pages-defence.php:63
+msgid "Sets the redirect to exclude the possibility of obtaining a login."
+msgstr "设置重定向以排除获取登录的可能性。"
+
+#: admin/pages/class-pages-defence.php:63
+msgid "An attacker can find out the author's login, using a similar request to get your site. mysite.com/?author=1"
+msgstr "攻击者可以使用类似的请求获取您的站点，以找出作者的登录名。mysite.com/?author=1"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:197
+#: admin/pages/class-pages-performance.php:236
+msgid "Removes .recentcomments styles from head section."
+msgstr "从头部删除.recentcomments样式。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:197
+#: admin/pages/class-pages-performance.php:236
+msgid "WP by default for the widget \"recent comments\" prescribes in the code styles that are almost impossible to change, because to them apply! important."
+msgstr "默认情况下，小部件“最近的评论”在代码样式中规定了几乎不可能改变的地方，因为它们适用于！重要。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:187
+#: admin/pages/class-pages-performance.php:226
+msgid "Remove the previous and next post links within the wp_head of your wordpress theme."
+msgstr "取出一个和下一个岗位的wp_head内的链接您的WordPress 主题。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:187
+#: admin/pages/class-pages-performance.php:226
+msgid "If you use Wordpress as a CMS, then you can delete these links, they can only come in handy for a blog."
+msgstr "如果您使用WordPress作为CMS，那么您可以删除这些链接，它们只能派上用场。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:177
+#: admin/pages/class-pages-performance.php:216
+msgid "Remove Shortlink link tag."
+msgstr "移除短链接标记。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:177
+#: admin/pages/class-pages-performance.php:216
+msgid "By default, the following tag shows up in every WordPress install. %s This is used for a shortlink to your pages and posts. However, if you are already using pretty permalinks, such as domain.com/post, then there is no reason to keep this, it is just unnecessary code."
+msgstr "默认情况下，每个WordPress安装都会显示以下标签。%s这用于指向您的 页面和帖子的短链接。但是，如果您已经使用了相当的永久链接，如domain.com/ 后，则没有理由保持这种，它只是不必要的代码。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:167
+#: admin/pages/class-pages-performance.php:206
+msgid "Remove wlwmanifest (Windows Live Writer) link tag."
+msgstr "删除wlwmanifest（Windows Live Writer）链接标记。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:167
+#: admin/pages/class-pages-performance.php:206
+msgid "This link is actually used by Windows Live Writer. If you don’t know use Windows Live Writer, which we are guessing you don’t, this is just unnecessary code."
+msgstr "该链接实际上由Windows Live Writer使用。如果您不知道使用Windows Live Writer，我们猜测您不这样做，这只是不必要的代码。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:157
+#: admin/pages/class-pages-performance.php:185
+msgid "Remove RSD (Real Simple Discovery) link tag."
+msgstr "删除RSD（Real Simple Discovery）链接标签。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:157
+#: admin/pages/class-pages-performance.php:185
+msgid "The above link is used by blog clients. If you edit your site from your browser then you don’t need this. It is also used by some 3rd party applications that utilize XML-RPC requests. In most cases, this is just unnecessary code."
+msgstr "上面的链接被博客客户端使用。如果您从您的浏览器编辑您的站点，那么您不需要这个。它也被一些利用XML-RPC请求的第三方应用程序使用。在大多数情况下，这只是不必要的代码。"
+
+#: admin/pages/class-pages-performance.php:166
+msgid "Removes WordPress Embed JavaScript file (wp-embed.min.js)"
+msgstr "删除WordPress Embed  JavaScript文件（wp-embed.min.js）"
+
+#: admin/pages/class-pages-performance.php:166
+msgid "Embeds were released with WordPress 4.4. This is basically the magic that auto converts your YouTube videos, Tweets, and URLs into pretty previews while you are editing. However, this actually loads a JavaScript file (wp-embed.min.js) on every page of your website. If you don’t care about the auto converting preview (which we don’t), you can disable this across your site."
+msgstr "嵌入与WordPress 4.4发布。这基本上就是您在编辑时自动将您的 YouTube 视频，推文和网址转换为漂亮预览的魔力。然而，这其实每加载一个JavaScript文件（WP-embed.min.js）页的您的站点。如果您不关心自动转换预览（我们不这样做），您可以在您的站点中禁用它。 "
+
+#: admin/pages/class-pages-performance.php:156
+msgid "Warning! If there is a broke on your site, disable this option!"
+msgstr "警告！如果您的站点出现故障，请禁用此选项！"
+
+#: admin/pages/class-pages-performance.php:156
+msgid "Removes jQuery Migrate JavaScript file (jquery-migrate.min.js)."
+msgstr "删除jQuery Migrate JavaScript文件（jQuery-migrate.min.js）。"
+
+#: admin/pages/class-pages-performance.php:156
+msgid "They started adding jQuery migrate in WordPress 3.6. Most up-to-date frontend code and plugins don’t require jquery-migrate.min.js. In most cases, this simply adds unnecessary load to your site. You can see this running if you launch Chrome Devtools console."
+msgstr "他们开始在WordPress 3.6中添加jQuery迁移。大多数最新的前端代码和插件不需要jquery-migrate.min.js。在大多数情况下，这只会给您的站点增加不必要的负载。您可以看到这个运行，如果您推出的Chrome Devtools控制台。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:147
+#: admin/pages/class-pages-performance.php:146
+msgid "Removes WordPress Emojis JavaScript file (wp-emoji-release.min.js)."
+msgstr "删除WordPress Emojis JavaScript文件（wp-emoji-release.min.js）。"
+
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:147
+#: admin/pages/class-pages-performance.php:146
+msgid "Emojis are fun and all, but if you are aren’t using them they actually load a JavaScript file (wp-emoji-release.min.js) on every page of your website. For a lot of businesses, this is not needed and simply adds load time to your site. So we recommend disabling this."
+msgstr "表情符号，是乐趣和所有，但如果您正在使用的不是他们，他们其实每加载一个JavaScript文件（wp-emoji-release.min.js）页的您的站点。对于很多企业来说，这是没有必要，只是增加了加载时间到您的站点。所以我们建议禁用这个。"
+
+#: admin/pages/class-pages-seo.php:79 admin/pages/class-pages-seo.php:118
+#: admin/pages/class-pages-seo.php:132 admin/pages/class-pages-seo.php:149
+#: admin/pages/class-pages-seo.php:163 admin/pages/class-pages-seo.php:173
+#: admin/pages/class-pages-seo.php:226
+#: admin/pages/class-pages-performance.php:345
+#: admin/pages/class-pages-performance.php:356
+#: admin/pages/class-pages-defence.php:121
+msgid "Recommended"
+msgstr "推荐的"
+
+#: admin/pages/class-pages-performance.php:125
+msgid "Removes REST API link tag from the front end and the REST API header link from page requests."
+msgstr "从前端删除REST API链接标记，并从页面请求中删除REST API 标头链接。"
+
+#: admin/pages/class-pages-performance.php:125
+msgid "The WordPress REST API provides API endpoints for WordPress data types that allow developers to interact with sites remotely by sending and receiving JSON (JavaScript Object Notation) objects. However, a lot of sites don’t use this, and therefore in most cases, it is just unnecessary code."
+msgstr "WordPress REST API为WordPress数据类型提供API端点，允许开发人员通过发送和接收JSON（JavaScript Object Notation）对象与站点进行远程交互。但是，很多站点并未使用这种方式，因此在大多数情况下，这只是不必要的代码。"
+
+#: admin/pages/class-pages-performance.php:95
+msgid "Removes a link to the RSS-feed from the %s section, closes and puts the redirect from all RSS-feeds."
+msgstr "从中删除指向RSS提要的链接 %s 部分，关闭并放置来自所有RSS提要的重定向。"
+
+#: admin/pages/class-pages-performance.php:95
+msgid "By default, WordPress generates all types of different RSS feeds for your site. While RSS feeds can be useful if you are running a blog, businesses might not always utilize these. Not every site out there has a blog."
+msgstr "默认情况下，WordPress为您的站点生成所有类型的不同RSS源。如果您正在运行博客，RSS提要可能很有用，但企业可能并不总是利用这些提示。并非每个站点都有博客。"
+
+#: admin/pages/class-pages-performance.php:70
+msgid "Warning! In the wp-config.php file, a constant WP_POST_REVISIONS is found, it determines the number of revisions. Delete it so you can change this value through the admin panel."
+msgstr "警告！在wp-config.php文件中，找到了一个常量WP_POST_REVISIONS，它确定了修订的数量。其删除，以便您可以通过管理面板更改此值。"
+
+#: admin/pages/class-pages-performance.php:309
+msgid ""
+"WordPress automatically saves revisions when you are working on posts and pages. These can begin to add up pretty quick. By default, there is no limit in place. We have seen posts with over 1,000 revisions. Multiply this by 50 pages and suddenly you have over 50,000 revisions sitting in your database. The problem with this is that you will most likely never use them and they can start slowing down your database as well as using disk space.\n"
+"So we recommend either disabling or limiting your revisions. "
+msgstr ""
+"当您处理帖子和页面时，WordPress会自动保存修改。这些可以开始加起来非常快。默认情况下，没有限制。我们看到有超过1000个修订版的帖子。把它乘以50 页，突然您有超过5万个修订版放在您的数据库中。这里的问题是，您将最有可能永远不会使用他们，他们可以开始放慢您的数据库，以及使用的磁盘空间。\n"
+" \n"
+"所以我们建议您禁用或限制您的修订。"
+
+#: admin/pages/class-pages-performance.php:297
+#: admin/pages/class-pages-performance.php:298
+#: admin/pages/class-pages-performance.php:299
+#: admin/pages/class-pages-performance.php:300
+#: admin/pages/class-pages-performance.php:301
+#: admin/pages/class-pages-performance.php:302
+#: admin/pages/class-pages-performance.php:303
+#: admin/pages/class-pages-performance.php:304
+#: admin/pages/class-pages-performance.php:305
+#: admin/pages/class-pages-performance.php:306
+msgid "revisions"
+msgstr "修订"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:199
+msgid "Works with the standard comment form, if the form is manually written in your theme-it probably will not work!"
+msgstr "与标准评论表单一起使用，如果表单是手动写入您的 主题 - 可能无法使用！"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:199
+msgid "Removes the \"Site\" field from the comment form."
+msgstr "从评论表单中删除\"Site\"字段。"
+
+#: components/comments-plus/admin/pages/class-page-comments.php:199
+msgid "Tired of spam in the comments? Do visitors leave \"blank\" comments for the sake of a link to their site?"
+msgstr "厌倦了评论中的垃圾邮件？访问者是否为了链接站点而留下 \"blank\" 空白评论？"
+
+#: admin/includes/options.php:313
+msgid "Eclude stylesheet/script file names"
+msgstr "排除样式表/脚本文件名"
+
+#: components/html-minify/admin/pages/class-pages-settings.php:59
+#: components/html-minify/admin/pages/class-pages-settings.php:77
+msgid "HTML Minify"
+msgstr "压缩HTML"
+
+#: admin/includes/options.php:298
+msgid "Removes links to wordpress.org site from the admin bar"
+msgstr "从管理栏中删除指向 wordpress.org站点的链接"
+
+#: components/comments-plus/admin/boot.php:158
+#: components/comments-plus/admin/pages/class-page-comments.php:197
+msgid "Remove field \"site\" in comment form"
+msgstr "在评论中删除 \"site\" 字段"
+
+#: admin/includes/options.php:295 admin/pages/class-pages-performance.php:93
+msgid "Disable RSS feeds"
+msgstr "禁用 RSS 订阅"
+
+#: admin/includes/options.php:294 admin/pages/class-pages-performance.php:164
+msgid "Disable Embeds"
+msgstr "禁用嵌入"
+
+#: admin/includes/options.php:291 admin/pages/class-pages-performance.php:154
+msgid "Remove jQuery Migrate"
+msgstr "删除 jQuery 迁移"
+
+#: admin/includes/options.php:288
+msgid "Quick mode"
+msgstr "快速模式"
+
+#: admin/includes/options.php:285 admin/pages/class-pages-seo.php:104
+msgid "You can edit the robots.txt file in the box below:"
+msgstr "您可以在下面的框中编辑 robots.txt 文件:"
+
+#: admin/includes/options.php:280 admin/pages/class-pages-seo.php:89
+msgid "Create right robots.txt"
+msgstr "创建右 robots.txt"
+
+#: admin/includes/options.php:277 admin/pages/class-pages-seo.php:140
+msgid "Exclude pages:"
+msgstr "排除页面:"
+
+#: admin/includes/options.php:276 admin/includes/options.php:343
+#: admin/pages/class-pages-performance.php:294
+msgid "Limit Post Revisions"
+msgstr "限制文章修订"
+
+#: admin/includes/options.php:275 admin/includes/options.php:338
+#: admin/pages/class-pages-performance.php:281
+msgid "Disable revision"
+msgstr "禁用修订"
+
+#: components/updates-manager/admin/boot.php:96
+#: components/updates-manager/admin/pages/class-page-updates.php:202
+msgid "Enable updates for VCS Installations"
+msgstr "启用 VCS 安装的更新"
+
+#: components/updates-manager/admin/boot.php:90
+msgid "Disable wordPress core updates"
+msgstr "禁用WordPress核心更新"
+
+#: components/updates-manager/admin/boot.php:85
+#: components/updates-manager/admin/pages/class-page-updates.php:150
+msgid "Disable Automatic Translation Updates"
+msgstr "禁用自动翻译更新"
+
+#: components/updates-manager/admin/boot.php:79
+msgid "Disable theme updates"
+msgstr "禁用主题 更新"
+
+#: components/updates-manager/admin/boot.php:73
+msgid "Disable plugin updates"
+msgstr "禁用插件 更新"
+
+#: admin/includes/options.php:272 admin/pages/class-pages-widgets.php:181
+msgid "Remove the \"Twenty Eleven Ephemera\" widget"
+msgstr "删除“Twenty Eleven Ephemera” 小部件"
+
+#: admin/includes/options.php:267 admin/pages/class-pages-widgets.php:172
+msgid "Remove the \"Menu\" widget"
+msgstr "删除“菜单” 小部件"
+
+#: admin/includes/options.php:262 admin/pages/class-pages-widgets.php:163
+msgid "Remove the \"RSS\" widget"
+msgstr "删除“RSS” 小部件"
+
+#: admin/includes/options.php:252 admin/pages/class-pages-widgets.php:154
+msgid "Remove the \"Recent Comments\" widget"
+msgstr "删除“最近的评论” 小部件"
+
+#: admin/includes/options.php:247 admin/pages/class-pages-widgets.php:145
+msgid "Remove the \"Recent Posts\" widget"
+msgstr "删除“最近的帖子 ” 小部件"
+
+#: admin/includes/options.php:242 admin/pages/class-pages-widgets.php:136
+msgid "Remove the \"Categories\" widget"
+msgstr "删除“ 类别 ” 小部件"
+
+#: admin/includes/options.php:237 admin/includes/options.php:257
+#: admin/pages/class-pages-widgets.php:127
+msgid "Remove the \"Text\" widget"
+msgstr "删除“文本” 小部件"
+
+#: admin/includes/options.php:232 admin/pages/class-pages-widgets.php:118
+msgid "Remove the \"Search\" widget"
+msgstr "删除“搜索” 小部件"
+
+#: admin/includes/options.php:227 admin/pages/class-pages-widgets.php:109
+msgid "Remove the \"Meta\" widget"
+msgstr "删除“元” 小部件"
+
+#: admin/includes/options.php:222 admin/pages/class-pages-widgets.php:100
+msgid "Remove the \"Links\" widget"
+msgstr "删除“链接” 小部件"
+
+#: admin/includes/options.php:217 admin/pages/class-pages-widgets.php:91
+msgid "Remove the \"Archives\" widget"
+msgstr "删除“存档” 小部件"
+
+#: admin/includes/options.php:212 admin/pages/class-pages-widgets.php:82
+msgid "Remove the \"Cloud of tags\" widget"
+msgstr "删除“ 标签云” 小部件"
+
+#: admin/includes/options.php:207 admin/pages/class-pages-widgets.php:73
+msgid "Remove calendar widget"
+msgstr "删除日历小部件"
+
+#: admin/includes/options.php:202 admin/pages/class-pages-widgets.php:64
+msgid "Remove the \"Pages\" widget"
+msgstr "删除“ 页面 ” 小部件"
+
+#: admin/includes/options.php:197 admin/includes/options.php:308
+#: admin/pages/class-pages-performance.php:345
+msgid "Remove Version from Script"
+msgstr "从脚本删除版本"
+
+#: admin/includes/options.php:192 admin/includes/options.php:303
+#: admin/pages/class-pages-performance.php:356
+msgid "Remove Version from Stylesheet"
+msgstr "从样式表中删除版本"
+
+#: admin/includes/options.php:187 admin/pages/class-pages-defence.php:71
+msgid "Hide errors when logging into the site"
+msgstr "登录站点时隐藏错误"
+
+#: admin/includes/options.php:182 admin/pages/class-pages-defence.php:61
+msgid "Hide author login"
+msgstr "隐藏作者登录"
+
+#: admin/includes/options.php:177 admin/pages/class-pages-defence.php:121
+msgid "Remove meta generator"
+msgstr "删除元生成器"
+
+#: admin/includes/options.php:172
+#: admin/pages/class-pages-seo-double-pages.php:131
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:155
+msgid "Remove ?replytocom"
+msgstr "删除 ?replytocom"
+
+#: admin/includes/options.php:167
+#: admin/pages/class-pages-seo-double-pages.php:121
+msgid "Remove post pagination"
+msgstr "删除文章分页"
+
+#: admin/includes/options.php:162
+#: admin/pages/class-pages-seo-double-pages.php:111
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:145
+msgid "Remove attachment pages"
+msgstr "删除附件页面"
+
+#: admin/includes/options.php:157
+#: admin/pages/class-pages-seo-double-pages.php:101
+msgid "Remove archives tag"
+msgstr "删除归档标签"
+
+#: admin/includes/options.php:152
+#: admin/pages/class-pages-seo-double-pages.php:91
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:135
+msgid "Remove author archives "
+msgstr "删除作者归档"
+
+#: admin/includes/options.php:147
+#: admin/pages/class-pages-seo-double-pages.php:81
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:125
+msgid "Remove archives date"
+msgstr "删除归档日期"
+
+#: admin/includes/options.php:142 admin/pages/class-pages-seo.php:226
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:114
+msgid "Remove comment from %s section"
+msgstr "删除评论 %s 部分"
+
+#: admin/includes/options.php:127 admin/pages/class-pages-seo.php:173
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:81
+msgid "Remove the tag %s from XML site map"
+msgstr "从XML站点地图中删除标记%s。"
+
+#: admin/includes/options.php:122 admin/pages/class-pages-seo.php:163
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:71
+msgid "Remove duplicate names in breadcrumbs WP SEO by Yoast"
+msgstr "通过Yoast去除面包屑WP SEO中的重复名称"
+
+#: admin/includes/options.php:117 admin/pages/class-pages-seo.php:149
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:59
+msgid "Return an If-Modified-Since responce"
+msgstr "返回If-Modified-Since响应"
+
+#: admin/includes/options.php:112 admin/pages/class-pages-seo.php:118
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:43
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:46
+msgid "Automatically insert the Last Modified header"
+msgstr "自动插入Last Modified标题"
+
+#: components/comments-plus/admin/boot.php:153
+#: components/comments-plus/admin/pages/class-page-comments.php:215
+msgid "Replace external links from comment authors on the JavaScript code"
+msgstr "在JavaScript代码中替换来自评论作者的外部链接"
+
+#: components/comments-plus/admin/boot.php:148
+#: components/comments-plus/admin/pages/class-page-comments.php:206
+msgid "Replace external links in comments on the JavaScript code"
+msgstr "在JavaScript代码的注释中替换外部链接"
+
+#: admin/includes/options.php:107 admin/pages/class-pages-seo.php:79
+#: admin/pages/setup/steps/class-step-setting-seo-optimize.php:33
+msgid "Automatically set the alt attribute"
+msgstr "自动设置alt属性"
+
+#: admin/includes/options.php:101
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:195
+#: admin/pages/class-pages-performance.php:234
+msgid "Remove .recentcomments styles"
+msgstr "删除.recentcomments风格"
+
+#: admin/includes/options.php:96
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:185
+#: admin/pages/class-pages-performance.php:224
+msgid "Remove links to previous, next post"
+msgstr "删除前一个，下一个帖子的链接"
+
+#: admin/includes/options.php:91
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:175
+#: admin/pages/class-pages-performance.php:214
+msgid "Remove Shortlink"
+msgstr "删除短链接"
+
+#: admin/includes/options.php:86
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:165
+#: admin/pages/class-pages-performance.php:204
+msgid "Remove wlwmanifest Link"
+msgstr "删除wlwmanifest链接"
+
+#: admin/includes/options.php:81
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:155
+#: admin/pages/class-pages-performance.php:183
+msgid "Remove RSD Link"
+msgstr "删除RSD链接"
+
+#: admin/includes/options.php:70
+#: admin/pages/setup/steps/class-step-setting-speed-optimize.php:145
+#: admin/pages/class-pages-performance.php:144
+msgid "Disable Emojis"
+msgstr "禁用表情符号"
+
+#: admin/includes/options.php:65 admin/pages/class-pages-performance.php:123
+msgid "Remove REST API Links"
+msgstr "删除REST API链接"
+
+#: libs/factory/pages/templates/impressive-page.class.php:358
+msgid "The settings have been updated successfully!"
+msgstr "设置已成功更新！"
+
+#: libs/factory/pages/templates/impressive-page.class.php:743
+msgid "You do not have permission to edit page."
+msgstr "您无权编辑页面。"
+
+#: libs/factory/clearfy/pages/class-pages.php:422
+msgid "Donation for plugin development"
+msgstr "捐赠插件开发"
+
+#: libs/factory/clearfy/pages/class-pages.php:404
+msgid "Go rate us and push ideas"
+msgstr "去评价和给我们建议。"
+
+#: libs/factory/clearfy/pages/class-pages.php:400
+msgid "And also write your ideas on how to extend or improve the plugin."
+msgstr "并且写下您的想法如何扩展或改进插件。"
+
+#: libs/factory/clearfy/pages/class-pages.php:399
+msgid "Help the author, leave a review on wordpress.org. Thanks to feedback, I will know that the plugin is really useful to you and is needed."
+msgstr "帮助作者，在wordpress.org留下评论。感谢反馈，我会知道这个插件对您真的很有用。"
+
+#: libs/factory/clearfy/pages/class-pages.php:397
+msgid "Do you want the plugin to improved and update?"
+msgstr "您想的插件，以提高和更新吗？"
+
+#: libs/factory/clearfy/pages/class-pages.php:370
+msgid "Hover to the icon to get help for the feature you selected."
+msgstr "将鼠标悬停在图标以获取该功能帮助您选择。"
+
+#: libs/factory/clearfy/pages/class-pages.php:366
+msgid "Absolutely safe setting, We recommend to use."
+msgstr "绝对安全的设置，我们建议使用。"
+
+#: libs/factory/clearfy/pages/class-pages.php:359
+msgid "When set this option, you must be careful. Plugins and themes may depend on this function. You must be sure that you can disable this feature for the site."
+msgstr "设置此选项时，您必须小心。插件和主题可能取决于此功能。您必须确保您可以禁用该站点的此功能。"
+
+#: libs/factory/clearfy/pages/class-pages.php:352
+msgid "A neutral setting that can not harm your site, but you must be sure that you need to use it."
+msgstr "一个中立的设置，不能伤害您的站点，但您必须确保您需要使用它。"
+
+#: includes/boot.php:103 admin/includes/compatibility.php:90
+#: admin/pages/class-pages-quick-start.php:66 clearfy.php:32
+msgid "Clearfy"
+msgstr "Clearfy"
+
+#: admin/pages/class-pages-advanced.php:38
+#: components/updates-manager/admin/pages/class-page-advanced.php:72
+msgid "Advanced"
+msgstr "高级"
+
+#: admin/pages/class-pages-widgets.php:37
+#: components/assets-manager/includes/classes/class-assets-manager-global.php:1371
+msgid "Widgets"
+msgstr "小工具"
+
+#: admin/pages/class-pages-defence.php:35
+msgid "Defence"
+msgstr "防御"
+
+#: admin/pages/class-pages-seo-double-pages.php:39
+msgid "Duplicate pages"
+msgstr "重复页面"
+
+#: admin/pages/class-pages-seo.php:37
+msgid "SEO"
+msgstr "SEO优化"
+
+#: libs/factory/clearfy/pages/class-page-more-features.php:91
+msgid "Code cleaning"
+msgstr "代码清理"
+
+#: admin/pages/class-pages-quick-start.php:76
+msgid "Quick start"
+msgstr "快速启动"
+
+#: libs/factory/pages/templates/impressive-page.class.php:130
+#: components/disable-admin-notices/admin/pages/class-pages-settings.php:85
+msgid "Settings"
+msgstr "设置"
+
+#: admin/ajax/import-settings.php:43
+msgid "Settings are not defined or do not exist."
+msgstr "设置未定义或不存在。"
+
+#: admin/ajax/configurate.php:26 admin/ajax/configurate.php:34
+msgid "Undefinded mode."
+msgstr "未定义模式。"
+
+#: libs/factory/core/ajax/install-addons.php:27
+#: libs/factory/core/ajax/install-addons.php:112
+#: admin/ajax/import-settings.php:24 admin/ajax/configurate.php:19
+#: components/assets-manager/admin/ajax/save-settings.php:27
+#: components/disable-admin-notices/admin/ajax/hide-notice.php:59
+#: components/disable-admin-notices/admin/ajax/restore-notice.php:45
+msgid "You don't have enough capability to edit this information."
+msgstr "您没有足够的能力来编辑这些信息。"
