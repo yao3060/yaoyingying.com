@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -aeuo pipefail
+
+rsync -avzP \
+  --exclude "uploads" \
+  --exclude "cache" \
+  --exclude "td_cache" \
+  --exclude "debug.log" \
+  --exclude "plugins" \
+  src/wp-content/ \
+  root@yaoin.net:/var/www/yaoin.net/wp-content/
