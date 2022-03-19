@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -aeuo pipefail
+
+# docker run -it --rm \
+#     -v $(pwd)/src:/var/www/html \
+#     -w /var/www/html \
+#     wordpress:cli-php8.0 $*

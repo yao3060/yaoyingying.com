@@ -1,5 +1,6 @@
 .idea
 .env
+src/oss.php
 src/vendor
 src/wp-config.php
 src/wp-content/languages/*.json
