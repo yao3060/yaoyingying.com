@@ -1,7 +1,9 @@
 {
   "require": {
     "sentry/sdk": "^3.1",
-    "illuminate/support": "^9.5"
+    "illuminate/support": "^9.5",
+    "elasticsearch/elasticsearch": "^8.1",
+    "symfony/var-dumper": "^6.0"
   },
   "repositories": {
     "packagist": {
