@@ -1,5 +1,12 @@
 {
-    "require": {
-        "sentry/sdk": "^3.1"
+  "require": {
+    "sentry/sdk": "^3.1",
+    "illuminate/support": "^9.5"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
     }
+  }
 }
