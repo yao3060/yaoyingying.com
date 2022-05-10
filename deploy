@@ -2,13 +2,8 @@
 set -aeuo pipefail
 
 rsync -avzP \
-  --exclude "uploads" \
-  --exclude "cache" \
-  --exclude "td_cache" \
-  --exclude "debug.log" \
-  --exclude "plugins" \
-  --exclude "advanced-cache.php" \
-  --exclude "object-cache.php" \
-  --exclude "wp-cache-config.php" \
-  src/wp-content/ \
-  root@yaoin.net:/var/www/yaoin.net/wp-content/
+  src/wp-content/themes/ root@yaoin.net:/var/www/yaoin.net/wp-content/themes/
+
+# PWA TEST
+npm run build
+rsync -avzP dist/ root@yaoin.net:/var/www/yaoin.net/

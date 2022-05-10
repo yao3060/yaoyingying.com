@@ -18,3 +18,30 @@ function get_category_names()
     $names = \Illuminate\Support\Arr::pluck($cats, 'name');
     echo join(',', $names);
 }
+
+add_action('wp_head', function () {
+    echo '<meta name="theme-color" content="#ffffff" />';
+    echo sprintf('<link rel="manifest" href="%s/assets/js/manifest.json" />', get_stylesheet_directory_uri());
+});
+
+add_action('wp_footer', function () {
+
+?>
+    <script type="text/javascript">
+        // Don't register the service worker
+        // until the page has fully loaded
+        window.addEventListener('load', () => {
+            // Is service worker available?
+            if ('serviceWorker' in navigator) {
+
+                navigator.serviceWorker.register('/sw.js').then(() => {
+                    console.log('Service worker registered!');
+                }).catch((error) => {
+                    console.warn('Error registering service worker:');
+                    console.warn(error);
+                });
+            }
+        });
+    </script>
+<?php
+});

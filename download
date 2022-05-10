@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -aeuo pipefail
+
+rsync -avzP \
+  root@yaoin.net:/var/www/yaoin.net/wp-content/plugins/ src/wp-content/plugins/

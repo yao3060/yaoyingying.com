@@ -1,0 +1,30 @@
+version: "3.1"
+
+services:
+  wordpress:
+    build:
+      context: .
+      dockerfile: ./.docker/Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME}_wordpress_apache
+    env_file: .env
+    restart: always
+    ports:
+      - "${WORDPRESS_HTTP_PORT}:80"
+    environment:
+      - WORDPRESS_DEBUG=1
+    depends_on:
+      - cache
+    volumes:
+      - ./src:/var/www/html
+    networks:
+      - default
+      - base_share_network
+
+  cache:
+    image: redis:alpine
+    container_name: ${COMPOSE_PROJECT_NAME}_cache
+    restart: always
+
+networks:
+  base_share_network:
+    external: true
