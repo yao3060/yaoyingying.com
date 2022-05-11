@@ -1,4 +1,4 @@
-import { clientsClaim, skipWaiting } from 'workbox-core'
+import { clientsClaim } from 'workbox-core'
 import { CacheableResponsePlugin } from 'workbox-cacheable-response'
 import { NetworkFirst, CacheFirst, StaleWhileRevalidate } from 'workbox-strategies'
 import { registerRoute, NavigationRoute, setCatchHandler } from 'workbox-routing'
@@ -99,4 +99,19 @@ setCatchHandler(async ({ event }) => {
   }
 
   return Response.error()
+})
+
+
+//推送
+self.addEventListener('push', function (event) {
+  let data = event.data
+  console.log('push data', data.json())
+  event.waitUntil(
+    self.registration.showNotification('Yay a message.', {
+      body: 'We have received a push message.',
+      tag: 'simple-push-demo-notification-tag',
+      icon: '/wp-content/themes/onepress-child/assets/icons/icon-192x192.png',
+      data: { doge: { wow: 'such amaze notification data' } }
+    })
+  )
 })
