@@ -237,10 +237,10 @@ if ( ! function_exists( 'onepress_site_header' ) ) {
 							); ?>
 						</ul>
 					</nav>
-					<!-- #site-navigation -->
+					
 				</div>
 			</div>
-		</header><!-- #masthead -->
+		</header>
 		<?php
 	}
 }
@@ -378,7 +378,7 @@ if ( ! function_exists( 'onepress_entry_footer' ) ) {
 		if ( $content ) {
 			echo '<footer class="entry-footer">';
 			echo $content; // WPCS: XSS OK.
-			echo '</footer><!-- .entry-footer -->';
+			echo '</footer>';
 		}
 
 	}
@@ -491,7 +491,7 @@ if ( ! function_exists( 'onepress_comment' ) ) :
 						);
 						edit_comment_link( __( 'Edit', 'onepress' ), '<span class="edit-link">', '</span>' );
 					?>
-				</header><!-- .comment-meta -->
+				</header>
 
 					<?php if ( '0' == $comment->comment_approved ) : ?>
 					<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'onepress' ); ?></p>
@@ -499,11 +499,11 @@ if ( ! function_exists( 'onepress_comment' ) ) :
 
 				<div class="comment-content entry-content">
 					<?php comment_text(); ?>
-									</div><!-- .comment-content -->
+				</div>
 
-			</div><!--/comment-wrapper-->
+			</div>
 
-		</article><!-- #comment-## -->
+		</article>
 				<?php
 				break;
 		endswitch; // end comment_type check
@@ -572,6 +572,7 @@ if ( ! function_exists( 'onepress_custom_inline_style' ) ) {
 
 			$logo_height = absint( get_theme_mod( 'onepress_logo_height' ) );
 			$logo_tran_height = absint( get_theme_mod( 'onepress_transparent_logo_height' ) );
+			$submenu_width = absint( get_theme_mod( 'onepress_submenu_width' ) );
 
 			/**
 			 *  Custom hero section css
@@ -598,6 +599,10 @@ if ( ! function_exists( 'onepress_custom_inline_style' ) ) {
 			$t_tagline_color = sanitize_hex_color( get_theme_mod( 'onepress_transparent_tag_title_c' ) );
 		if ( $t_tagline_color ) {
 			echo "#page .is-transparent .site-header.no-scroll .site-description { color: {$t_tagline_color}; }";
+		}
+		
+		if ( $submenu_width ) {
+			echo ".onepress-menu ul {max-width: {$submenu_width}px;}";
 		}
 
 		?>
@@ -937,15 +942,20 @@ if ( ! function_exists( 'onepress_custom_inline_style' ) ) {
 			.gallery-carousel .g-item{
 				padding: 0px <?php echo intval( $gallery_spacing / 2 ); ?>px;
 			}
-			.gallery-carousel {
+			.gallery-carousel-wrap {
 				margin-left: -<?php echo intval( $gallery_spacing / 2 ); ?>px;
 				margin-right: -<?php echo intval( $gallery_spacing / 2 ); ?>px;
 			}
 			.gallery-grid .g-item, .gallery-masonry .g-item .inner {
 				padding: <?php echo intval( $gallery_spacing / 2 ); ?>px;
 			}
-			.gallery-grid, .gallery-masonry {
-				margin: -<?php echo intval( $gallery_spacing / 2 ); ?>px;
+			.gallery-grid-wrap, .gallery-masonry-wrap{
+				margin-left: -<?php echo intval( $gallery_spacing / 2 ); ?>px;
+				margin-right: -<?php echo intval( $gallery_spacing / 2 ); ?>px;
+			}
+			.gallery-justified-wrap {
+				margin-left: -<?php echo intval( $gallery_spacing ); ?>px;
+				margin-right: -<?php echo intval( $gallery_spacing ); ?>px;
 			}
 		<?php
 		$content_width = absint( get_theme_mod( 'single_layout_content_width' ) );
@@ -1154,9 +1164,12 @@ if ( ! function_exists( 'onepress_get_social_profiles' ) ) {
 	 * @return bool|array
 	 */
 	function onepress_get_social_profiles() {
-		$array = get_theme_mod( 'onepress_social_profiles' );
+		$array = get_theme_mod( 'onepress_social_profiles', [] );
 		if ( is_string( $array ) ) {
 			$array = json_decode( $array, true );
+		}
+		if ( ! is_array( $array ) ) {
+			$array = [];
 		}
 		$html = '';
 		if ( ! empty( $array ) && is_array( $array ) ) {
@@ -1192,7 +1205,7 @@ if ( ! function_exists( 'onepress_get_social_profiles' ) ) {
 		}
 
 		foreach ( (array) $array as $s ) {
-			if ( $s['icon'] != '' ) {
+			if ( $s && $s['icon'] != '' ) {
 				$html .= '<a target="_blank" href="' . $s['link'] . '" title="' . esc_attr( $s['network'] ) . '"><i class="fa ' . esc_attr( $s['icon'] ) . '"></i></a>';
 			}
 		}
@@ -1282,7 +1295,9 @@ if ( ! function_exists( 'onepress_get_section_gallery_data' ) ) {
 		$source = 'page';
 		if ( has_filter( 'onepress_get_section_gallery_data' ) ) {
 			$data = apply_filters( 'onepress_get_section_gallery_data', false );
-			return $data;
+			if ( $data ) {
+				return $data;
+			}
 		}
 
 		$data = array();
@@ -1290,6 +1305,7 @@ if ( ! function_exists( 'onepress_get_section_gallery_data' ) ) {
 			default:
 				$page_id = get_theme_mod( 'onepress_gallery_source_page' );
 				$images = '';
+				$found_gallery = false;
 				if ( $page_id ) {
 					$images = onepress_get_gallery_image_ids( $page_id );
 				}
@@ -1307,26 +1323,25 @@ if ( ! function_exists( 'onepress_get_section_gallery_data' ) ) {
 					if ( ! is_array( $images ) ) {
 						$images = explode( ',', $images );
 					}
-					foreach ( $images as $post_id ) {
-						$post = get_post( $post_id );
+					
+					$found_gallery = true;
+					
+					foreach ( $images as $img_id ) {
+						$post = get_post( $img_id );
 						if ( $post ) {
-							$img_thumb = wp_get_attachment_image_src( $post_id, $image_thumb_size );
-							if ( $img_thumb ) {
-								$img_thumb = $img_thumb[0];
-							}
-
-							$img_full = wp_get_attachment_image_src( $post_id, 'full' );
-							if ( $img_full ) {
-								$img_full = $img_full[0];
-							}
-
-							$alt = get_post_meta( $post_id, '_wp_attachment_image_alt', true );
+							$img_thumb = wp_get_attachment_image_src( $img_id, $image_thumb_size );
+							$img_full = wp_get_attachment_image_src( $img_id, 'full' );
+							$alt = get_post_meta( $img_id, '_wp_attachment_image_alt', true );
 
 							if ( $img_thumb && $img_full ) {
-								$data[ $post_id ] = array(
-									'id'        => $post_id,
-									'thumbnail' => $img_thumb,
-									'full'      => $img_full,
+								$data[ $img_id ] = array(
+									'id'        => $img_id,
+									'thumbnail' => $img_thumb[0],
+									'thumb_w'   => $img_thumb[1],
+									'thumb_h'   => $img_thumb[2],
+									'full'      => $img_full[0],
+									'full_w'    => $img_full[1],
+									'full_h'    => $img_full[2],
 									'title'     => $post->post_title,
 									'content'   => $post->post_content,
 									'alt'       => $alt,
@@ -1334,21 +1349,56 @@ if ( ! function_exists( 'onepress_get_section_gallery_data' ) ) {
 							}
 						}
 					}
+					
 				} else {
 					if ( $page_id ) {
 						$gallery_image_urls = onepress_get_gallery_image_ids_by_urls( $page_id );
+						if ( ! empty( $gallery_image_urls ) ) {
+							$found_gallery = true;
+						}
 						foreach ( $gallery_image_urls as $key => $value ) {
-							$data[ $key ] = array(
-								'id'        => '',
-								'thumbnail' => $value,
-								'full'      => $value,
-								'title'     => '',
-								'content'   => '',
-								'alt'       => '',
+						
+							$img_id = attachment_url_to_postid($value);
+							$content = '';
+							$title = '';
+							$alt = '';
+							$thumbnail = $value;
+							$full = $value;
+							if ($img_id) {
+								$post = get_post($img_id);
+								if ($post) {
+									$content = $post->post_title;
+									$title = $post->post_content;
+									$alt = get_post_meta($img_id, '_wp_attachment_image_alt', true);
+									$img_thumb = wp_get_attachment_image_src($img_id, $image_thumb_size);
+									if ($img_thumb) {
+										$thumbnail = $img_thumb[0];
+									}
+									$img_full = wp_get_attachment_image_src($img_id, 'full');
+									if ($img_full) {
+										$full = $img_full[0];
+									}
+								}
+							}
+
+							$data[$key] = array(
+								'id'        => $img_id,
+								'thumbnail' => $thumbnail,
+								'full'      => $full,
+								'title'     => $title,
+								'content'   => $content,
+								'alt'       => $alt,
 							);
+					
 						}
 					}
+				} // End if check gallery.
+				
+				if ( ! $found_gallery && $page_id ) {
+					$post = get_post( $page_id );
+					return apply_filters( 'the_content',  $post->post_content );
 				}
+				
 				break;
 		}
 
@@ -1436,6 +1486,14 @@ function onepress_gallery_generate( $echo = true ) {
 	$div = '';
 
 	$data = onepress_get_section_gallery_data();
+	if ( $data && is_string( $data ) ) {
+		if ( $echo ) {
+			echo $data;
+			return;
+		} else {
+			return $data;
+		}
+	}
 
 	$display_type = get_theme_mod( 'onepress_gallery_display', 'grid' );
 	$lightbox = get_theme_mod( 'onepress_g_lightbox', 1 );
@@ -1447,20 +1505,25 @@ function onepress_gallery_generate( $echo = true ) {
 	if ( $col <= 0 ) {
 		$col = 4;
 	}
+	
 	switch ( $display_type ) {
 		case 'masonry':
 			$html = onepress_gallery_html( $data );
 			if ( $html ) {
+				$div .= '<div class="gallery-masonry-wrap  gallery-grid-wrap">';
 				$div .= '<div data-col="' . $col . '" class="g-zoom-in gallery-masonry ' . $class . ' gallery-grid g-col-' . $col . '">';
 				$div .= $html;
+				$div .= '</div>';
 				$div .= '</div>';
 			}
 			break;
 		case 'carousel':
 			$html = onepress_gallery_html( $data );
 			if ( $html ) {
+				$div .= '<div class="gallery-carousel-wrap">';
 				$div .= '<div data-col="' . $col . '" class="g-zoom-in gallery-carousel owl-theme owl-carousel owl-carousel' . $class . '">';
 				$div .= $html;
+				$div .= '</div>';
 				$div .= '</div>';
 			}
 			break;
@@ -1477,16 +1540,20 @@ function onepress_gallery_generate( $echo = true ) {
 			if ( $html ) {
 				$gallery_spacing = absint( get_theme_mod( 'onepress_g_spacing', 20 ) );
 				$row_height = absint( get_theme_mod( 'onepress_g_row_height', 120 ) );
+				$div .= '<div class="gallery-justified-wrap">';
 				$div .= '<div data-row-height="' . $row_height . '" data-spacing="' . $gallery_spacing . '" class="g-zoom-in gallery-justified' . $class . '">';
 				$div .= $html;
+				$div .= '</div>';
 				$div .= '</div>';
 			}
 			break;
 		default: // grid
 			$html = onepress_gallery_html( $data );
 			if ( $html ) {
+				$div .= '<div class="gallery-grid-wrap">';
 				$div .= '<div class="gallery-grid g-zoom-in ' . $class . ' g-col-' . $col . '">';
 				$div .= $html;
+				$div .= '</div>';
 				$div .= '</div>';
 			}
 			break;

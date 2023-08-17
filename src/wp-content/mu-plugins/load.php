@@ -8,7 +8,7 @@
   Author URI: https://www.yaoin.net
 */
 
-\Sentry\init(['dsn' => 'https://9b8eda057b194ff1a129867cc2e2a132@o1169359.ingest.sentry.io/6262113']);
+require_once WPMU_PLUGIN_DIR . '/rest-api/index.php';
 
 add_filter('max_srcset_image_width', '__return_false');
 

@@ -2,8 +2,9 @@
 set -aeuo pipefail
 
 rsync -avzP \
-  src/wp-content/themes/ root@yaoin.net:/var/www/yaoin.net/wp-content/themes/
+  src/wp-content/mu-plugins/ root@yaoyingying.com:/var/www/yaoin.net/wp-content/mu-plugins/
 
-# PWA TEST
-npm run build
-rsync -avzP dist/ root@yaoin.net:/var/www/yaoin.net/
+
+rsync -avzP \
+  src/wp-content/themes/ root@yaoyingying.com:/var/www/yaoin.net/wp-content/themes/
+

@@ -1,5 +1,5 @@
 <?php
-$id       = get_theme_mod( 'onepress_gallery_id', esc_html__('gallery', 'onepress') );
+$id       = get_theme_mod( 'onepress_gallery_id', 'gallery' );
 $disable  = get_theme_mod( 'onepress_gallery_disable', 1 ) ==  1 ? true : false;
 $title    = get_theme_mod( 'onepress_gallery_title', esc_html__('Gallery', 'onepress' ));
 $subtitle = get_theme_mod( 'onepress_gallery_subtitle', esc_html__('Section subtitle', 'onepress' ));
@@ -9,7 +9,6 @@ if ( onepress_is_selective_refresh() ) {
     $disable = false;
 }
 $layout = get_theme_mod( 'onepress_gallery_layout', 'default' );
-
 ?>
 <?php if ( ! $disable ) { ?>
     <?php if ( ! onepress_is_selective_refresh() ){ ?>
