@@ -1,5 +1,6 @@
 .idea
 .env
+src/.DS_Store
 src/oss.php
 src/vendor
 src/wp-config.php
