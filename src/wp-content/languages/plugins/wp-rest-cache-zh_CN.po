@@ -1,0 +1,285 @@
+# Translation of Plugins - WP REST Cache - Stable (latest release) in Chinese (China)
+# This file is distributed under the same license as the Plugins - WP REST Cache - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-06-22 09:10:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.3\n"
+"Language: zh_CN\n"
+"Project-Id-Version: Plugins - WP REST Cache - Stable (latest release)\n"
+
+#. translators: %1$s: Type of action Deleted|Flushed, %2$d: Number of
+#. flushed/deleted caches.
+#: includes/cli/class-flush-command.php:77
+msgid "Deleted"
+msgstr "已删除"
+
+#. translators: %1$s: Type of action Deleted|Flushed, %2$d: Number of
+#. flushed/deleted caches.
+#: includes/cli/class-flush-command.php:76
+msgid "%1$s %2$d caches"
+msgstr "%2$d条%1$s缓存"
+
+#: includes/cli/class-flush-command.php:60
+msgid "Flag --related is only allowed when an object type is given."
+msgstr "标志 -- 仅指定对象类型时允许关联。"
+
+#: includes/caching/class-caching.php:710
+#: includes/caching/class-caching.php:1005
+msgid "Unlimited"
+msgstr "无限制"
+
+#: includes/caching/class-caching.php:707
+#: includes/caching/class-caching.php:1002
+msgid "Expired"
+msgstr "已过期"
+
+#: admin/class-admin.php:345
+msgid "Hide this message"
+msgstr "隐藏此消息"
+
+#: admin/class-admin.php:212 admin/class-admin.php:442
+#: admin/class-admin.php:463
+msgid "Clear REST cache"
+msgstr "清除REST缓存"
+
+#: admin/class-admin.php:119
+msgid "Caches"
+msgstr "缓存"
+
+#: admin/includes/class-api-caches-table.php:227
+msgid "Request Method"
+msgstr "请求方法"
+
+#: admin/includes/class-api-caches-table.php:226
+msgid "Request Headers"
+msgstr "请求头部"
+
+#: admin/includes/class-api-caches-table.php:159
+#: admin/includes/class-api-caches-table.php:263
+msgid "Delete cache record"
+msgstr "删除缓存记录"
+
+#: admin/includes/class-api-caches-table.php:149
+#: admin/includes/class-api-caches-table.php:262
+msgid "Flush cache"
+msgstr "清除缓存"
+
+#: admin/includes/class-api-caches-table.php:139
+msgid "Details"
+msgstr "详情"
+
+#: admin/includes/class-api-caches-table.php:110
+msgid "No caches available"
+msgstr "无可用缓存"
+
+#: admin/includes/class-api-caches-table.php:64
+msgid "Endpoint API Cache"
+msgstr "端点API缓存"
+
+#: admin/partials/header.php:24
+msgid "Clear Caches"
+msgstr "清除缓存"
+
+#: admin/includes/class-api-caches-table.php:65 admin/partials/header.php:22
+msgid "Endpoint API Caches"
+msgstr "端点API缓存"
+
+#: admin/partials/sub-clear-cache.php:77
+msgid "Caches cleared!"
+msgstr "缓存已清除！"
+
+#. translators: %1$s: Type of action Deleted|Flushed, %2$d: Number of
+#. flushed/deleted caches.
+#: includes/caching/class-caching.php:705
+#: includes/caching/class-caching.php:1000
+#: includes/cli/class-flush-command.php:77
+msgid "Flushed"
+msgstr "已清除"
+
+#: includes/caching/class-caching.php:272
+msgid "Invalid strictness"
+msgstr "限制条件无效"
+
+#: admin/class-admin.php:314
+msgid "We have detected you are using external object caching. If you are using Memcache(d) as external object cache, please make sure you visit this plugin's settings page and check the `Using Memcache(d)` checkbox."
+msgstr "我们检测到您正在使用外部对象缓存。如果您使用 Memcache(d) 作为外部对象缓存，请务必打开此插件的设置页面，选中“使用 Memcache(d)”复选框。"
+
+#. translators: %1$s: source-directory, %2$s: target-directory
+#: admin/class-admin.php:293
+msgid "You are not getting the best caching result! <br/>Please copy %1$s to %2$s"
+msgstr "你没有得到最好的缓存结果！<br/>请将 %1$s 复制到 %2$s"
+
+#. translators: %s: api-type
+#: admin/includes/class-api-caches-table.php:55
+msgid "Invalid API type: %s"
+msgstr "无效的API类型：%s"
+
+#: admin/partials/sub-clear-cache.php:57
+msgid "Starting..."
+msgstr "正在开始..."
+
+#: admin/partials/sub-clear-cache.php:52
+msgid "Clear REST Cache"
+msgstr "清除REST缓存"
+
+#: admin/partials/sub-cache-details.php:95
+msgid "Cache data"
+msgstr "缓存数据"
+
+#: admin/partials/sub-cache-details.php:86
+msgid "Cached request headers"
+msgstr "缓存请求头部"
+
+#: admin/includes/class-api-caches-table.php:185
+#: admin/includes/class-api-caches-table.php:186
+#: admin/partials/sub-cache-details.php:72
+#: admin/partials/sub-cache-details.php:73
+#: admin/partials/sub-cache-details.php:99
+msgid "Cache is expired or flushed."
+msgstr "缓存已失效或已被清除"
+
+#: admin/includes/class-api-caches-table.php:177
+#: admin/includes/class-api-caches-table.php:178
+#: admin/partials/sub-cache-details.php:64
+#: admin/partials/sub-cache-details.php:65
+msgid "Cache is ready to be served."
+msgstr "缓存已就绪。"
+
+#: admin/includes/class-api-caches-table.php:231
+#: admin/partials/sub-cache-details.php:57
+msgid "Active"
+msgstr "激活"
+
+#: admin/includes/class-api-caches-table.php:230
+#: admin/partials/sub-cache-details.php:53
+msgid "# Cache Hits"
+msgstr "# 缓存命中"
+
+#: admin/includes/class-api-caches-table.php:229
+#: admin/partials/sub-cache-details.php:49
+msgid "Expiration"
+msgstr "过期时间"
+
+#: admin/includes/class-api-caches-table.php:228
+#: admin/partials/sub-cache-details.php:45
+msgid "Object Type"
+msgstr "对象类型"
+
+#: admin/includes/class-api-caches-table.php:225
+#: admin/partials/sub-cache-details.php:41
+msgid "Request URI"
+msgstr "请求URL"
+
+#: admin/partials/sub-cache-details.php:37
+msgid "Cache Type"
+msgstr "缓存类型"
+
+#: admin/includes/class-api-caches-table.php:224
+#: admin/partials/sub-cache-details.php:33
+msgid "Cache Key"
+msgstr "缓存键"
+
+#: admin/partials/sub-cache-details.php:29
+msgid "Sorry the cache could not be found."
+msgstr "抱歉，找不到缓存。"
+
+#: admin/partials/sub-cache-details.php:25
+msgid "Cache info"
+msgstr "缓存信息"
+
+#: admin/partials/sub-cache-details.php:14
+msgid "Cache details"
+msgstr "缓存详情"
+
+#: admin/partials/caches-table.php:26
+msgid "Search"
+msgstr "搜索"
+
+#: admin/partials/sub-settings.php:113
+msgid "Memcache(d) used"
+msgstr "使用Memcache(d)"
+
+#: admin/partials/sub-settings.php:118
+msgid "Are you using Memcache(d) as external object caching?"
+msgstr "您是否正在使用Memcache(d)作为外部对象缓存？"
+
+#: admin/partials/sub-settings.php:105
+msgid "How many caches should be regenerated at maximum per interval? Increasing this number will increase the load on your server when the regeneration process is running."
+msgstr "每次最多可以重新生成多少条缓存？增加此数字提高重新生成缓存时的服务器负载。"
+
+#: admin/partials/sub-settings.php:100
+msgid "Max number regenerate caches"
+msgstr "重新生成缓存的最大数量"
+
+#: admin/partials/sub-settings.php:86
+msgid "Regeneration interval"
+msgstr "重新生成缓存时间间隔"
+
+#: admin/partials/sub-settings.php:82
+msgid "Will enable a cron that regenerates expired or flushed caches."
+msgstr "将启用重新生成过期或刷新缓存的计划任务。"
+
+#: admin/partials/sub-settings.php:77
+msgid "Enable cache regeneration"
+msgstr "启用缓存重新生成"
+
+#: admin/partials/sub-settings.php:73
+msgid "Which request headers should be cached (and used to distinguish separate caches). This can be a comma separated list of headers. If you want to use headers for only certain REST calls please see the FAQ."
+msgstr "应该缓存哪些请求标头（并用于区分不同的缓存），可以是逗号分隔的标题列表。如果您只想对某些 REST 调用使用标头，请参阅FAQ。"
+
+#: admin/partials/sub-settings.php:68
+msgid "Global cacheable request headers"
+msgstr "全局可缓存请求标头"
+
+#: admin/partials/sub-settings.php:64
+msgid "Time until expiration of cache. (Default = 1 year)"
+msgstr "缓存到期时间。(默认值=1年)"
+
+#: admin/partials/sub-settings.php:60
+msgid "Year(s)"
+msgstr "年"
+
+#: admin/partials/sub-settings.php:56
+msgid "Month(s)"
+msgstr "月"
+
+#: admin/partials/sub-settings.php:52
+msgid "Week(s)"
+msgstr "周"
+
+#: admin/partials/sub-settings.php:48
+msgid "Day(s)"
+msgstr "日"
+
+#: admin/partials/sub-settings.php:44
+msgid "Hour(s)"
+msgstr "小时"
+
+#: admin/partials/sub-settings.php:40
+msgid "Minute(s)"
+msgstr "分钟"
+
+#: admin/partials/sub-settings.php:32
+msgid "Cache timeout"
+msgstr "缓存超时时间"
+
+#: admin/class-admin.php:153 admin/partials/header.php:20
+#: admin/partials/sub-settings.php:17
+msgid "Settings"
+msgstr "设置"
+
+#. Author of the plugin
+msgid "Acato"
+msgstr "Acato"
+
+#. Description of the plugin
+msgid "Adds caching to the WP REST API"
+msgstr "为WP REST API添加缓存"
+
+#. Plugin Name of the plugin
+msgid "WP REST Cache"
+msgstr "WP REST Cache"

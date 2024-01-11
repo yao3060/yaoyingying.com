@@ -1,9 +1,25 @@
 #!/usr/bin/env bash
 set -aeuo pipefail
 
-rsync -avzP \
-  root@yaoin.net:/var/www/yaoin.net/wp-content/plugins/ src/wp-content/plugins/
+
+# --exclude 'wp-content'
+rsync -avzP  \
+  --exclude 'favicon.ico' \
+  --exclude 'wp-content' \
+  --exclude 'vendor' \
+  --exclude '*.swp' \
+  ubuntu@yaoyingying.com:/var/www/yaoyingying.com/ src/
+
+# languages
+rsync -avzP  \
+  ubuntu@yaoyingying.com:/var/www/yaoyingying.com/wp-content/languages/ src/wp-content/languages/
 
 
-rsync -avzP \
-  root@yaoin.net:/var/www/yaoin.net/wp-content/themes/ src/wp-content/themes/
+rsync -avzP  \
+  ubuntu@yaoyingying.com:/var/www/yaoyingying.com/wp-content/mu-plugins/ src/wp-content/mu-plugins/
+
+rsync -avzP  \
+  ubuntu@yaoyingying.com:/var/www/yaoyingying.com/wp-content/plugins/ src/wp-content/plugins/
+
+rsync -avzP  \
+  ubuntu@yaoyingying.com:/var/www/yaoyingying.com/wp-content/themes/ src/wp-content/themes/
