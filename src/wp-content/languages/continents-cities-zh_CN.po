@@ -1,15 +1,23 @@
-# Translation of WordPress - 5.9.x - Development - Continents & Cities in Chinese (China)
-# This file is distributed under the same license as the WordPress - 5.9.x - Development - Continents & Cities package.
+# Translation of WordPress - 6.4.x - Development - Continents & Cities in Chinese (China)
+# This file is distributed under the same license as the WordPress - 6.4.x - Development - Continents & Cities package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-12-24 13:22:50+0000\n"
+"PO-Revision-Date: 2023-10-18 11:44:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"X-Generator: GlotPress/4.0.0-alpha.11\n"
 "Language: zh_CN\n"
-"Project-Id-Version: WordPress - 5.9.x - Development - Continents & Cities\n"
+"Project-Id-Version: WordPress - 6.4.x - Development - Continents & Cities\n"
+
+#: wp-admin/includes/continents-cities.php:523
+msgid "Kanton"
+msgstr "坎顿"
+
+#: wp-admin/includes/continents-cities.php:451
+msgid "Kyiv"
+msgstr "基辅"
 
 #: wp-admin/includes/continents-cities.php:319
 msgid "Qostanay"
@@ -19,7 +27,7 @@ msgstr "库斯塔奈"
 msgid "Nuuk"
 msgstr "努克"
 
-#: wp-admin/includes/continents-cities.php:471
+#: wp-admin/includes/continents-cities.php:472
 msgid "Saratov"
 msgstr "萨拉托夫"
 
@@ -39,23 +47,23 @@ msgstr "阿特劳"
 msgid "Punta Arenas"
 msgstr "蓬塔阿雷纳斯"
 
-#: wp-admin/includes/continents-cities.php:535
+#: wp-admin/includes/continents-cities.php:537
 msgid "Pohnpei"
 msgstr "波纳佩"
 
-#: wp-admin/includes/continents-cities.php:509
+#: wp-admin/includes/continents-cities.php:510
 msgid "Chuuk"
 msgstr "楚克"
 
-#: wp-admin/includes/continents-cities.php:507
+#: wp-admin/includes/continents-cities.php:508
 msgid "Bougainville"
 msgstr "布干维尔"
 
-#: wp-admin/includes/continents-cities.php:479
+#: wp-admin/includes/continents-cities.php:480
 msgid "Ulyanovsk"
 msgstr "乌里扬诺夫斯克"
 
-#: wp-admin/includes/continents-cities.php:451
+#: wp-admin/includes/continents-cities.php:452
 msgid "Kirov"
 msgstr "基洛夫"
 
@@ -167,359 +175,359 @@ msgstr "萨尔塔"
 msgid "Juba"
 msgstr "朱巴"
 
-#: wp-admin/includes/continents-cities.php:547
+#: wp-admin/includes/continents-cities.php:549
 msgid "Yap"
 msgstr "雅蒲"
 
-#: wp-admin/includes/continents-cities.php:546
+#: wp-admin/includes/continents-cities.php:548
 msgid "Wallis"
 msgstr "瓦利斯"
 
-#: wp-admin/includes/continents-cities.php:545
+#: wp-admin/includes/continents-cities.php:547
 msgid "Wake"
 msgstr "威克岛"
 
-#: wp-admin/includes/continents-cities.php:544
+#: wp-admin/includes/continents-cities.php:546
 msgid "Truk"
 msgstr "特鲁克"
 
-#: wp-admin/includes/continents-cities.php:543
+#: wp-admin/includes/continents-cities.php:545
 msgid "Tongatapu"
 msgstr "汤加塔布"
 
-#: wp-admin/includes/continents-cities.php:542
+#: wp-admin/includes/continents-cities.php:544
 msgid "Tarawa"
 msgstr "塔拉瓦"
 
-#: wp-admin/includes/continents-cities.php:541
+#: wp-admin/includes/continents-cities.php:543
 msgid "Tahiti"
 msgstr "塔希提岛"
 
-#: wp-admin/includes/continents-cities.php:540
+#: wp-admin/includes/continents-cities.php:542
 msgid "Samoa"
 msgstr "萨摩亚"
 
-#: wp-admin/includes/continents-cities.php:539
+#: wp-admin/includes/continents-cities.php:541
 msgid "Saipan"
 msgstr "塞班"
 
-#: wp-admin/includes/continents-cities.php:538
+#: wp-admin/includes/continents-cities.php:540
 msgid "Rarotonga"
 msgstr "拉罗汤加"
 
-#: wp-admin/includes/continents-cities.php:537
+#: wp-admin/includes/continents-cities.php:539
 msgid "Port Moresby"
 msgstr "莫尔兹比港"
 
-#: wp-admin/includes/continents-cities.php:536
+#: wp-admin/includes/continents-cities.php:538
 msgid "Ponape"
 msgstr "波纳佩岛"
 
-#: wp-admin/includes/continents-cities.php:534
+#: wp-admin/includes/continents-cities.php:536
 msgid "Pitcairn"
 msgstr "皮特凯恩"
 
-#: wp-admin/includes/continents-cities.php:533
+#: wp-admin/includes/continents-cities.php:535
 msgid "Palau"
 msgstr "帕劳"
 
-#: wp-admin/includes/continents-cities.php:532
+#: wp-admin/includes/continents-cities.php:534
 msgid "Pago Pago"
 msgstr "帕果帕果"
 
-#: wp-admin/includes/continents-cities.php:531
+#: wp-admin/includes/continents-cities.php:533
 msgid "Noumea"
 msgstr "努美阿"
 
-#: wp-admin/includes/continents-cities.php:530
+#: wp-admin/includes/continents-cities.php:532
 msgid "Norfolk"
 msgstr "诺福克"
 
-#: wp-admin/includes/continents-cities.php:529
+#: wp-admin/includes/continents-cities.php:531
 msgid "Niue"
 msgstr "纽埃"
 
-#: wp-admin/includes/continents-cities.php:528
+#: wp-admin/includes/continents-cities.php:530
 msgid "Nauru"
 msgstr "瑙鲁"
 
-#: wp-admin/includes/continents-cities.php:527
+#: wp-admin/includes/continents-cities.php:529
 msgid "Midway"
 msgstr "中途岛"
 
-#: wp-admin/includes/continents-cities.php:526
+#: wp-admin/includes/continents-cities.php:528
 msgid "Marquesas"
 msgstr "马克萨斯"
 
-#: wp-admin/includes/continents-cities.php:525
+#: wp-admin/includes/continents-cities.php:527
 msgid "Majuro"
 msgstr "马朱罗"
 
-#: wp-admin/includes/continents-cities.php:524
+#: wp-admin/includes/continents-cities.php:526
 msgid "Kwajalein"
 msgstr "夸贾林环礁"
 
-#: wp-admin/includes/continents-cities.php:523
+#: wp-admin/includes/continents-cities.php:525
 msgid "Kosrae"
 msgstr "科斯雷"
 
-#: wp-admin/includes/continents-cities.php:522
+#: wp-admin/includes/continents-cities.php:524
 msgid "Kiritimati"
 msgstr "基里蒂马蒂"
 
-#: wp-admin/includes/continents-cities.php:521
+#: wp-admin/includes/continents-cities.php:522
 msgid "Johnston"
 msgstr "约翰斯顿"
 
-#: wp-admin/includes/continents-cities.php:520
+#: wp-admin/includes/continents-cities.php:521
 msgid "Honolulu"
 msgstr "檀香山"
 
-#: wp-admin/includes/continents-cities.php:519
+#: wp-admin/includes/continents-cities.php:520
 msgid "Guam"
 msgstr "关岛"
 
-#: wp-admin/includes/continents-cities.php:518
+#: wp-admin/includes/continents-cities.php:519
 msgid "Guadalcanal"
 msgstr "瓜达尔卡纳尔岛"
 
-#: wp-admin/includes/continents-cities.php:517
+#: wp-admin/includes/continents-cities.php:518
 msgid "Gambier"
 msgstr "甘比尔"
 
-#: wp-admin/includes/continents-cities.php:516
+#: wp-admin/includes/continents-cities.php:517
 msgid "Galapagos"
 msgstr "加拉帕戈斯"
 
-#: wp-admin/includes/continents-cities.php:515
+#: wp-admin/includes/continents-cities.php:516
 msgid "Funafuti"
 msgstr "富纳富提"
 
-#: wp-admin/includes/continents-cities.php:514
+#: wp-admin/includes/continents-cities.php:515
 msgid "Fiji"
 msgstr "斐济"
 
-#: wp-admin/includes/continents-cities.php:513
+#: wp-admin/includes/continents-cities.php:514
 msgid "Fakaofo"
 msgstr "法考福"
 
-#: wp-admin/includes/continents-cities.php:512
+#: wp-admin/includes/continents-cities.php:513
 msgid "Enderbury"
 msgstr "恩德伯里"
 
-#: wp-admin/includes/continents-cities.php:511
+#: wp-admin/includes/continents-cities.php:512
 msgid "Efate"
 msgstr "埃法特岛"
 
-#: wp-admin/includes/continents-cities.php:510
+#: wp-admin/includes/continents-cities.php:511
 msgid "Easter"
 msgstr "圣诞岛"
 
-#: wp-admin/includes/continents-cities.php:508
+#: wp-admin/includes/continents-cities.php:509
 msgid "Chatham"
 msgstr "查塔姆"
 
-#: wp-admin/includes/continents-cities.php:506
+#: wp-admin/includes/continents-cities.php:507
 msgid "Auckland"
 msgstr "奥克兰"
 
-#: wp-admin/includes/continents-cities.php:505
+#: wp-admin/includes/continents-cities.php:506
 msgid "Apia"
 msgstr "阿皮亚"
 
-#: wp-admin/includes/continents-cities.php:504
+#: wp-admin/includes/continents-cities.php:505
 msgid "Pacific"
 msgstr "太平洋"
 
-#: wp-admin/includes/continents-cities.php:502
+#: wp-admin/includes/continents-cities.php:503
 msgid "Reunion"
 msgstr "团圆"
 
-#: wp-admin/includes/continents-cities.php:501
+#: wp-admin/includes/continents-cities.php:502
 msgid "Mayotte"
 msgstr "马约特岛"
 
-#: wp-admin/includes/continents-cities.php:500
+#: wp-admin/includes/continents-cities.php:501
 msgid "Mauritius"
 msgstr "毛里求斯"
 
-#: wp-admin/includes/continents-cities.php:499
+#: wp-admin/includes/continents-cities.php:500
 msgid "Maldives"
 msgstr "马尔代夫"
 
-#: wp-admin/includes/continents-cities.php:498
+#: wp-admin/includes/continents-cities.php:499
 msgid "Mahe"
 msgstr "马埃"
 
-#: wp-admin/includes/continents-cities.php:497
+#: wp-admin/includes/continents-cities.php:498
 msgid "Kerguelen"
 msgstr "凯尔盖朗"
 
-#: wp-admin/includes/continents-cities.php:496
+#: wp-admin/includes/continents-cities.php:497
 msgid "Comoro"
 msgstr "科摩罗"
 
-#: wp-admin/includes/continents-cities.php:495
+#: wp-admin/includes/continents-cities.php:496
 msgid "Cocos"
 msgstr "科科斯"
 
-#: wp-admin/includes/continents-cities.php:494
+#: wp-admin/includes/continents-cities.php:495
 msgid "Christmas"
 msgstr "圣诞岛"
 
-#: wp-admin/includes/continents-cities.php:493
+#: wp-admin/includes/continents-cities.php:494
 msgid "Chagos"
 msgstr "查戈斯群岛"
 
-#: wp-admin/includes/continents-cities.php:492
+#: wp-admin/includes/continents-cities.php:493
 msgid "Antananarivo"
 msgstr "塔那那利佛"
 
-#: wp-admin/includes/continents-cities.php:491
+#: wp-admin/includes/continents-cities.php:492
 msgid "Indian"
 msgstr "印度次大陆"
 
-#: wp-admin/includes/continents-cities.php:489
+#: wp-admin/includes/continents-cities.php:490
 msgid "Zurich"
 msgstr "苏黎世"
 
-#: wp-admin/includes/continents-cities.php:488
+#: wp-admin/includes/continents-cities.php:489
 msgid "Zaporozhye"
 msgstr "扎波罗热"
 
-#: wp-admin/includes/continents-cities.php:487
+#: wp-admin/includes/continents-cities.php:488
 msgid "Zagreb"
 msgstr "萨格勒布"
 
-#: wp-admin/includes/continents-cities.php:486
+#: wp-admin/includes/continents-cities.php:487
 msgid "Warsaw"
 msgstr "华沙"
 
-#: wp-admin/includes/continents-cities.php:485
+#: wp-admin/includes/continents-cities.php:486
 msgid "Volgograd"
 msgstr "伏尔加格勒"
 
-#: wp-admin/includes/continents-cities.php:484
+#: wp-admin/includes/continents-cities.php:485
 msgid "Vilnius"
 msgstr "维尔纽斯"
 
-#: wp-admin/includes/continents-cities.php:483
+#: wp-admin/includes/continents-cities.php:484
 msgid "Vienna"
 msgstr "维也纳"
 
-#: wp-admin/includes/continents-cities.php:482
+#: wp-admin/includes/continents-cities.php:483
 msgid "Vatican"
 msgstr "梵蒂冈"
 
-#: wp-admin/includes/continents-cities.php:481
+#: wp-admin/includes/continents-cities.php:482
 msgid "Vaduz"
 msgstr "瓦杜兹"
 
-#: wp-admin/includes/continents-cities.php:480
+#: wp-admin/includes/continents-cities.php:481
 msgid "Uzhgorod"
 msgstr "乌日哥罗德"
 
-#: wp-admin/includes/continents-cities.php:478
+#: wp-admin/includes/continents-cities.php:479
 msgid "Tiraspol"
 msgstr "蒂拉斯波尔"
 
-#: wp-admin/includes/continents-cities.php:477
+#: wp-admin/includes/continents-cities.php:478
 msgid "Tirane"
 msgstr "地拉那"
 
-#: wp-admin/includes/continents-cities.php:476
+#: wp-admin/includes/continents-cities.php:477
 msgid "Tallinn"
 msgstr "塔林"
 
-#: wp-admin/includes/continents-cities.php:475
+#: wp-admin/includes/continents-cities.php:476
 msgid "Stockholm"
 msgstr "斯德哥尔摩"
 
-#: wp-admin/includes/continents-cities.php:474
+#: wp-admin/includes/continents-cities.php:475
 msgid "Sofia"
 msgstr "索菲亚"
 
-#: wp-admin/includes/continents-cities.php:473
+#: wp-admin/includes/continents-cities.php:474
 msgid "Skopje"
 msgstr "斯科普里"
 
-#: wp-admin/includes/continents-cities.php:472
+#: wp-admin/includes/continents-cities.php:473
 msgid "Simferopol"
 msgstr "辛菲罗波尔"
 
-#: wp-admin/includes/continents-cities.php:470
+#: wp-admin/includes/continents-cities.php:471
 msgid "Sarajevo"
 msgstr "萨拉热窝"
 
-#: wp-admin/includes/continents-cities.php:469
+#: wp-admin/includes/continents-cities.php:470
 msgid "San Marino"
 msgstr "圣马力诺"
 
-#: wp-admin/includes/continents-cities.php:468
+#: wp-admin/includes/continents-cities.php:469
 msgid "Samara"
 msgstr "萨马拉"
 
-#: wp-admin/includes/continents-cities.php:467
+#: wp-admin/includes/continents-cities.php:468
 msgid "Rome"
 msgstr "罗马"
 
-#: wp-admin/includes/continents-cities.php:466
+#: wp-admin/includes/continents-cities.php:467
 msgid "Riga"
 msgstr "里加"
 
-#: wp-admin/includes/continents-cities.php:465
+#: wp-admin/includes/continents-cities.php:466
 msgid "Prague"
 msgstr "布拉格"
 
-#: wp-admin/includes/continents-cities.php:464
+#: wp-admin/includes/continents-cities.php:465
 msgid "Podgorica"
 msgstr "波德戈里察"
 
-#: wp-admin/includes/continents-cities.php:463
+#: wp-admin/includes/continents-cities.php:464
 msgid "Paris"
 msgstr "巴黎"
 
-#: wp-admin/includes/continents-cities.php:462
+#: wp-admin/includes/continents-cities.php:463
 msgid "Oslo"
 msgstr "奥斯陆"
 
-#: wp-admin/includes/continents-cities.php:461
+#: wp-admin/includes/continents-cities.php:462
 msgid "Moscow"
 msgstr "莫斯科"
 
-#: wp-admin/includes/continents-cities.php:460
+#: wp-admin/includes/continents-cities.php:461
 msgid "Monaco"
 msgstr "摩纳哥"
 
-#: wp-admin/includes/continents-cities.php:459
+#: wp-admin/includes/continents-cities.php:460
 msgid "Minsk"
 msgstr "明斯克"
 
-#: wp-admin/includes/continents-cities.php:458
+#: wp-admin/includes/continents-cities.php:459
 msgid "Mariehamn"
 msgstr "马利汉姆"
 
-#: wp-admin/includes/continents-cities.php:457
+#: wp-admin/includes/continents-cities.php:458
 msgid "Malta"
 msgstr "马耳他"
 
-#: wp-admin/includes/continents-cities.php:456
+#: wp-admin/includes/continents-cities.php:457
 msgid "Madrid"
 msgstr "马德里"
 
-#: wp-admin/includes/continents-cities.php:455
+#: wp-admin/includes/continents-cities.php:456
 msgid "Luxembourg"
 msgstr "卢森堡"
 
-#: wp-admin/includes/continents-cities.php:454
+#: wp-admin/includes/continents-cities.php:455
 msgid "London"
 msgstr "伦敦"
 
-#: wp-admin/includes/continents-cities.php:453
+#: wp-admin/includes/continents-cities.php:454
 msgid "Ljubljana"
 msgstr "卢布尔雅那"
 
-#: wp-admin/includes/continents-cities.php:452
+#: wp-admin/includes/continents-cities.php:453
 msgid "Lisbon"
 msgstr "里斯本"
 
@@ -621,7 +629,7 @@ msgstr "通用"
 
 #: wp-admin/includes/continents-cities.php:422
 msgid "UCT"
-msgstr "UCT"
+msgstr "通用协调时（UCT）"
 
 #: wp-admin/includes/continents-cities.php:421
 msgid "Greenwich"

@@ -1,4 +1,20 @@
 {
+  "name": "yao3060/yaoyingying",
+  "description": "My brilliant WordPress site. See https://wpackagist.org/",
+  "autoload": {
+    "files": [
+      "app/Helpers.php"
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Yao Yingying",
+      "email": "yingying.yao@it-consultis.com"
+    }
+  ],
   "require": {
     "sentry/sdk": "^3.1",
     "illuminate/support": "^9.5",

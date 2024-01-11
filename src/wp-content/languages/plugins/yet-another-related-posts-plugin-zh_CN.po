@@ -1,0 +1,253 @@
+# Translation of Plugins - YARPP &#8211; Yet Another Related Posts Plugin - Stable (latest release) in Chinese (China)
+# This file is distributed under the same license as the Plugins - YARPP &#8211; Yet Another Related Posts Plugin - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-10-18 02:47:16+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/4.0.0-alpha.10\n"
+"Language: zh_CN\n"
+"Project-Id-Version: Plugins - YARPP &#8211; Yet Another Related Posts Plugin - Stable (latest release)\n"
+
+#: classes/YARPP_Meta_Box.php:14
+msgid "This advanced option gives you full power to easily customize the look and feel of YARPP. YARPP Custom Templates are written in PHP and saved in your active theme folder. %1$sLearn more about YARPP Custom Templates%2$s."
+msgstr "此高级选项使您能够轻松自定义 YARPP 的外观和喜好。 YARPP 自定义模板使是用 PHP 编写的，并保存在您已激活的主题文件夹中。 %1$s了解有关 YARPP 自定义模板的更多信息%2$s。"
+
+#: classes/YARPP_Block.php:205 classes/YARPP_Widget.php:122 src/js/block.js:157
+msgid "You may also like"
+msgstr "你可能也会喜欢"
+
+#: includes/template_builtin.php:35
+msgid "%f is the YARPP match score between the current entry and this related entry. You are seeing this value because you are logged in to WordPress as an administrator. It is not shown to regular visitors."
+msgstr "YARPP 中的 %f 是指当前文章和关联文章之间的匹配程度。当您以管理员的身份登录时才能查阅，游客等其他权限是不能查阅的。"
+
+#: classes/YARPP_Meta_Box.php:95
+msgid "do not consider"
+msgstr "不参考"
+
+#: classes/YARPP_Meta_Box.php:96
+msgid "consider"
+msgstr "参考"
+
+#: classes/YARPP_Meta_Box.php:97
+msgid "consider with extra weight"
+msgstr "作为主要参考指标"
+
+#: includes/yarpp_meta_boxes_hooks.php:15
+msgid "\"The Pool\""
+msgstr "全局设置"
+
+#: classes/YARPP_Meta_Box_Relatedness.php:10
+msgid "Match threshold:"
+msgstr "匹配值："
+
+#: classes/YARPP_Meta_Box_Relatedness.php:12
+msgid "Titles: "
+msgstr "标题："
+
+#: classes/YARPP_Meta_Box_Relatedness.php:13
+msgid "Bodies: "
+msgstr "正文："
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:47
+#: classes/YARPP_Meta_Box_Display_Web.php:90
+msgid "Before / after related entries:"
+msgstr "主体起止标签"
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:47
+#: classes/YARPP_Meta_Box_Display_Feed.php:48
+#: classes/YARPP_Meta_Box_Display_Feed.php:53
+#: classes/YARPP_Meta_Box_Display_Web.php:90
+#: classes/YARPP_Meta_Box_Display_Web.php:91
+#: classes/YARPP_Meta_Box_Display_Web.php:96
+msgid "For example:"
+msgstr "例如："
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:48
+#: classes/YARPP_Meta_Box_Display_Web.php:91
+msgid "Before / after each related entry:"
+msgstr "条目起止标签"
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:50
+#: classes/YARPP_Meta_Box_Display_Web.php:93
+msgid "Show excerpt?"
+msgstr "显示摘要？"
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:51
+#: classes/YARPP_Meta_Box_Display_Web.php:94
+msgid "Excerpt length (No. of words):"
+msgstr "摘要字符数"
+
+#: classes/YARPP_Meta_Box.php:104
+msgid "Order results:"
+msgstr "排序方式："
+
+#: classes/YARPP_Meta_Box.php:108
+msgid "score (high relevance to low)"
+msgstr "匹配值（有高到低）"
+
+#: classes/YARPP_Meta_Box.php:109
+msgid "score (low relevance to high)"
+msgstr "匹配值（由低到高）"
+
+#: classes/YARPP_Meta_Box.php:110
+msgid "date (new to old)"
+msgstr "日期（由新到旧）"
+
+#: classes/YARPP_Meta_Box.php:111
+msgid "date (old to new)"
+msgstr "日期（由旧到新）"
+
+#: classes/YARPP_Meta_Box.php:112
+msgid "title (alphabetical)"
+msgstr "标题（按字母顺序排列）"
+
+#: classes/YARPP_Meta_Box.php:113
+msgid "title (reverse alphabetical)"
+msgstr "标题（按逆向字母排列）"
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:57
+#: classes/YARPP_Meta_Box_Display_Web.php:100
+msgid "Default display if no results:"
+msgstr "无匹配时："
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:9
+msgid "Display related posts in feeds?"
+msgstr "在文章底部显示？"
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:10
+msgid "Display related posts in the descriptions?"
+msgstr "在摘要中显示？(当RSS只输出摘要时)"
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:10
+msgid "This option displays the related posts in the RSS description fields, not just the content. If your feeds are set up to only display excerpts, however, only the description field is used, so this option is required for any display at all."
+msgstr "该选项将会在 RSS 的摘要区中插入关联文章，而不是在正文区中。如果您的 RSS 只输出摘要，请选择该项。"
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:53
+#: classes/YARPP_Meta_Box_Display_Web.php:96
+msgid "Before / after (excerpt):"
+msgstr "摘要起止标签："
+
+#: includes/yarpp_options.php:178
+msgid "Options saved!"
+msgstr "保存成功！"
+
+#: classes/YARPP_Core.php:195 classes/YARPP_Core.php:205
+#: classes/YARPP_Core.php:828 classes/YARPP_Core.php:839
+#: includes/template_widget.php:13
+msgid "No related posts."
+msgstr "无关联文章"
+
+#: includes/yarpp_meta_boxes_hooks.php:48
+msgid "Contact YARPP"
+msgstr "联系YARPP"
+
+#: classes/YARPP_Admin.php:580
+msgid "Settings"
+msgstr "设置"
+
+#: classes/YARPP_Admin.php:378
+msgid "The following information is sent back to YARPP:"
+msgstr "以下信息发送回YARPP："
+
+#: classes/YARPP_Admin.php:469
+msgid "Thank you for installing <span>Yet Another Related Posts Plugin</span>!"
+msgstr "感谢您安装 <span>Yet Another Related Posts 插件</span>!"
+
+#: classes/YARPP_Core.php:193 classes/YARPP_Core.php:203
+#: classes/YARPP_Core.php:233 classes/YARPP_Core.php:235
+#: classes/YARPP_Core.php:826 classes/YARPP_Core.php:837
+#: classes/YARPP_Core.php:1304
+msgid "Related posts:"
+msgstr "相关文章："
+
+#: classes/YARPP_Meta_Box_Contact.php:18
+msgid "YARPP on Twitter"
+msgstr "YARPP on Twitter"
+
+#: classes/YARPP_Meta_Box_Contact.php:13
+msgid "YARPP Forum"
+msgstr "YARPP论坛"
+
+#: classes/YARPP_Meta_Box_Contact.php:28
+msgid "Review YARPP on WordPress.org"
+msgstr "在WordPress.org给YARPP一个评价"
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:37
+#: classes/YARPP_Meta_Box_Display_Web.php:79
+msgid "Default image (URL):"
+msgstr "默认图片(URL地址):"
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:47
+#: classes/YARPP_Meta_Box_Display_Feed.php:48
+#: classes/YARPP_Meta_Box_Display_Feed.php:53
+#: classes/YARPP_Meta_Box_Display_Web.php:90
+#: classes/YARPP_Meta_Box_Display_Web.php:91
+#: classes/YARPP_Meta_Box_Display_Web.php:96
+msgid " or "
+msgstr "或"
+
+#: classes/YARPP_Admin.php:465
+msgid "%1$s updated successfully."
+msgstr "%1$s 更新成功。"
+
+#: classes/YARPP_Admin.php:288 classes/YARPP_Admin.php:325
+msgid "Frequently Asked Questions"
+msgstr "常见问题"
+
+#: classes/YARPP_Cache_Demo_Bypass.php:147
+msgid "Example post "
+msgstr "示例文章"
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:36
+#: classes/YARPP_Meta_Box_Display_Web.php:78
+msgid "Heading:"
+msgstr "标题:"
+
+#: classes/YARPP_Admin.php:382
+msgid "In addition, YARPP also loads an invisible pixel image with your YARPP results to know how often YARPP is being used."
+msgstr "此外，YARPP还会在您的YARPP结果中加载不可见的像素图像，以了解使用YARPP的频率。"
+
+#: classes/YARPP_Admin.php:304
+msgid "Optional Data Collection"
+msgstr "可选数据收集"
+
+#: classes/YARPP_Admin.php:369
+msgid "Contributing this data will help make YARPP better for you and for other YARPP users."
+msgstr "贡献这些数据将帮助您和其他YARPP用户更好地使用YARPP。"
+
+#: classes/YARPP_Admin.php:350
+msgid ""
+"With your permission, YARPP will send information about YARPP's settings, usage, and environment\n"
+"                    back to a central server at "
+msgstr ""
+"经您的许可，YARPP将发送有关YARPP的设置，用法和环境的信息回到\n"
+"位于的中央服务器"
+
+#: classes/YARPP_Meta_Box_Relatedness.php:7
+msgid "YARPP limits the related posts list by (1) a maximum number and (2) a <em>match threshold</em>."
+msgstr "YARPP 插件的相关文章列表基于 (1) 最大关联数 (2) <em>匹配值</em>."
+
+#: classes/YARPP_Meta_Box_Display_Feed.php:9
+msgid "This option displays related posts at the end of each item in your RSS and Atom feeds. No template changes are needed."
+msgstr "此选项在RSS和Atom feeds中每个项目的末尾显示相关的文章。 无需更改模板。"
+
+#: classes/YARPP_Admin.php:296 classes/YARPP_Admin.php:341
+msgid "Developing with YARPP"
+msgstr "用YARPP开发"
+
+#: includes/template_metabox.php:29
+msgid "Whether all matches are actually displayed and how they are displayed depends on your YARPP display options."
+msgstr "所有这些相关内容是否实际显示以及它们如何显示取决于您的YARPP显示选项设置。"
+
+#: classes/YARPP_Admin.php:361
+msgid ""
+"This information will be used to improve YARPP in the future and help decide future development\n"
+"                decisions for YARPP."
+msgstr "这些信息将在将来用于改进YARPP并帮助决定未来的开发。"
+
+#: classes/YARPP_Meta_Box_Relatedness.php:7
+msgid "The higher the match threshold, the more restrictive, and you get less related posts overall. The default match threshold is 5. If you want to find an appropriate match threshold, take a look at some post's related posts display and their scores. You can see what kinds of related posts are being picked up and with what kind of match scores, and determine an appropriate threshold for your site."
+msgstr "匹配值越高，限制就越严格，您将得到更少的相关文章。默认的匹配值是 5。如果您想得到一个合适的匹配值，您可以看看您一些文章下面的相关文章显示，并觉得它们怎么样，是否合适。然后做出调整，看看其他匹配值的结果怎么样，是否合适，以此来确定一个适合您网站的匹配值。"
