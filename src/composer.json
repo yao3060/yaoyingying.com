@@ -23,9 +23,27 @@
     "guzzlehttp/guzzle": "^7.4"
   },
   "repositories": {
-    "packagist": {
-      "type": "composer",
-      "url": "https://mirrors.aliyun.com/composer/"
+      "packagist": {
+        "type": "composer",
+        "url": "https://mirrors.aliyun.com/composer/"
+      },
+      "wpackagist": {
+        "type":"composer",
+        "url":"https://wpackagist.org",
+        "only": [
+            "wpackagist-plugin/*",
+            "wpackagist-theme/*"
+        ]
+    }
+  },
+  "extra": {
+    "installer-paths": {
+        "wp-content/mu-plugins/{$name}/": [
+            "wpackagist-plugin/akismet"
+        ],
+        "wp-content/plugins/{$name}/": [
+            "type:wordpress-plugin"
+        ]
     }
   }
 }
