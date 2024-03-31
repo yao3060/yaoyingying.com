@@ -1,7 +1,7 @@
 <?php
-// Helpers.php
+namespace App\Helpers;
 
-if(!function_exists('array_insert')) {
+class BaseHelpers {
     function array_insert(
         array $array = [],
         int $position = 0,
@@ -12,9 +12,7 @@ if(!function_exists('array_insert')) {
             $new_array +
             array_slice($array, $position, count($array) - 1, $preserve_keys);
     }
-}
 
-if(!function_exists('get_client_ip')) {
     function get_client_ip()
     {
         $ipaddress = 'UNKNOWN';
@@ -35,4 +33,3 @@ if(!function_exists('get_client_ip')) {
         return $ipaddress;
     }
 }
-

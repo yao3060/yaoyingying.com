@@ -8,7 +8,7 @@
   Author URI: https://www.yaoin.net
 */
 
-require_once WPMU_PLUGIN_DIR . '/rest-api/index.php';
+new \App\Routes\NavMenusRoute();
 
 function onepress_fonts_url()
 {

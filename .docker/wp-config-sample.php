@@ -76,7 +76,11 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
 if (!defined('ABSPATH'))
     define('ABSPATH', dirname(__FILE__) . '/');
 
+define( 'WPMU_PLUGIN_DIR', ABSPATH . 'app');
+define( 'WPMU_PLUGIN_URL', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/app' );
+
 require_once __DIR__ . '/vendor/autoload.php';
+
 
 /** 设置WordPress变量和包含文件。 */
 require_once(ABSPATH . 'wp-settings.php');
