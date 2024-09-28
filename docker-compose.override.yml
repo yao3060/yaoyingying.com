@@ -1,0 +1,34 @@
+version: "3.1"
+
+services:
+  wordpress:
+    build:
+      context: .
+      dockerfile: ./.docker/Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME}_wordpress_apache
+    env_file: .env
+    restart: always
+    user: "${DOCKER_HOST_UID}:${DOCKER_HOST_GID}"
+    ports:
+      - "${WORDPRESS_HTTP_PORT}:80"
+    environment:
+      - WORDPRESS_DEBUG=1
+    volumes:
+      - wordpress-uploads:/var/www/html/wp-content/uploads
+      - ./src:/var/www/html
+
+  wordpress_db:
+    restart: no
+
+  cache:
+    restart: no
+
+  adminer:
+    image: adminer
+    restart: always
+    environment:
+      - ADMINER_DEFAULT_SERVER=wordpress_db
+    ports:
+      - 18080:8080
+
+

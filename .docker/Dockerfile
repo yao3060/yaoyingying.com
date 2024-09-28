@@ -146,7 +146,7 @@ WORKDIR /var/www/html
 COPY ./src /var/www/html
 
 # set ownership of /var/www/html to www-data
-# RUN chown -R www-data:www-data /var/www/html
+RUN chown -R www-data:www-data /var/www/html
 
 # copy our wp-config-sample.php file that uses getenv() to retrieve environment variables
 COPY ./.docker/wp-config-sample.php /wp-config-sample.php

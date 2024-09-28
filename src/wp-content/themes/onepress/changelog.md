@@ -1,4 +1,17 @@
 # CHANGELOG
+# 2.3.10
+* FIXED: fix css issues.
+
+
+# 2.3.9
+* FIXED: fix security issues.
+
+# 2.3.8
+* FIXED: Fix issue security check when save form.
+
+# 2.3.7
+* FIXED: Fix issue vulnerable to Cross Site Scripting (XSS).
+
 # 2.3.6
 * NEW: Update font Awesome to version 6.5.1.
 * FIXED: PHP 8.3 isssues.

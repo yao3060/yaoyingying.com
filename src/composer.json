@@ -19,7 +19,22 @@
     "elasticsearch/elasticsearch": "^7",
     "symfony/var-dumper": "^6.0",
     "guzzlehttp/guzzle": "^7.4",
-    "wp-cli/wp-cli-bundle": "^2.10"
+    "wp-cli/wp-cli-bundle": "^2.10",
+    "wpackagist-plugin/code-block-pro": "*",
+    "wpackagist-plugin/contact-form-7": "*",
+    "wpackagist-plugin/contact-form-cfdb7": "*",
+    "wpackagist-plugin/essential-blocks": "*",
+    "wpackagist-plugin/jwt-authentication-for-wp-rest-api": "*",
+    "wpackagist-plugin/oss-aliyun": "*",
+    "wpackagist-plugin/updraftplus": "*",
+    "wpackagist-plugin/woo-variation-swatches": "*",
+    "wpackagist-plugin/woocommerce": "*",
+    "wpackagist-plugin/wordfence": "*",
+    "wpackagist-plugin/wp-crontrol": "*",
+    "wpackagist-plugin/wp-smtp": "*",
+    "wpackagist-plugin/wp-serverinfo": "*",
+    "wpackagist-plugin/yet-another-related-posts-plugin": "*",
+    "wpackagist-plugin/advanced-custom-fields": "^6.3"
   },
   "repositories": {
     "packagist": {
@@ -35,11 +50,9 @@
       ]
     }
   },
+  "allow-plugins": true,
   "extra": {
     "installer-paths": {
-      "wp-content/mu-plugins/{$name}/": [
-        "wpackagist-plugin/akismet"
-      ],
       "wp-content/plugins/{$name}/": [
         "type:wordpress-plugin"
       ]
