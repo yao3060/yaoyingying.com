@@ -1,21 +1,16 @@
-# https://raw.githubusercontent.com/docker-library/wordpress/master/latest/php8.0/apache/Dockerfile
-FROM php:8.0-apache
+# @see https://github.com/docker-library/wordpress/blob/master/latest/php8.3/apache/Dockerfile
+FROM php:8.3-apache
 
-# debian source from aliyun https://developer.aliyun.com/mirror/debian?spm=a2c6h.13651102.0.0.3e221b11I7OCDs
-RUN { \
-		echo 'deb http://mirrors.aliyun.com/debian/ bullseye main non-free contrib'; \
-		echo 'deb-src http://mirrors.aliyun.com/debian/ bullseye main non-free contrib'; \
-		echo 'deb http://mirrors.aliyun.com/debian-security/ bullseye-security main'; \
-		echo 'deb-src http://mirrors.aliyun.com/debian-security/ bullseye-security main'; \
-		echo 'deb http://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib'; \
-		echo 'deb-src http://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib'; \
-		echo 'deb http://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib'; \
-		echo 'deb-src http://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib'; \
-        echo 'deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye main contrib non-free'; \
-        echo 'deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-updates main contrib non-free'; \
-        echo 'deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bullseye-backports main contrib non-free'; \
-        echo 'deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bullseye-security main contrib non-free'; \
-	} > /etc/apt/sources.list
+COPY --from=composer:2.7.7 /usr/bin/composer /usr/bin/composer
+
+# persistent dependencies
+RUN set -eux; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends \
+# Ghostscript is required for rendering PDF previews
+		ghostscript \
+	; \
+	rm -rf /var/lib/apt/lists/*
 
 # install the PHP extensions we need (https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions)
 RUN set -ex; \
@@ -25,6 +20,7 @@ RUN set -ex; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends \
 		libfreetype6-dev \
+		libicu-dev \
 		libjpeg-dev \
 		libmagickwand-dev \
 		libpng-dev \
@@ -41,13 +37,23 @@ RUN set -ex; \
 		bcmath \
 		exif \
 		gd \
+		intl \
 		mysqli \
 		zip \
 	; \
 # https://pecl.php.net/package/imagick
-	pecl install imagick-3.6.0; \
-	docker-php-ext-enable imagick; \
-	rm -r /tmp/pear; \
+# https://github.com/Imagick/imagick/commit/5ae2ecf20a1157073bad0170106ad0cf74e01cb6 (causes a lot of build failures, but strangely only intermittent ones 🤔)
+# see also https://github.com/Imagick/imagick/pull/641
+# this is "pecl install imagick-3.7.0", but by hand so we can apply a small hack / part of the above commit
+	curl -fL -o imagick.tgz 'https://pecl.php.net/get/imagick-3.7.0.tgz'; \
+	echo '5a364354109029d224bcbb2e82e15b248be9b641227f45e63425c06531792d3e *imagick.tgz' | sha256sum -c -; \
+	tar --extract --directory /tmp --file imagick.tgz imagick-3.7.0; \
+	grep '^//#endif$' /tmp/imagick-3.7.0/Imagick.stub.php; \
+	test "$(grep -c '^//#endif$' /tmp/imagick-3.7.0/Imagick.stub.php)" = '1'; \
+	sed -i -e 's!^//#endif$!#endif!' /tmp/imagick-3.7.0/Imagick.stub.php; \
+	grep '^//#endif$' /tmp/imagick-3.7.0/Imagick.stub.php && exit 1 || :; \
+	docker-php-ext-install /tmp/imagick-3.7.0; \
+	rm -rf imagick.tgz /tmp/imagick-3.7.0; \
 	\
 # some misbehaving extensions end up outputting to stdout 🙈 (https://github.com/docker-library/wordpress/issues/669#issuecomment-993945967)
 	out="$(php -r 'exit(0);')"; \
@@ -61,9 +67,9 @@ RUN set -ex; \
 	apt-mark auto '.*' > /dev/null; \
 	apt-mark manual $savedAptMark; \
 	ldd "$extDir"/*.so \
-		| awk '/=>/ { print $3 }' \
+		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' \
 		| sort -u \
-		| xargs -r dpkg-query -S \
+		| xargs -r dpkg-query --search \
 		| cut -d: -f1 \
 		| sort -u \
 		| xargs -rt apt-mark manual; \
@@ -85,7 +91,6 @@ RUN set -eux; \
 		echo 'opcache.interned_strings_buffer=8'; \
 		echo 'opcache.max_accelerated_files=4000'; \
 		echo 'opcache.revalidate_freq=2'; \
-		echo 'opcache.fast_shutdown=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 # https://wordpress.org/support/article/editing-wp-config-php/#configure-error-logging
 RUN { \
@@ -102,6 +107,17 @@ RUN { \
 		echo 'html_errors = Off'; \
 	} > /usr/local/etc/php/conf.d/error-logging.ini
 
+# Use the default production configuration
+RUN { \
+		echo 'upload_max_filesize = 100M'; \
+		echo 'post_max_size = 101M'; \
+	} > $PHP_INI_DIR/conf.d/custom.ini
+
+# add phpredis to php-available-exts (install in the next step)
+RUN pecl install -o -f redis-6.0.2 \
+	&&  rm -rf /tmp/pear \
+	&& docker-php-ext-enable redis
+
 RUN set -eux; \
 	a2enmod rewrite expires; \
 	\
@@ -110,22 +126,27 @@ RUN set -eux; \
 	{ \
 		echo 'RemoteIPHeader X-Forwarded-For'; \
 # these IP ranges are reserved for "private" use and should thus *usually* be safe inside Docker
-		echo 'RemoteIPTrustedProxy 10.0.0.0/8'; \
-		echo 'RemoteIPTrustedProxy 172.16.0.0/12'; \
-		echo 'RemoteIPTrustedProxy 192.168.0.0/16'; \
-		echo 'RemoteIPTrustedProxy 169.254.0.0/16'; \
-		echo 'RemoteIPTrustedProxy 127.0.0.0/8'; \
+		echo 'RemoteIPInternalProxy 10.0.0.0/8'; \
+		echo 'RemoteIPInternalProxy 172.16.0.0/12'; \
+		echo 'RemoteIPInternalProxy 192.168.0.0/16'; \
+		echo 'RemoteIPInternalProxy 169.254.0.0/16'; \
+		echo 'RemoteIPInternalProxy 127.0.0.0/8'; \
 	} > /etc/apache2/conf-available/remoteip.conf; \
 	a2enconf remoteip; \
 # https://github.com/docker-library/wordpress/issues/383#issuecomment-507886512
 # (replace all instances of "%h" with "%a" in LogFormat)
 	find /etc/apache2 -type f -name '*.conf' -exec sed -ri 's/([[:space:]]*LogFormat[[:space:]]+"[^"]*)%h([^"]*")/\1%a\2/g' '{}' +
 
+
+WORKDIR /var/www/html
+
+# CMD ["apache2-foreground"]
+
 # source code
 COPY ./src /var/www/html
 
 # set ownership of /var/www/html to www-data
-RUN chown -R www-data:www-data /var/www/html
+# RUN chown -R www-data:www-data /var/www/html
 
 # copy our wp-config-sample.php file that uses getenv() to retrieve environment variables
 COPY ./.docker/wp-config-sample.php /wp-config-sample.php

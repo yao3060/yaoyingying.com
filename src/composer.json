@@ -1,5 +1,6 @@
 {
   "name": "yao3060/yaoyingying",
+  "version": "1.0.0",
   "description": "My brilliant WordPress site. See https://wpackagist.org/",
   "autoload": {
     "psr-4": {
@@ -17,30 +18,31 @@
     "illuminate/support": "^9.5",
     "elasticsearch/elasticsearch": "^7",
     "symfony/var-dumper": "^6.0",
-    "guzzlehttp/guzzle": "^7.4"
+    "guzzlehttp/guzzle": "^7.4",
+    "wp-cli/wp-cli-bundle": "^2.10"
   },
   "repositories": {
-      "packagist": {
-        "type": "composer",
-        "url": "https://mirrors.aliyun.com/composer/"
-      },
-      "wpackagist": {
-        "type":"composer",
-        "url":"https://wpackagist.org",
-        "only": [
-            "wpackagist-plugin/*",
-            "wpackagist-theme/*"
-        ]
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer/"
+    },
+    "wpackagist": {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
     }
   },
   "extra": {
     "installer-paths": {
-        "wp-content/mu-plugins/{$name}/": [
-            "wpackagist-plugin/akismet"
-        ],
-        "wp-content/plugins/{$name}/": [
-            "type:wordpress-plugin"
-        ]
+      "wp-content/mu-plugins/{$name}/": [
+        "wpackagist-plugin/akismet"
+      ],
+      "wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ]
     }
   }
 }

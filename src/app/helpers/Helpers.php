@@ -1,7 +1,9 @@
 <?php
+
 namespace App\Helpers;
 
-class BaseHelpers {
+class BaseHelpers
+{
     function array_insert(
         array $array = [],
         int $position = 0,

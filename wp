@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
-set -aeuo pipefail
 
-# docker run -it --rm \
-#     -v $(pwd)/src:/var/www/html \
-#     -w /var/www/html \
-#     wordpress:cli-php8.0 $*
+WP_CLI="$(docker ps -q -f NAME=wordpress_apache)"
+docker exec  -u www-data -ti $WP_CLI sh -c "vendor/bin/wp $*"

@@ -1,4 +1,7 @@
 {
-	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "vscode.php-language-features"
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "vscode.php-language-features",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

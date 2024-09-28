@@ -21,4 +21,4 @@ echo "install packages"
 ./composer install --ignore-platform-reqs -vvv
 
 echo "start project"
-docker-compose up $@
+./docker-compose up $@
